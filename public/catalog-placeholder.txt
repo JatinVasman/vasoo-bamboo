@@ -1,0 +1,16 @@
+# Vasoo Bamboo Arts Catalog
+
+This is a placeholder for the actual product catalog PDF.
+
+In production, you would replace this with your actual catalog PDF file.
+
+## What the catalog should include:
+- Complete product listings
+- High-quality product images
+- Pricing information
+- Product specifications
+- Bulk order discounts
+- Contact information
+- Company story and values
+
+File should be named: catalog.pdf

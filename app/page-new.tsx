@@ -50,8 +50,8 @@ export default function Home() {
     <div className="pt-16">
       {/* Hero Section */}
       <Hero
-        title="Crafted by Nature, Perfected by Heart."
-        subtitle="In a world where convenience often overshadows care for the earth, Vasoo Bamboo Arts was born out of a promise – to protect nature while preserving our rich craftsmanship."
+        title="Crafted from Bamboo. Inspired by Nature."
+        subtitle="Discover our collection of eco-friendly bamboo products that blend sustainability with style. Each piece is handcrafted with love for nature and passion for quality."
         buttonText="Explore Products"
         buttonHref="/products"
         backgroundImage="/images/bamboo-hero.jpg"
@@ -94,14 +94,14 @@ export default function Home() {
                 Our Story
               </h2>
               <p className="text-black text-lg leading-relaxed mb-6">
-                In a world where convenience often overshadows care for the earth, we chose a different path. 
-                Born from a heartfelt promise to protect nature while preserving craftsmanship, every bamboo 
-                creation carries tradition and hope for a sustainable future.
+                At Vasoo Bamboo Arts, we believe in the power of sustainable living. 
+                Our journey began with a simple vision: to create beautiful, functional 
+                products that honor nature while serving modern needs.
               </p>
               <p className="text-black text-lg leading-relaxed mb-8">
-                When you choose our handcrafted pieces, you&apos;re not just buying a product – you&apos;re embracing 
-                a legacy of love for the environment and joining artisans whose skilled hands turn humble 
-                grass into timeless treasures.
+                Every piece in our collection is handcrafted with precision and care, 
+                ensuring that you receive not just a product, but a work of art that 
+                tells a story of sustainability and craftsmanship.
               </p>
               <AnimatedButton href="/about" variant="outline" size="md">
                 Learn More About Us
@@ -137,7 +137,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-bamboo-brown">100% Natural</h4>
-                    <p className="text-sm text-black">Sustainable bamboo materials</p>
+                    <p className="text-sm text-dark-text">Sustainable bamboo materials</p>
                   </div>
                 </div>
               </motion.div>
@@ -147,45 +147,45 @@ export default function Home() {
       </section>
 
       {/* Sustainability Features */}
-      <section className="py-20 bg-beige">
+      <section className="py-20 bg-eco-green">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-12 text-center"
-        >
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-black mb-4">
-            Why Choose Bamboo?
-          </h2>
-          <p className="text-black text-lg max-w-2xl mx-auto">
-            Bamboo is one of the most sustainable materials on Earth. Here&apos;s why it makes a difference.
-          </p>
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-white mb-4">
+              Why Choose Bamboo?
+            </h2>
+            <p className="text-white/90 text-lg max-w-2xl mx-auto">
+              Bamboo is one of the most sustainable materials on Earth. Here&apos;s why it makes a difference.
+            </p>
+          </motion.div>
 
-        <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
-          {features.map((feature, index) => (
-            <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="flex-1 flex items-stretch"
-            >
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 hover:scale-105 hover:shadow-2xl hover:shadow-white/10 transition-all duration-300 group-hover:transform group-hover:-translate-y-2 border border-black flex flex-col justify-center h-full min-h-[260px] items-center text-center">
-          <div className="text-4xl mb-4">{feature.icon}</div>
-          <h3 className="font-semibold text-xl text-black mb-3">
-            {feature.title}
-          </h3>
-          <p className="text-black/80">
-            {feature.description}
-          </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center group cursor-pointer"
+              >
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 hover:scale-105 hover:shadow-2xl hover:shadow-white/10 transition-all duration-300 group-hover:transform group-hover:-translate-y-2">
+                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{feature.icon}</div>
+                  <h3 className="font-semibold text-xl text-white mb-3 group-hover:text-beige transition-colors duration-300">
+                    {feature.title}
+                  </h3>
+                  <p className="text-white/80 group-hover:text-white transition-colors duration-300">
+                    {feature.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -208,19 +208,19 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <AnimatedButton
-                href="mailto:vasoo.bamboo@gmail.com?subject=Catalog Request&body=Hello Vasoo Bamboo Arts,%0A%0APlease send me your product catalog.%0A%0AThank you!"
+                href="/catalog.pdf"
                 variant="primary"
                 size="lg"
-                className="w-full sm:w-auto !text-black hover:!text-black border border-eco-green/30"
+                className="w-full sm:w-auto"
               >
                 📄 Download Catalog
               </AnimatedButton>
               
               <AnimatedButton
-                href="https://wa.me/919027918860"
+                href="https://wa.me/918484988228"
                 variant="secondary"
                 size="lg"
-                className="w-full sm:w-auto !text-black hover:!text-black border border-eco-green/30"
+                className="w-full sm:w-auto"
               >
                 💬 WhatsApp Us
               </AnimatedButton>

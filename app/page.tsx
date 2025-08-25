@@ -3,85 +3,101 @@
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
-import CategoryCard from '../components/CategoryCard';
+import ProductCard from '../components/ProductCard';
 import AnimatedButton from '../components/AnimatedButton';
+import { products } from '../data/products';
 
 export default function Home() {
-  const categories = [
-    {
-      title: 'Bamboo Bottles',
-      image: '/images/bottles.jpg',
-      description: 'Eco-friendly water bottles crafted from sustainable bamboo',
-      href: '/products?category=bottles',
-    },
-    {
-      title: 'Home Décor',
-      image: '/images/decor.jpg',
-      description: 'Beautiful handcrafted bamboo decorative items for your home',
-      href: '/products?category=decor',
-    },
-    {
-      title: 'Lamps & Lighting',
-      image: '/images/lamps.jpg',
-      description: 'Stunning bamboo lamps that bring warmth to any space',
-      href: '/products?category=lamps',
-    },
-  ];
+  // Featured products - select 6 products to showcase in 3-3 format
+  const featuredProducts = [
+    products.find(p => p.id === 'bamboo-bottle-regular'),
+    products.find(p => p.id === 'bamboo-peacock'),
+    products.find(p => p.id === 'bamboo-silver-lamp'),
+    products.find(p => p.id === 'premium-bamboo-pen'),
+    products.find(p => p.id === 'bamboo-cutlery-set'),
+    products.find(p => p.id === 'bamboo-tabala'),
+  ].filter(Boolean).slice(0, 6);
 
-  const features = [
-    {
-      icon: '🌱',
-      title: 'Eco-Friendly',
-      description: 'Made from 100% sustainable bamboo',
-    },
-    {
-      icon: '🤲',
-      title: 'Handcrafted',
-      description: 'Carefully crafted by skilled artisans',
-    },
-    {
-      icon: '♻️',
-      title: 'Sustainable',
-      description: 'Biodegradable and environmentally conscious',
-    },
-  ];
+  const handleInquiry = (productName: string) => {
+    const subject = `Product Inquiry: ${productName}`;
+    const body = `Hello Vasoo Bamboo Arts,%0A%0AI am interested in the ${productName}.%0A%0APlease provide more details including:%0A- Pricing%0A- Availability%0A- Specifications%0A- Bulk orders%0A%0AThank you!`;
+    window.location.href = `mailto:vasoo.bamboo@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+  };
 
   return (
     <div className="pt-16">
       {/* Hero Section */}
       <Hero
-        title="Crafted by Nature, Perfected by Heart."
-        subtitle="In a world where convenience often overshadows care for the earth, Vasoo Bamboo Arts was born out of a promise – to protect nature while preserving our rich craftsmanship."
-        buttonText="Explore Products"
+        title="Welcome to Vasoo Bamboo Arts - Handmade Excellence"
+        subtitle="Discover eco-friendly, sustainable bamboo crafts handmade by skilled artisans in Chandrapur. Experience traditional craftsmanship that brings nature's beauty into your home while protecting our planet."
+        buttonText="Explore Our Products"
         buttonHref="/products"
         backgroundImage="/images/bamboo-hero.jpg"
       />
 
-      {/* Featured Categories Section */}
+      {/* Featured Products Section */}
       <section className="py-20 bg-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
-            title="Featured Categories"
-            subtitle="Explore our handpicked collection of bamboo products designed for modern living"
+            title="Featured Products"
+            subtitle="Handpicked from our collection of eco-friendly bamboo crafts"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {categories.map((category, index) => (
-              <CategoryCard
-                key={category.title}
-                title={category.title}
-                image={category.image}
-                description={category.description}
-                href={category.href}
-                index={index}
-              />
+          {/* First row - 3 products */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {featuredProducts.slice(0, 3).map((product, index) => (
+              product && (
+                <ProductCard
+                  key={product.id}
+                  id={product.id}
+                  name={product.name}
+                  image={product.image}
+                  price={product.price}
+                  originalPrice={product.originalPrice}
+                  category={product.category}
+                  isNew={product.isNew}
+                  index={index}
+                  onInquiry={handleInquiry}
+                />
+              )
             ))}
+          </div>
+
+          {/* Second row - 3 products */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {featuredProducts.slice(3, 6).map((product, index) => (
+              product && (
+                <ProductCard
+                  key={product.id}
+                  id={product.id}
+                  name={product.name}
+                  image={product.image}
+                  price={product.price}
+                  originalPrice={product.originalPrice}
+                  category={product.category}
+                  isNew={product.isNew}
+                  index={index + 3}
+                  onInquiry={handleInquiry}
+                />
+              )
+            ))}
+          </div>
+
+          <div className="text-center">
+            <AnimatedButton
+              href="/products"
+              variant="primary"
+              size="lg"
+              className="!text-black hover:!text-black border border-eco-green/30"
+            >
+              🏬 View All {products.length}+ Products
+            </AnimatedButton>
           </div>
         </div>
       </section>
 
       {/* About Preview Section */}
-      <section className="py-20">
+      <section className="py-20 bg-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -91,17 +107,17 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-bamboo-brown mb-6">
-                Our Story
+                About Vasoo Bamboo Arts
               </h2>
               <p className="text-black text-lg leading-relaxed mb-6">
-                In a world where convenience often overshadows care for the earth, we chose a different path. 
-                Born from a heartfelt promise to protect nature while preserving craftsmanship, every bamboo 
-                creation carries tradition and hope for a sustainable future.
+                Based in Chandrapur, Maharashtra, Vasoo Bamboo Arts specializes in creating beautiful, 
+                eco-friendly bamboo crafts using traditional craftsmanship techniques. Every handmade piece 
+                is sustainably sourced and crafted by skilled artisans who care deeply about our environment.
               </p>
               <p className="text-black text-lg leading-relaxed mb-8">
-                When you choose our handcrafted pieces, you&apos;re not just buying a product – you&apos;re embracing 
-                a legacy of love for the environment and joining artisans whose skilled hands turn humble 
-                grass into timeless treasures.
+                When you choose our handmade bamboo products, you&apos;re supporting sustainable living and 
+                traditional craftsmanship. Our eco-friendly bamboo crafts bring natural beauty to your 
+                home while helping preserve our planet for future generations.
               </p>
               <AnimatedButton href="/about" variant="outline" size="md">
                 Learn More About Us
@@ -146,51 +162,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sustainability Features */}
-      <section className="py-20 bg-beige">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-12 text-center"
-        >
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-black mb-4">
-            Why Choose Bamboo?
-          </h2>
-          <p className="text-black text-lg max-w-2xl mx-auto">
-            Bamboo is one of the most sustainable materials on Earth. Here&apos;s why it makes a difference.
-          </p>
-        </motion.div>
-
-        <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
-          {features.map((feature, index) => (
-            <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="flex-1 flex items-stretch"
-            >
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 hover:scale-105 hover:shadow-2xl hover:shadow-white/10 transition-all duration-300 group-hover:transform group-hover:-translate-y-2 border border-black flex flex-col justify-center h-full min-h-[260px] items-center text-center">
-          <div className="text-4xl mb-4">{feature.icon}</div>
-          <h3 className="font-semibold text-xl text-black mb-3">
-            {feature.title}
-          </h3>
-          <p className="text-black/80">
-            {feature.description}
-          </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20 bg-beige">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -199,19 +172,20 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-bamboo-brown mb-6">
-              Ready to Go Green?
+              Start Your Eco-Friendly Journey Today
             </h2>
             <p className="text-black text-lg mb-8 max-w-2xl mx-auto">
-              Join thousands of customers who have made the switch to sustainable bamboo products. 
-              Download our catalog or get in touch with us today.
+              Join thousands of customers who have embraced sustainable living with our handmade bamboo crafts. 
+              Explore our eco-friendly products from Vasoo Bamboo Arts in Chandrapur and make a difference.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <AnimatedButton
-                href="mailto:vasoo.bamboo@gmail.com?subject=Catalog Request&body=Hello Vasoo Bamboo Arts,%0A%0APlease send me your product catalog.%0A%0AThank you!"
+                href="/Catalog/VASOO_CATALOG_1.pdf"
                 variant="primary"
                 size="lg"
                 className="w-full sm:w-auto !text-black hover:!text-black border border-eco-green/30"
+                download="VASOO_CATALOG.pdf"
               >
                 📄 Download Catalog
               </AnimatedButton>

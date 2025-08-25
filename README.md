@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎋 Vasoo Bamboo Arts
 
 > A modern, sustainable e-commerce website showcasing handcrafted bamboo products with eco-friendly design principles.
@@ -215,3 +216,6 @@ For support, email vasoo.bamboo@gmail.com or contact +91 90279 18860.
 ---
 
 **Made with 🌱 for sustainable living** | Vasoo Bamboo Arts © 2025
+=======
+# vasoo-bamboo-arts
+>>>>>>> 9f21d306ca95d9649fe83be5ddad7b4b2ef94f68

@@ -104,7 +104,7 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6"
           >
-            Get in Touch With Us
+            We&apos;d Love to Hear From You
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -112,8 +112,8 @@ export default function ContactPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-black max-w-3xl mx-auto"
           >
-            Ready to start your sustainable journey? We&apos;re here to help you find the perfect 
-            bamboo products or answer any questions you might have.
+            Contact Vasoo Bamboo Arts in Chandrapur for handmade, eco-friendly bamboo crafts. 
+            Reach out for custom designs, bulk orders, or questions about our sustainable products.
           </motion.p>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-black text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
             >
-              Multiple ways to reach us - choose what works best for you
+              Contact us today for eco-friendly bamboo crafts and traditional craftsmanship from Chandrapur
             </motion.p>
 
             {/* Floating Leaves Animation */}

@@ -55,10 +55,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true }}
       whileHover={{ y: -8 }}
       className="group bg-beige rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-bamboo-accent/10 transition-all duration-300"
     >

@@ -12,6 +12,7 @@ interface AnimatedButtonProps {
   size?: 'sm' | 'md' | 'lg';
   className?: string;
   disabled?: boolean;
+  download?: string;
 }
 
 const AnimatedButton: React.FC<AnimatedButtonProps> = ({
@@ -22,6 +23,7 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   size = 'md',
   className = '',
   disabled = false,
+  download,
 }) => {
   const baseClasses =
     'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 border-2 border-black';
@@ -63,7 +65,7 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
         whileTap={{ scale: 0.95 }}
         transition={{ type: 'spring', stiffness: 400, damping: 17 }}
       >
-        <Link href={href} className={buttonClasses}>
+        <Link href={href} className={buttonClasses} download={download}>
           {buttonContent}
         </Link>
       </motion.div>

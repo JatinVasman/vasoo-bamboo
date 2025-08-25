@@ -5,137 +5,10 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../../components/SectionTitle';
 import ProductCard from '../../components/ProductCard';
 import AnimatedButton from '../../components/AnimatedButton';
+import { products, productCategories } from '../../data/products';
 
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState('all');
-
-  const categories = [
-    { id: 'all', name: 'All Products', icon: '🏬' },
-    { id: 'bottles', name: 'Bottles', icon: '🍼' },
-    { id: 'decor', name: 'Décor', icon: '🎍' },
-    { id: 'lamps', name: 'Lamps', icon: '🏮' },
-    { id: 'office', name: 'Office', icon: '🪑' },
-    { id: 'utility', name: 'Utility', icon: '🧺' },
-  ];
-
-  const products = [
-    {
-      id: 'bamboo-water-bottle',
-      name: 'Bamboo Water Bottle',
-      image: '/images/products/bottle-1.jpg',
-      price: '899',
-      originalPrice: '1299',
-      category: 'bottles',
-      isNew: true,
-    },
-    {
-      id: 'insulated-bamboo-tumbler',
-      name: 'Insulated Bamboo Tumbler',
-      image: '/images/products/bottle-2.jpg',
-      price: '1299',
-      category: 'bottles',
-    },
-    {
-      id: 'bamboo-tea-set',
-      name: 'Bamboo Tea Set',
-      image: '/images/products/bottle-3.jpg',
-      price: '2499',
-      originalPrice: '3199',
-      category: 'bottles',
-    },
-    {
-      id: 'decorative-bamboo-vase',
-      name: 'Decorative Bamboo Vase',
-      image: '/images/products/decor-1.jpg',
-      price: '1899',
-      category: 'decor',
-      isNew: true,
-    },
-    {
-      id: 'bamboo-wall-art',
-      name: 'Bamboo Wall Art',
-      image: '/images/products/decor-2.jpg',
-      price: '3499',
-      category: 'decor',
-    },
-    {
-      id: 'bamboo-photo-frame-set',
-      name: 'Bamboo Photo Frame Set',
-      image: '/images/products/decor-3.jpg',
-      price: '1599',
-      originalPrice: '1999',
-      category: 'decor',
-    },
-    {
-      id: 'bamboo-table-lamp',
-      name: 'Bamboo Table Lamp',
-      image: '/images/products/lamp-1.jpg',
-      price: '2899',
-      category: 'lamps',
-    },
-    {
-      id: 'bamboo-floor-lamp',
-      name: 'Bamboo Floor Lamp',
-      image: '/images/products/lamp-2.jpg',
-      price: '4999',
-      category: 'lamps',
-      isNew: true,
-    },
-    {
-      id: 'bamboo-pendant-light',
-      name: 'Bamboo Pendant Light',
-      image: '/images/products/lamp-3.jpg',
-      price: '3799',
-      originalPrice: '4499',
-      category: 'lamps',
-    },
-    {
-      id: 'bamboo-desk-organizer',
-      name: 'Bamboo Desk Organizer',
-      image: '/images/products/office-1.jpg',
-      price: '1299',
-      category: 'office',
-    },
-    {
-      id: 'bamboo-laptop-stand',
-      name: 'Bamboo Laptop Stand',
-      image: '/images/products/office-2.jpg',
-      price: '2199',
-      category: 'office',
-      isNew: true,
-    },
-    {
-      id: 'bamboo-pen-holder',
-      name: 'Bamboo Pen Holder',
-      image: '/images/products/office-3.jpg',
-      price: '799',
-      originalPrice: '999',
-      category: 'office',
-    },
-    {
-      id: 'bamboo-kitchen-utensil-set',
-      name: 'Bamboo Kitchen Utensil Set',
-      image: '/images/products/utility-1.jpg',
-      price: '1799',
-      category: 'utility',
-    },
-    {
-      id: 'bamboo-cutting-board',
-      name: 'Bamboo Cutting Board',
-      image: '/images/products/utility-2.jpg',
-      price: '1199',
-      category: 'utility',
-    },
-    {
-      id: 'bamboo-storage-baskets',
-      name: 'Bamboo Storage Baskets',
-      image: '/images/products/utility-3.jpg',
-      price: '2499',
-      originalPrice: '2999',
-      category: 'utility',
-      isNew: true,
-    },
-  ];
 
   const filteredProducts = activeCategory === 'all' 
     ? products 
@@ -159,7 +32,7 @@ export default function ProductsPage() {
             transition={{ duration: 0.6 }}
             className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6"
           >
-            Our Products
+            Eco-Friendly Bamboo Products
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -167,8 +40,8 @@ export default function ProductsPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-black max-w-3xl mx-auto"
           >
-            Discover our complete collection of eco-friendly bamboo products. 
-            Each item is carefully crafted to bring sustainability and style to your everyday life.
+            Discover our collection of {products.length} handmade bamboo crafts from Chandrapur. Each sustainable product is carefully 
+            crafted using traditional craftsmanship to bring eco-friendly living to your home.
           </motion.p>
         </div>
       </section>
@@ -184,7 +57,7 @@ export default function ProductsPage() {
           >
             {/* Desktop Navigation */}
             <div className="hidden md:flex justify-center items-center space-x-4 relative">
-              {categories.map((category) => (
+              {productCategories.map((category) => (
                 <motion.button
                   key={category.id}
                   whileHover={{ 
@@ -228,7 +101,7 @@ export default function ProductsPage() {
             {/* Mobile Navigation - Premium Scrollable with Snap */}
             <div className="md:hidden relative">
               <div className="flex space-x-3 overflow-x-auto scrollbar-hide pb-2 snap-x snap-mandatory px-2">
-                {categories.map((category) => (
+                {productCategories.map((category) => (
                   <motion.button
                     key={category.id}
                     whileHover={{ scale: 1.02 }}
@@ -266,15 +139,33 @@ export default function ProductsPage() {
       {/* Products Grid */}
       <section className="py-16 bg-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Category Info */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-2xl font-semibold text-bamboo-brown mb-2">
+              {activeCategory === 'all' 
+                ? `All Products (${products.length})` 
+                : `${productCategories.find(c => c.id === activeCategory)?.name} (${filteredProducts.length})`
+              }
+            </h2>
+            <p className="text-black/70">
+              {activeCategory === 'all' 
+                ? 'Browse our complete collection of eco-friendly bamboo products'
+                : `Discover our ${filteredProducts.length} ${productCategories.find(c => c.id === activeCategory)?.name.toLowerCase()}`
+              }
+            </p>
+          </motion.div>
+
+          <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
           >
             {filteredProducts.map((product, index) => (
               <ProductCard
-                key={`${product.id}-${activeCategory}`}
+                key={`${product.id}-${activeCategory}-${index}`}
                 id={product.id}
                 name={product.name}
                 image={product.image}
@@ -308,6 +199,45 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA Section */}
+      <section className="py-20 bg-beige">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-bamboo-brown mb-6">
+              Shop Handmade Bamboo Products Today
+            </h2>
+            <p className="text-black text-lg mb-8 max-w-2xl mx-auto">
+              Experience the durability and sustainability of our eco-friendly bamboo crafts. 
+              Each piece showcases unique traditional craftsmanship from Vasoo Bamboo Arts.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <AnimatedButton
+                href="/Catalog/VASOO_CATALOG_1.pdf"
+                variant="primary"
+                size="lg"
+                className="w-full sm:w-auto !text-black hover:!text-black border border-eco-green/30"
+                download="VASOO_CATALOG.pdf"
+              >
+                📦 Shop Handmade Bamboo Products
+              </AnimatedButton>
+              
+              <AnimatedButton
+                href="https://wa.me/919027918860"
+                variant="secondary"
+                size="lg"
+                className="w-full sm:w-auto !text-black hover:!text-black border border-eco-green/30"
+              >
+                💬 WhatsApp for Custom Orders
+              </AnimatedButton>
+            </div>
+          </motion.div>
+        </div>
+      </section>
    
     </div>
   );

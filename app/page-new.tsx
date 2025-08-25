@@ -208,10 +208,11 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <AnimatedButton
-                href="/catalog.pdf"
+                href="/Catalog/VASOO_CATALOG_1.pdf"
                 variant="primary"
                 size="lg"
                 className="w-full sm:w-auto"
+                download="VASOO_CATALOG.pdf"
               >
                 📄 Download Catalog
               </AnimatedButton>

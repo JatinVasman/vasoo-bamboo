@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -25,9 +26,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="font-playfair font-bold text-xl text-black">
-              Vasoo Bamboo Arts
-            </span>
+            <Image 
+              src="/images/Logo/logo.png" 
+              alt="Vasoo Bamboo Arts Logo" 
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -63,7 +68,8 @@ const Navbar = () => {
               </Link>
             ))}
             <motion.a
-              href="mailto:vasoo.bamboo@gmail.com?subject=Catalog Request&body=Hello Vasoo Bamboo Arts,%0A%0APlease send me your product catalog.%0A%0AThank you!"
+              href="/Catalog/VASOO_CATALOG_1.pdf"
+              download="Vasoo_Bamboo_Arts_Catalog.pdf"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="bg-beige text-black border border-bamboo-accent px-4 py-2 rounded-lg hover:bg-bamboo-accent hover:text-black hover:shadow-xl hover:shadow-bamboo-accent/30 transition-all duration-300 relative overflow-hidden group"
@@ -137,7 +143,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <motion.a
-                href="mailto:vasoo.bamboo@gmail.com?subject=Catalog Request&body=Hello Vasoo Bamboo Arts,%0A%0APlease send me your product catalog.%0A%0AThank you!"
+                href="/Catalog/VASOO_CATALOG_1.pdf"
+                download="Vasoo_Bamboo_Arts_Catalog.pdf"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full text-left bg-beige text-black border border-bamboo-accent px-3 py-2 rounded-lg hover:bg-bamboo-accent hover:text-white hover:shadow-lg hover:shadow-bamboo-accent/30 transition-all duration-300 mt-2 block relative overflow-hidden group"

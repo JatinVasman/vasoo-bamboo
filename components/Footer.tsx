@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -31,9 +32,13 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="mb-4">
-              <span className="font-playfair font-bold text-xl text-black">
-                Vasoo Bamboo Arts
-              </span>
+              <Image 
+                src="/images/Logo/logo.png" 
+                alt="Vasoo Bamboo Arts Logo" 
+                width={150}
+                height={50}
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-black mb-4">
               Crafted by Nature, Perfected by Heart. 

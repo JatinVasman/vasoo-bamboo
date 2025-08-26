@@ -64,12 +64,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <div className="absolute top-3 left-3 flex flex-col space-y-2">
           {isNew && (
             <span className="bg-eco-green text-white text-xs font-semibold px-2 py-1 rounded-full">
-              New
+              
             </span>
           )}
           {isEcoFriendly && (
             <span className="bg-bamboo-brown text-white text-xs font-semibold px-2 py-1 rounded-full flex items-center">
-              🌱 Eco
+              🌱
             </span>
           )}
         </div>

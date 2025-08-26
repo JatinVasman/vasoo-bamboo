@@ -19,13 +19,24 @@ export default function ProductsPage() {
   return (
     <div className="pt-24 pb-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-bamboo-brown to-eco-green py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/Logo/product-page.jpg"
+            alt="Bamboo Products Background"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-bamboo-brown/80 to-eco-green/80" />
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6"
+            className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-shadow-black mb-6 drop-shadow-2xl"
           >
             Eco-Friendly Bamboo Products
           </motion.h1>
@@ -33,7 +44,7 @@ export default function ProductsPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-black max-w-3xl mx-auto"
+            className="text-xl text-black font-semibold max-w-3xl mx-auto drop-shadow-lg"
           >
             Discover our collection of {products.length} handmade bamboo crafts from Chandrapur. Each sustainable product is carefully 
             crafted using traditional craftsmanship to bring eco-friendly living to your home.

@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({
   onButtonClick,
 }) => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen py-20 flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <motion.div
         initial={{ scale: 1.1 }}

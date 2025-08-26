@@ -27,7 +27,7 @@ export default function ProductsPage() {
             alt="Bamboo Products Background"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-bamboo-brown/80 to-eco-green/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-bamboo-brown/95 to-eco-green/95" />
         </div>
         
         {/* Content */}
@@ -36,7 +36,7 @@ export default function ProductsPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-shadow-black mb-6 drop-shadow-2xl"
+            className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-gray-200 mb-6 drop-shadow-2xl"
           >
             Eco-Friendly Bamboo Products
           </motion.h1>
@@ -44,7 +44,7 @@ export default function ProductsPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-black font-semibold max-w-3xl mx-auto drop-shadow-lg"
+            className="text-xl text-[#F5F5DC] font-semibold max-w-3xl mx-auto drop-shadow-lg"
           >
             Discover our collection of {products.length} handmade bamboo crafts from Chandrapur. Each sustainable product is carefully 
             crafted using traditional craftsmanship to bring eco-friendly living to your home.

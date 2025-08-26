@@ -22,6 +22,14 @@ export const productCategories = [
 export const products: Product[] = [
   // Bottles & Cups
   {
+    id: 'bottle-engraving-sample',
+    name: 'Bottle Engraving Sample',
+    image: '/images/products/_BOTTLE ENGRAVING SAMPLE.jpg',
+    price: '989',
+    category: 'bottles',
+    description: 'Sample of custom engraving on bamboo bottle'
+  },
+  {
     id: 'sports-bamboo-bottle',
     name: 'Sports Bamboo Bottle',
     image: '/images/products/SPORTS BAMBOO BOTTLE  .jpg',
@@ -29,6 +37,14 @@ export const products: Product[] = [
     category: 'bottles',
     isNew: true,
     description: 'Sports bottle made from sustainable bamboo - 500ML'
+  },
+  {
+    id: 'bamboo-bottle-bamboo-cap',
+    name: 'Bamboo Bottle with Bamboo Cap',
+    image: '/images/products/BAMBOO BOTTLE WITH BAMBOO CAP.jpg',
+    price: '629',
+    category: 'bottles',
+    description: 'Eco-friendly bamboo bottle with a natural bamboo cap - 500ML'
   },
   {
     id: 'bamboo-bottle-steel-handle',
@@ -39,8 +55,8 @@ export const products: Product[] = [
     description: 'Durable bamboo bottle with stainless steel handle - 500ML'
   },
   {
-    id: 'bamboo-bottle-bamboo-cap',
-    name: 'Bamboo Bottle with Bamboo Cap',
+    id: 'BAMBOO BOTTLE  WITH LACE ',
+    name: 'BAMBOO BOTTLE  WITH LACE ',
     image: '/images/products/BAMBOO BOTTLE  WITH LACE .jpg',
     price: '799',
     category: 'bottles',
@@ -55,10 +71,10 @@ export const products: Product[] = [
     description: 'Regular bamboo water bottle for daily use - 500ML'
   },
   {
-    id: 'bamboo-bottle-big-stainer',
-    name: 'Bamboo Bottle with Big Stainer',
-    image: '/images/products/BAMBOO BOTTLE  WITH LACE .jpg',
-    price: '699',
+    id: 'SPORTS BAMBOO BOTTLE   (1)',
+    name: 'Sports Bamboo Bottle',
+    image: '/images/products/SPORTS BAMBOO BOTTLE(1).jpg',
+    price: '799',
     category: 'bottles',
     description: 'Bamboo bottle with big stainer - 500ML'
   },
@@ -79,20 +95,20 @@ export const products: Product[] = [
     description: 'Sustainable wheat fiber cup with bamboo lid - 350ML'
   },
   {
-    id: 'coffee-tumbler',
-    name: 'Coffee Tumbler',
+    id: 'tumbler',
+    name: 'Tumbler',
     image: '/images/products/TUMBLR.jpg',
-    price: '749',
+    price: '499',
     category: 'bottles',
     description: 'Coffee tumbler made from bamboo - 450ML'
   },
   {
-    id: 'beer-mug-tumbler',
-    name: 'Beer Mug Tumbler',
-    image: '/images/products/TUMBLR.jpg',
-    price: '499',
+    id: 'coffee-tumbler-beer-mug',
+    name: 'Coffee Tumbler Beer Mug',
+    image: '/images/products/_COFFEETUMBLRBEERMUG.jpg',
+    price: '749',
     category: 'bottles',
-    description: 'Beer mug style tumbler - 450ML'
+    description: 'Bamboo coffee tumbler beer mug - 400ML'
   },
   {
     id: 'reusable-bamboo-straw',
@@ -317,18 +333,10 @@ export const products: Product[] = [
     description: 'Alternative table organizer - 9"x5"'
   },
   {
-    id: 'elephant-mobile-stand',
-    name: 'Elephant Mobile Stand',
-    image: '/images/products/MOBILE STAND .jpg',
-    price: '159',
-    category: 'office',
-    description: 'Elephant-shaped mobile stand - 5"X2.5"'
-  },
-  {
     id: 'mobile-amplifier',
     name: 'Mobile Amplifier',
     image: '/images/products/MOBILE AMPLIFIER .jpg',
-    price: '299',
+    price: '229',
     category: 'office',
     description: 'Bamboo mobile amplifier - 10" Length'
   },
@@ -336,7 +344,7 @@ export const products: Product[] = [
     id: 'flat-mobile-stand',
     name: 'Flat Mobile Stand',
     image: '/images/products/FLATMOBILE STAND.jpg',
-    price: '229',
+    price: '239',
     category: 'office',
     description: 'Flat mobile stand - 7.5" Height'
   },
@@ -373,14 +381,6 @@ export const products: Product[] = [
     description: 'Bamboo name plate - 2.25" x 12"'
   },
   {
-    id: 'name-plate-2',
-    name: 'Name Plate Design 2',
-    image: '/images/products/NAME PLATE.jpg',
-    price: '449',
-    category: 'office',
-    description: 'Name plate variant - 3.5" x 13"'
-  },
-  {
     id: 'home-name-plate-1',
     name: 'Home Name Plate Large',
     image: '/images/products/HOME NAME PLATE (1).jpg',
@@ -392,7 +392,7 @@ export const products: Product[] = [
     id: 'notebook',
     name: 'Bamboo Notebook',
     image: '/images/products/NOTEBOOK .jpg',
-    price: '699',
+    price: '663',
     category: 'office',
     description: 'Notebook with bamboo cover - 5.5"x 7.5", 200 Pages'
   },
@@ -400,7 +400,7 @@ export const products: Product[] = [
     id: 'diary-bamboo-pages',
     name: 'Diary with Bamboo Pages',
     image: '/images/products/DIARY WITH BAMBOO PAGES .jpg',
-    price: '663',
+    price: '699',
     category: 'office',
     description: 'Diary with bamboo paper - 6.1"x 8.5", 150 Pages'
   },
@@ -583,7 +583,7 @@ export const products: Product[] = [
   {
     id: 'premium-pen-artificial-diamond',
     name: 'Premium Pen with Artificial Diamond',
-    image: '/images/products/ARTIFICIAL DIAMOND  PEN WITH BAMBOO  BOX.jpg',
+    image: '/images/products/PREMIUM PEN SAMAI BIG  SMAI-BIG  WITH ARTIFICIAL DIAMOND BOX.jpg',
     price: '449',
     category: 'office',
     description: 'Premium pen with artificial diamond'
@@ -718,27 +718,20 @@ export const products: Product[] = [
     category: 'utility',
     description: 'Bamboo fruit serving tray - 11"X9"'
   },
+
   {
-    id: 'small-tray',
+    id: 'strip-tray-small',
     name: 'Small Tray',
     image: '/images/products/SMALL TRAY .jpg',
     price: '269',
-    category: 'utility',
-    description: 'Small serving tray - 6" x 9.5" x 3"'
-  },
-  {
-    id: 'strip-tray-small',
-    name: 'Strip Tray Small',
-    image: '/images/products/STRIP TRAY .jpg',
-    price: '779',
     category: 'utility',
     description: 'Small strip tray - 13" X9"'
   },
   {
     id: 'strip-tray-big',
-    name: 'Strip Tray Big',
+    name: 'Strip Tray Small | Big',
     image: '/images/products/STRIP  TRAY(SMALL    BIG).jpg',
-    price: '1289',
+    price: '779|1289',
     category: 'utility',
     description: 'Large strip tray - 12" X18"'
   },
@@ -801,7 +794,7 @@ export const products: Product[] = [
   {
     id: 'photo-key-chain',
     name: 'Photo Key Chain',
-    image: '/images/products/KEY CHAINS  KY-CHNS.jpg',
+    image: '/images/products/Photo KEY CHAIN.jpg',
     price: '150',
     category: 'utility',
     description: 'Photo key chain'
@@ -837,14 +830,6 @@ export const products: Product[] = [
     price: '450',
     category: 'utility',
     description: 'Educational learning cubes - 3" x 3"'
-  },
-  {
-    id: 'walking-stick',
-    name: 'Walking Stick',
-    image: '/images/products/REUSABLE BAMBOO STRAW.jpg',
-    price: '260',
-    category: 'utility',
-    description: 'Bamboo walking stick - 36", 39" height'
   },
   {
     id: 'sarota',
@@ -885,14 +870,6 @@ export const products: Product[] = [
     price: '40',
     category: 'utility',
     description: 'Bamboo toothbrush with hard bristles'
-  },
-  {
-    id: 'ultra-soft-tooth-brush',
-    name: 'Ultra Soft/Nano Bristles',
-    image: '/images/products/SOFT TOOTH BRUSH  .jpg',
-    price: '130',
-    category: 'utility',
-    description: 'Ultra soft nano bristle toothbrush'
   },
   {
     id: 'lily-comb',
@@ -940,16 +917,16 @@ export const products: Product[] = [
     id: 'hanging-lamp-2',
     name: 'Hanging Lamp',
     image: '/images/products/HANGING LAMP2.jpg',
-    price: '829',
+    price: '1019',
     category: 'lighting',
     isNew: true,
     description: 'Hanging bamboo lamp - dia 7" x 10"ht'
   },
   {
     id: 'hanging-lamp-1',
-    name: 'Hanging Lamp Large',
+    name: 'Hanging Lamp Design-2',
     image: '/images/products/HANGING LAMP.jpg',
-    price: '1019',
+    price: '829',
     category: 'lighting',
     description: 'Large hanging lamp - 14" x 14"'
   },
@@ -971,19 +948,11 @@ export const products: Product[] = [
   },
   {
     id: 'electric-lamp-1',
-    name: 'Electric Lamp Small',
+    name: 'Electric Lamp 2',
     image: '/images/products/ELECTRICLAMP (1).jpg',
-    price: '203',
-    category: 'lighting',
-    description: 'Small electric lamp - dia 3" x 10"'
-  },
-  {
-    id: 'electric-lamp-3',
-    name: 'Electric Lamp Square',
-    image: '/images/products/ELECTRICLAMP.jpg',
     price: '479',
     category: 'lighting',
-    description: 'Square electric lamp - 5" x5" x 9"ht'
+    description: 'Small electric lamp - dia 3" x 10"'
   },
   {
     id: 'bamboo-silver-lamp-3',
@@ -992,14 +961,6 @@ export const products: Product[] = [
     price: '789',
     category: 'lighting',
     description: 'Silver bamboo lamp - dia 6" x 13" ht'
-  },
-  {
-    id: 'bamboo-silver-lamp-2',
-    name: 'Bamboo Silver Lamp Design 2',
-    image: '/images/products/BAMBOO SLIVER LAMP.jpg',
-    price: '789',
-    category: 'lighting',
-    description: 'Alternative silver lamp - dia 6" x 13" ht'
   },
   {
     id: 'glass-lamp',
@@ -1011,35 +972,11 @@ export const products: Product[] = [
   },
   {
     id: 'candle-set-1',
-    name: 'Candle Set',
+    name: 'HARINE CANDLE HOLDER',
     image: '/images/products/HARINE CANDLE HOLDER.jpg',
-    price: '646',
+    price: '109',
     category: 'lighting',
     description: 'Bamboo candle set - 8"x8"x2"ht'
-  },
-  {
-    id: 'samai-big',
-    name: 'Samai Big',
-    image: '/images/products/PREMIUM PEN SAMAI BIG  SMAI-BIG  WITH ARTIFICIAL DIAMOND BOX.jpg',
-    price: '3901',
-    category: 'lighting',
-    description: 'Large samai lamp - 3.5 ht'
-  },
-  {
-    id: 'candle-set-2',
-    name: 'Candle Set Small',
-    image: '/images/products/HARINE CANDLE HOLDER.jpg',
-    price: '299',
-    category: 'lighting',
-    description: 'Small candle set - dia 35mm x3"ht'
-  },
-  {
-    id: 'bamboo-nandha-deep',
-    name: 'Bamboo Nandha Deep',
-    image: '/images/products/PREMIUM CAP ROTATION   BAMBOO NANDHA DEEP  BAMBOO PEN WITH BAMBOO.jpg',
-    price: '151',
-    category: 'lighting',
-    description: 'Traditional nandha deep - 6"ht'
   },
   {
     id: 'shivaji-wall-clock',
@@ -1131,15 +1068,15 @@ export const products: Product[] = [
   },
   {
     id: 'photo-frame-4',
-    name: 'Photo Frame Medium',
+    name: 'Photo Frame ',
     image: '/images/products/PHOTOFRAME 2.jpg',
-    price: '1100',
+    price: '469',
     category: 'lighting',
     description: 'Medium photo frame - 10"X12"'
   },
   {
     id: 'photo-frame-2',
-    name: 'Photo Frame Small',
+    name: 'Table Photo Frame',
     image: '/images/products/_ TABLE PHOTO FRAME.jpg',
     price: '469',
     category: 'lighting',

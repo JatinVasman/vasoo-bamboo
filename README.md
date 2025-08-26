@@ -187,7 +187,7 @@ colors: {
 
 Update the phone number in `contexts/ProductListContext.tsx`:
 ```typescript
-const whatsappUrl = `https://api.whatsapp.com/send?phone=919027918860&text=${encodedMessage}`;
+const whatsappUrl = `https://api.whatsapp.com/send?phone=918484988228&text=${encodedMessage}`;
 ```
 
 ## 🌍 Browser Support

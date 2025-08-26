@@ -121,7 +121,7 @@ export const ProductListProvider: React.FC<ProductListProviderProps> = ({ childr
     // Properly encode the message for WhatsApp
     const encodedMessage = encodeURIComponent(message);
     // Use the correct WhatsApp API format
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=919027918860&text=${encodedMessage}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=918484988228&text=${encodedMessage}`;
     
     // Debug: Log the message and URL for testing
     console.log('WhatsApp Message:', message);

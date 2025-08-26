@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import ProductCard from '../components/ProductCard';
@@ -25,7 +26,7 @@ export default function Home() {
   };
 
   return (
-    <div className="pt-16">
+    <div className="pt-16 md:pt-20">
       {/* Hero Section */}
       <Hero
         title="Welcome to Vasoo Bamboo Arts - Handmade Excellence"
@@ -57,7 +58,6 @@ export default function Home() {
                   category={product.category}
                   isNew={product.isNew}
                   index={index}
-                  onInquiry={handleInquiry}
                 />
               )
             ))}
@@ -77,7 +77,6 @@ export default function Home() {
                   category={product.category}
                   isNew={product.isNew}
                   index={index + 3}
-                  onInquiry={handleInquiry}
                 />
               )
             ))}
@@ -129,34 +128,35 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative"
+              className="space-y-6"
             >
-              <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="/images/workshop.jpg"
-                  alt="Bamboo crafting workshop"
+                <Image
+                  src="/images/Logo/bamboo-forest.jpg"
+                  alt="Beautiful bamboo tree representing our sustainable bamboo crafts"
+                  width={800}
+                  height={600}
                   className="w-full h-96 object-cover rounded-2xl"
+                  priority
                 />
-              </div>
               
-              {/* Floating Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="absolute -bottom-6 -left-6 bg-beige border border-bamboo-accent/20 p-6 rounded-xl shadow-lg max-w-xs"
-              >
-                <div className="flex items-center space-x-3">
-                  <div className="bg-eco-green p-3 rounded-full">
-                    <span className="text-black text-xl">🎋</span>
+              {/* Card Below Image */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  className="inline-block bg-beige border border-bamboo-accent/20 px-4 py-3 rounded-lg shadow-md mx-auto"
+                >
+                  <div className="flex items-center space-x-3">
+                    <div className="bg-eco-green p-2 rounded-full">
+                      <span className="text-black text-lg">🎋</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-bamboo-brown text-base">100% Natural</h4>
+                      <p className="text-sm text-black">Sustainable bamboo materials</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-bamboo-brown">100% Natural</h4>
-                    <p className="text-sm text-black">Sustainable bamboo materials</p>
-                  </div>
-                </div>
-              </motion.div>
+                </motion.div>
             </motion.div>
           </div>
         </div>
@@ -191,7 +191,7 @@ export default function Home() {
               </AnimatedButton>
               
               <AnimatedButton
-                href="https://wa.me/919027918860"
+                href="https://wa.me/+918484988228"
                 variant="secondary"
                 size="lg"
                 className="w-full sm:w-auto !text-black hover:!text-black border border-eco-green/30"

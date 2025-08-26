@@ -78,14 +78,14 @@ export default function AboutPage() {
     <div className="pt-24 pb-16">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/images/about-hero.jpg"
-            alt="Bamboo workshop"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
+      <div className="absolute inset-0">
+        <img
+        src="/images/Logo/wide-shot-of-the-forest.jpg"
+        alt="Wide shot of the forest - sustainable bamboo source"
+        className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.h1

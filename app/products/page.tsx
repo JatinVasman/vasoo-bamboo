@@ -14,12 +14,7 @@ export default function ProductsPage() {
     ? products 
     : products.filter(product => product.category === activeCategory);
 
-  const handleInquiry = (productName: string) => {
-    // Open email client with product inquiry
-    const subject = `Product Inquiry: ${productName}`;
-    const body = `Hello Vasoo Bamboo Arts,%0A%0AI am interested in the ${productName}.%0A%0APlease provide more details including:%0A- Pricing%0A- Availability%0A- Specifications%0A- Bulk orders%0A%0AThank you!`;
-    window.location.href = `mailto:vasoo.bamboo@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-  };
+
 
   return (
     <div className="pt-24 pb-16">
@@ -174,7 +169,6 @@ export default function ProductsPage() {
                 category={product.category}
                 isNew={product.isNew}
                 index={index}
-                onInquiry={handleInquiry}
               />
             ))}
           </motion.div>
@@ -227,7 +221,7 @@ export default function ProductsPage() {
               </AnimatedButton>
               
               <AnimatedButton
-                href="https://wa.me/919027918860"
+                href="https://wa.me/+918484988228"
                 variant="secondary"
                 size="lg"
                 className="w-full sm:w-auto !text-black hover:!text-black border border-eco-green/30"

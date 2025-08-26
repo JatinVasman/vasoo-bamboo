@@ -105,6 +105,31 @@ export const products: Product[] = [
 
   // Home Décor
   {
+    id: 'single-national-flag',
+    name: 'Single National Flag',
+    image: '/images/products/SINGLE NATIONAL FLAG.jpg',
+    price: '979',
+    category: 'decor',
+    isNew: true,
+    description: 'Single national flag holder - 16" Height'
+  },
+  {
+    id: 'twin-national-flag',
+    name: 'Twin National Flag',
+    image: '/images/products/TWIN NATIONAL FLAG .jpg',
+    price: '709',
+    category: 'decor',
+    description: 'Twin national flag holder - 8.5" Height'
+  },
+  {
+    id: 'twin-national-flag-small',
+    name: 'Twin National Flag Small',
+    image: '/images/products/TWIN NTIONAL FLAG SMAL.jpg',
+    price: '139',
+    category: 'decor',
+    description: 'Small twin national flag holder - 4.7" Height'
+  },
+  {
     id: 'bamboo-charaka',
     name: 'Bamboo Charaka',
     image: '/images/products/BAMBOO-CHARAKA.jpg',
@@ -292,6 +317,14 @@ export const products: Product[] = [
     description: 'Alternative table organizer - 9"x5"'
   },
   {
+    id: 'elephant-mobile-stand',
+    name: 'Elephant Mobile Stand',
+    image: '/images/products/MOBILE STAND .jpg',
+    price: '159',
+    category: 'office',
+    description: 'Elephant-shaped mobile stand - 5"X2.5"'
+  },
+  {
     id: 'mobile-amplifier',
     name: 'Mobile Amplifier',
     image: '/images/products/MOBILE AMPLIFIER .jpg',
@@ -338,6 +371,14 @@ export const products: Product[] = [
     price: '395',
     category: 'office',
     description: 'Bamboo name plate - 2.25" x 12"'
+  },
+  {
+    id: 'name-plate-2',
+    name: 'Name Plate Design 2',
+    image: '/images/products/NAME PLATE.jpg',
+    price: '449',
+    category: 'office',
+    description: 'Name plate variant - 3.5" x 13"'
   },
   {
     id: 'home-name-plate-1',
@@ -540,6 +581,14 @@ export const products: Product[] = [
     description: 'Premium quality bamboo pen'
   },
   {
+    id: 'premium-pen-artificial-diamond',
+    name: 'Premium Pen with Artificial Diamond',
+    image: '/images/products/ARTIFICIAL DIAMOND  PEN WITH BAMBOO  BOX.jpg',
+    price: '449',
+    category: 'office',
+    description: 'Premium pen with artificial diamond'
+  },
+  {
     id: 'premium-bamboo-ink-pen',
     name: 'Premium Bamboo Ink Pen with Box',
     image: '/images/products/PREMIUM BAMBOO INK PEN WITH BAMBOO BOX.jpg',
@@ -702,323 +751,398 @@ export const products: Product[] = [
     description: 'Silver finish tray - 13"X5"'
   },
   {
+    id: 'strip-tray-3',
+    name: 'Strip Tray',
+    image: '/images/products/STRIP TRAY .jpg',
+    price: '819',
+    category: 'utility',
+    description: 'Medium strip tray - 13" x 9.5" x 3"'
+  },
+  {
+    id: 'travel-karanda',
+    name: 'Travel Karanda',
+    image: '/images/products/TRAVEL KARANDA.jpg',
+    price: '169',
+    category: 'utility',
+    description: 'Portable karanda for travel - 1.5"X5"'
+  },
+  {
+    id: 'karanda',
+    name: 'Karanda',
+    image: '/images/products/KARANDA.jpg',
+    price: '139',
+    category: 'utility',
+    description: 'Traditional bamboo karanda - 7"X3"'
+  },
+  {
+    id: 'pipal-karanda',
+    name: 'Pipal Karanda',
+    image: '/images/products/PIPAL KARANDA  KRND-PIP.jpg',
+    price: '149',
+    category: 'utility',
+    description: 'Pipal leaf design karanda - 3.5"X5"'
+  },
+  {
+    id: 'key-chains',
+    name: 'Key Chains',
+    image: '/images/products/KEY CHAINS  KY-CHNS.jpg',
+    price: '82',
+    category: 'utility',
+    description: 'Bamboo key chains - 45 to 60mm'
+  },
+  {
+    id: 'key-chains-100',
+    name: 'Key Chains Premium',
+    image: '/images/products/KEY CHAINS  KY-CHNS 2.jpg',
+    price: '100',
+    category: 'utility',
+    description: 'Premium bamboo key chains'
+  },
+  {
+    id: 'photo-key-chain',
+    name: 'Photo Key Chain',
+    image: '/images/products/KEY CHAINS  KY-CHNS.jpg',
+    price: '150',
+    category: 'utility',
+    description: 'Photo key chain'
+  },
+  {
+    id: 'bell-key-holder',
+    name: 'Bell Key Holder',
+    image: '/images/products/BELL KEY HOLDER.jpg',
+    price: '169',
+    category: 'utility',
+    description: 'Bell-shaped key holder - 8"X3.5"'
+  },
+  {
+    id: 'elephant-key-holder',
+    name: 'Elephant Key Holder',
+    image: '/images/products/ELEPHANTKEY HOLDER .jpg',
+    price: '479',
+    category: 'utility',
+    description: 'Elephant key holder - 11"X7"'
+  },
+  {
+    id: 'guitar-key-holder',
+    name: 'Guitar Key Holder',
+    image: '/images/products/GUITAR KEY HOLDER  KY-HL-GTR .jpg',
+    price: '479',
+    category: 'utility',
+    description: 'Guitar-shaped key holder - 14"X7"'
+  },
+  {
+    id: 'learn-cubes',
+    name: 'Learn Cubes',
+    image: '/images/products/LEARN CUBES.jpg',
+    price: '450',
+    category: 'utility',
+    description: 'Educational learning cubes - 3" x 3"'
+  },
+  {
+    id: 'walking-stick',
+    name: 'Walking Stick',
+    image: '/images/products/REUSABLE BAMBOO STRAW.jpg',
+    price: '260',
+    category: 'utility',
+    description: 'Bamboo walking stick - 36", 39" height'
+  },
+  {
+    id: 'sarota',
+    name: 'Sarota',
+    image: '/images/products/SAROTA.jpg',
+    price: '59',
+    category: 'utility',
+    description: 'Bamboo sarota for kitchen - 11"'
+  },
+  {
+    id: 'chimta',
+    name: 'Chimta',
+    image: '/images/products/CHIMTA.jpg',
+    price: '59',
+    category: 'utility',
+    description: 'Bamboo chimta tongs - 8"'
+  },
+  {
     id: 'pot-stand',
-    name: 'Bamboo Pot Stand',
+    name: 'Pot Stand',
     image: '/images/products/POT STAND.jpg',
     price: '79',
-    category: 'kitchen',
-    description: 'Bamboo stand for cooking pots'
+    category: 'utility',
+    description: 'Bamboo pot stand - 6" x6" x2"'
+  },
+  {
+    id: 'soft-tooth-brush',
+    name: 'Soft Tooth Brush',
+    image: '/images/products/SOFT TOOTH BRUSH  .jpg',
+    price: '44',
+    category: 'utility',
+    description: 'Bamboo toothbrush with soft bristles'
+  },
+  {
+    id: 'hard-tooth-brush',
+    name: 'Hard Tooth Brush',
+    image: '/images/products/_HARD TOOTH BRUSH.jpg',
+    price: '40',
+    category: 'utility',
+    description: 'Bamboo toothbrush with hard bristles'
+  },
+  {
+    id: 'ultra-soft-tooth-brush',
+    name: 'Ultra Soft/Nano Bristles',
+    image: '/images/products/SOFT TOOTH BRUSH  .jpg',
+    price: '130',
+    category: 'utility',
+    description: 'Ultra soft nano bristle toothbrush'
+  },
+  {
+    id: 'lily-comb',
+    name: 'Lily Comb',
+    image: '/images/products/_LILY COMB  .jpg',
+    price: '139',
+    category: 'utility',
+    description: 'Lily bamboo comb - 7.5"X2"'
+  },
+  {
+    id: 'beard-comb',
+    name: 'Beard Comb',
+    image: '/images/products/_ BEARD COMB .jpg',
+    price: '69',
+    category: 'utility',
+    description: 'Bamboo beard comb - 3.5"X2.4"'
+  },
+  {
+    id: 'pocket-comb',
+    name: 'Pocket Comb',
+    image: '/images/products/POCKET COMB.jpg',
+    price: '49',
+    category: 'utility',
+    description: 'Compact pocket comb - 5.5"X1.5"'
+  },
+  {
+    id: 'handle-comb',
+    name: 'Handle Comb',
+    image: '/images/products/HANDLE COMB.jpg',
+    price: '139',
+    category: 'utility',
+    description: 'Bamboo comb with handle - 7.5"X2"'
+  },
+  {
+    id: 'shampoo-comb',
+    name: 'Shampoo Comb',
+    image: '/images/products/_SHAMPOO COMB.jpg',
+    price: '79',
+    category: 'utility',
+    description: 'Shampoo comb - 6.5"X2.5"'
   },
 
-  // Gifts & Mementos
+  // Lamps & Clocks
   {
-    id: 'memento',
-    name: 'Bamboo Memento',
-    image: '/images/products/MEMENTO .jpg',
-    price: '669',
-    category: 'gifts',
-    description: 'Beautiful bamboo memento piece'
+    id: 'hanging-lamp-2',
+    name: 'Hanging Lamp',
+    image: '/images/products/HANGING LAMP2.jpg',
+    price: '829',
+    category: 'lighting',
+    isNew: true,
+    description: 'Hanging bamboo lamp - dia 7" x 10"ht'
   },
   {
-    id: 'memento-2',
-    name: 'Bamboo Memento Design 2',
-    image: '/images/products/MEMENTO 2.jpg',
-    price: '429',
-    category: 'gifts',
-    description: 'Alternative memento design'
+    id: 'hanging-lamp-1',
+    name: 'Hanging Lamp Large',
+    image: '/images/products/HANGING LAMP.jpg',
+    price: '1019',
+    category: 'lighting',
+    description: 'Large hanging lamp - 14" x 14"'
   },
   {
-    id: 'memento-3',
-    name: 'Bamboo Memento Design 3',
-    image: '/images/products/MEMENTO 3.jpg',
-    price: '1279',
-    category: 'gifts',
-    description: 'Premium memento design'
+    id: 'hanging-lamp-3',
+    name: 'Hanging Lamp Design 3',
+    image: '/images/products/HANGINGLAMP.jpg',
+    price: '699',
+    category: 'lighting',
+    description: 'Hanging lamp variant - 14" x 14"'
   },
   {
-    id: 'memento-4',
-    name: 'Bamboo Memento Design 4',
-    image: '/images/products/MEMENTO 4.jpg',
-    price: '489',
-    category: 'gifts',
-    description: 'Luxury memento piece'
+    id: 'electric-lamp-2',
+    name: 'Electric Lamp',
+    image: '/images/products/ELECTRICLAMP.jpg',
+    price: '589',
+    category: 'lighting',
+    description: 'Electric bamboo lamp - 7" x 10"ht'
   },
   {
-    id: 'memento-box',
-    name: 'Bamboo Memento Box',
-    image: '/images/products/MEMENTO BOX.jpg',
-    price: '3099',
-    category: 'gifts',
-    description: 'Bamboo box for storing mementos'
+    id: 'electric-lamp-1',
+    name: 'Electric Lamp Small',
+    image: '/images/products/ELECTRICLAMP (1).jpg',
+    price: '203',
+    category: 'lighting',
+    description: 'Small electric lamp - dia 3" x 10"'
   },
   {
-    id: 'memento-round',
-    name: 'Round Bamboo Memento',
-    image: '/images/products/MEMENTO ROUND.jpg',
-    price: '1419',
-    category: 'gifts',
-    description: 'Circular bamboo memento'
+    id: 'electric-lamp-3',
+    name: 'Electric Lamp Square',
+    image: '/images/products/ELECTRICLAMP.jpg',
+    price: '479',
+    category: 'lighting',
+    description: 'Square electric lamp - 5" x5" x 9"ht'
   },
   {
-    id: 'memento-tiger',
-    name: 'Tiger Memento',
-    image: '/images/products/MEMENTO TIGER.jpg',
-    price: '1909',
-    category: 'gifts',
-    description: 'Tiger-themed bamboo memento'
+    id: 'bamboo-silver-lamp-3',
+    name: 'Bamboo Silver Lamp',
+    image: '/images/products/BAMBOO SLIVER LAMP.jpg',
+    price: '789',
+    category: 'lighting',
+    description: 'Silver bamboo lamp - dia 6" x 13" ht'
   },
   {
-    id: 'memento-tree',
-    name: 'Tree Memento',
-    image: '/images/products/MEMENTO TREE .jpg',
-    price: '359',
-    category: 'gifts',
-    description: 'Tree-shaped bamboo memento'
+    id: 'bamboo-silver-lamp-2',
+    name: 'Bamboo Silver Lamp Design 2',
+    image: '/images/products/BAMBOO SLIVER LAMP.jpg',
+    price: '789',
+    category: 'lighting',
+    description: 'Alternative silver lamp - dia 6" x 13" ht'
   },
   {
-    id: 'invitation-card',
-    name: 'Bamboo Invitation Card',
-    image: '/images/products/INVITATION CARD.jpg',
+    id: 'glass-lamp',
+    name: 'Glass Lamp',
+    image: '/images/products/GLASS LAMP.jpg',
     price: '329',
-    category: 'gifts',
-    description: 'Eco-friendly bamboo invitation card'
+    category: 'lighting',
+    description: 'Glass and bamboo combination lamp'
   },
   {
-    id: 'invitation-card-2',
-    name: 'Bamboo Invitation Card Design 2',
-    image: '/images/products/INVITATION CARD 2.jpg',
-    price: '509',
-    category: 'gifts',
-    description: 'Alternative invitation card design'
+    id: 'candle-set-1',
+    name: 'Candle Set',
+    image: '/images/products/HARINE CANDLE HOLDER.jpg',
+    price: '646',
+    category: 'lighting',
+    description: 'Bamboo candle set - 8"x8"x2"ht'
   },
   {
-    id: 'invitation-card-3',
-    name: 'Bamboo Invitation Card Design 3',
-    image: '/images/products/INVITATION CARD 3.jpg',
-    price: '489',
-    category: 'gifts',
-    description: 'Premium invitation card design'
+    id: 'samai-big',
+    name: 'Samai Big',
+    image: '/images/products/PREMIUM PEN SAMAI BIG  SMAI-BIG  WITH ARTIFICIAL DIAMOND BOX.jpg',
+    price: '3901',
+    category: 'lighting',
+    description: 'Large samai lamp - 3.5 ht'
   },
-
-// Musical Instruments
-{
-  id: 'bamboo-tabala',
-  name: 'Bamboo Tabala',
-  image: '/images/products/BAMBOO TABALA.jpg',
-  price: '689',        // Updated from 2499
-  category: 'musical',
-  description: 'Traditional bamboo tabala drums'
-},
-{
-  id: 'bamboo-dholak',
-  name: 'Bamboo Dholak',
-  image: '/images/products/BAMBOO DHOLAK.jpg',
-  price: '159',        // Updated from 1899
-  category: 'musical',
-  description: 'Bamboo dholak for traditional music'
-},
-{
-  id: 'bamboo-sound-amplifier',
-  name: 'Bamboo Sound Amplifier & Mobile Holder',
-  image: '/images/products/BAMBOO SOUND AMPLIFIER AND MOBILE HOLDER.jpg',
-  price: '359',        // Updated from 799
-  category: 'musical',
-  description: 'Bamboo sound amplifier with mobile holder'
-},
-{
-  id: 'mobile-amplifier',
-  name: 'Mobile Amplifier',
-  image: '/images/products/MOBILE AMPLIFIER .jpg',
-  price: '299',        // Updated from 599
-  category: 'musical',
-  description: 'Bamboo mobile phone amplifier'
-},
-
-// Clocks & Timepieces
-{
-  id: 'wall-clock',
-  name: 'Bamboo Wall Clock',
-  image: '/images/products/WALL CLOCK .jpg',
-  price: '749',        // Updated from 1299
-  category: 'clocks',
-  description: 'Classic bamboo wall clock'
-},
-{
-  id: 'table-clock',
-  name: 'Bamboo Table Clock',
-  image: '/images/products/TABLE CLOCK.jpg',
-  price: '559',        // Updated from 999
-  category: 'clocks',
-  description: 'Elegant bamboo table clock'
-},
-{
-  id: 'clock-round',
-  name: 'Round Bamboo Clock',
-  image: '/images/products/CLOCK ROUND.jpg',
-  price: '249',        // Updated from 899
-  category: 'clocks',
-  description: 'Circular bamboo clock design'
-},
-{
-  id: 'octagonal-wall-clock',
-  name: 'Octagonal Wall Clock',
-  image: '/images/products/OCTAGONAL WALL CLOCK.jpg',
-  price: '1009',       // Already matches catalog
-  category: 'clocks',
-  description: 'Unique octagonal bamboo wall clock'
-},
-{
-  id: 'ganesh-wall-clock',
-  name: 'Ganesh Wall Clock',
-  image: '/images/products/GANESH WALL CLOCK .jpg',
-  price: '599',        // Updated from 1799
-  category: 'clocks',
-  description: 'Ganesh-themed bamboo wall clock'
-},
-{
-  id: 'shivaji-wall-clock',
-  name: 'Shivaji Wall Clock',
-  image: '/images/products/SHIVAJI WALL CLOCK .jpg',
-  price: '1529',       // Updated from 1899
-  category: 'clocks',
-  description: 'Shivaji-themed bamboo wall clock'
-},
-{
-  id: 'train-wall-clock',
-  name: 'Train Wall Clock',
-  image: '/images/products/TRAIN WALL CLOCK .jpg',
-  price: '849',        // Updated from 1599
-  category: 'clocks',
-  description: 'Train-themed bamboo wall clock'
-},
-{
-  id: 'tribal-table-clock',
-  name: 'Tribal Table Clock',
-  image: '/images/products/TRABAL TABLE CLOCK.jpg',
-  price: '1829',       // Updated from 1199
-  category: 'clocks',
-  description: 'Tribal design bamboo table clock'
-},
-{
-  id: 'anchor-wall-clock',
-  name: 'Anchor Wall Clock',
-  image: '/images/products/ANCHOR WALL CLOCK.jpg',
-  price: '2869',       // Already matches catalog
-  category: 'clocks',
-  description: 'Anchor-themed bamboo wall clock'
-},
-
-// Additional Items
-{
-  id: 'bamboo-visiting-cards',
-  name: 'Bamboo Visiting Cards',
-  image: '/images/products/BAMBOO VISITING CARDS .jpg',
-  price: '49',         // Updated from 299
-  category: 'office',
-  description: 'Eco-friendly bamboo visiting cards'
-},
-{
-  id: 'single-national-flag',
-  name: 'Single National Flag',
-  image: '/images/products/SINGLE NATIONAL FLAG.jpg',
-  price: '979',        // Updated from 199
-  category: 'decor',
-  description: 'Bamboo national flag holder'
-},
-{
-  id: 'twin-national-flag',
-  name: 'Twin National Flag',
-  image: '/images/products/TWIN NATIONAL FLAG .jpg',
-  price: '709',        // Updated from 299
-  category: 'decor',
-  description: 'Dual national flag bamboo holder'
-},
-{
-  id: 'twin-national-flag-small',
-  name: 'Twin National Flag Small',
-  image: '/images/products/TWIN NTIONAL FLAG SMAL.jpg',
-  price: '139',        // Updated from 249
-  category: 'decor',
-  description: 'Small twin national flag holder'
-},
-{
-  id: 'calendar',
-  name: 'Bamboo Calendar',
-  image: '/images/products/CALANDER .jpg',
-  price: '349',        // Updated from 399
-  category: 'office',
-  description: 'Bamboo wall calendar'
-},
-{
-  id: 'flat-planter-plant',
-  name: 'Flat Planter Plant',
-  image: '/images/products/FLAT PLANTER PLANT-2 .jpg',
-  price: '159',        // Updated from 599
-  category: 'decor',
-  description: 'Flat bamboo planter for plants'
-},
-{
-  id: 'flat-planter-plant-2',
-  name: 'Flat Planter Plant Design 2',
-  image: '/images/products/FLAT PLANTER PLANT-2  (1).jpg',
-  price: '159',        // Updated from 649
-  category: 'decor',
-  description: 'Alternative flat planter design'
-},
-{
-  id: 'planter-plant',
-  name: 'Bamboo Planter Plant',
-  image: '/images/products/PLANTER  PLANT-1.jpg',
-  price: '89',         // Updated from 699
-  category: 'decor',
-  description: 'Traditional bamboo plant pot'
-},
-{
-  id: 'tea-coaster',
-  name: 'Bamboo Tea Coaster',
-  image: '/images/products/TEA COASTER.jpg',
-  price: '539',        // Updated from 199
-  category: 'kitchen',
-  description: 'Bamboo coaster for tea cups'
-},
-{
-  id: 'bamboo-tea-coaster-set',
-  name: 'Bamboo Tea Coaster Set of 6',
-  image: '/images/products/BAMBOO TEA COASTER SET OF 6 .jpg',
-  price: '459',        // Updated from 899
-  category: 'kitchen',
-  description: 'Set of 6 bamboo tea coasters'
-},
-{
-  id: 'bullock-cart-tea-coaster',
-  name: 'Bullock Cart Tea Coaster',
-  image: '/images/products/BULLOCK CART TEA COASTER.jpg',
-  price: '869',        // Already matches catalog
-  category: 'kitchen',
-  description: 'Bullock cart design tea coaster'
-},
-{
-  id: 'horse-tea-coaster',
-  name: 'Horse Tea Coaster',
-  image: '/images/products/HORSE TEA COASTER.jpg',
-  price: '879',        // Updated from 299
-  category: 'kitchen',
-  description: 'Horse design tea coaster'
-},
-{
-  id: 'small-elephant-tea-coaster',
-  name: 'Small Elephant Tea Coaster',
-  image: '/images/products/SMALL ELEPHANT TEA COASTER.jpg',
-  price: '579',        // Updated from 249
-  category: 'kitchen',
-  description: 'Small elephant design tea coaster'
-},
-{
-  id: 'insence-stick-holder',
-  name: 'Incense Stick Holder with Non-Burning Cloth',
-  image: '/images/products/INSENCE STICK HOLDER WITH NON BURNING CLOTH  .jpg',
-  price: '399',        // Updated from 199
-  category: 'decor',
-  description: 'Bamboo incense stick holder'
-}
-]
+  {
+    id: 'candle-set-2',
+    name: 'Candle Set Small',
+    image: '/images/products/HARINE CANDLE HOLDER.jpg',
+    price: '299',
+    category: 'lighting',
+    description: 'Small candle set - dia 35mm x3"ht'
+  },
+  {
+    id: 'bamboo-nandha-deep',
+    name: 'Bamboo Nandha Deep',
+    image: '/images/products/PREMIUM CAP ROTATION   BAMBOO NANDHA DEEP  BAMBOO PEN WITH BAMBOO.jpg',
+    price: '151',
+    category: 'lighting',
+    description: 'Traditional nandha deep - 6"ht'
+  },
+  {
+    id: 'shivaji-wall-clock',
+    name: 'Shivaji Wall Clock',
+    image: '/images/products/SHIVAJI WALL CLOCK .jpg',
+    price: '1529',
+    category: 'lighting',
+    description: 'Shivaji themed wall clock - 24"x10"x3"'
+  },
+  {
+    id: 'anchor-wall-clock',
+    name: 'Anchor Wall Clock',
+    image: '/images/products/ANCHOR WALL CLOCK.jpg',
+    price: '2869',
+    category: 'lighting',
+    description: 'Anchor design wall clock - 14"x12"x3"'
+  },
+  {
+    id: 'tribal-table-clock',
+    name: 'Tribal Table Clock',
+    image: '/images/products/TRABAL TABLE CLOCK.jpg',
+    price: '1829',
+    category: 'lighting',
+    description: 'Tribal table clock - 13" X9"'
+  },
+  {
+    id: 'ganesh-wall-clock',
+    name: 'Ganesh Wall Clock',
+    image: '/images/products/GANESH WALL CLOCK .jpg',
+    price: '889',
+    category: 'lighting',
+    description: 'Ganesh wall clock - 14"X6"'
+  },
+  {
+    id: 'table-clock',
+    name: 'Table Clock',
+    image: '/images/products/TABLE CLOCK.jpg',
+    price: '559',
+    category: 'lighting',
+    description: 'Classic table clock - 6"X6"'
+  },
+  {
+    id: 'train-wall-clock',
+    name: 'Train Wall Clock',
+    image: '/images/products/TRAIN WALL CLOCK .jpg',
+    price: '849',
+    category: 'lighting',
+    description: 'Train wall clock - 13"x13"x3"'
+  },
+  {
+    id: 'wall-clock',
+    name: 'Wall Clock',
+    image: '/images/products/WALL CLOCK .jpg',
+    price: '749',
+    category: 'lighting',
+    description: 'Classic wall clock - 10" X 10"'
+  },
+  {
+    id: 'octagonal-wall-clock',
+    name: 'Octagonal Wall Clock',
+    image: '/images/products/OCTAGONAL WALL CLOCK.jpg',
+    price: '1009',
+    category: 'lighting',
+    description: 'Octagonal wall clock - 12"X 12"'
+  },
+  {
+    id: 'clock-round',
+    name: 'Round Clock',
+    image: '/images/products/CLOCK ROUND.jpg',
+    price: '249',
+    category: 'lighting',
+    description: 'Small round clock - 4"x4"'
+  },
+  {
+    id: 'photo-frame-3',
+    name: 'Photo Frame',
+    image: '/images/products/PHOTOFRAME.jpg',
+    price: '859',
+    category: 'lighting',
+    description: 'Bamboo photo frame - 9"X7"'
+  },
+  {
+    id: 'big-photo-frame',
+    name: 'Big Photo Frame',
+    image: '/images/products/BIG PHOTO.jpg',
+    price: '2469',
+    category: 'lighting',
+    description: 'Large photo frame - 20"X16"'
+  },
+  {
+    id: 'photo-frame-4',
+    name: 'Photo Frame Medium',
+    image: '/images/products/PHOTOFRAME 2.jpg',
+    price: '1100',
+    category: 'lighting',
+    description: 'Medium photo frame - 10"X12"'
+  },
+  {
+    id: 'photo-frame-2',
+    name: 'Photo Frame Small',
+    image: '/images/products/_ TABLE PHOTO FRAME.jpg',
+    price: '469',
+    category: 'lighting',
+    description: 'Small photo frame - 10"X8"'
+  }
+];

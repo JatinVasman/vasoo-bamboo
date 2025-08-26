@@ -23,15 +23,16 @@ const Navbar = () => {
       className="bg-beige backdrop-blur-md shadow-lg fixed top-0 w-full z-50 border-b border-bamboo-accent/30"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center p-1 rounded-lg hover:bg-bamboo-light/10 transition-colors duration-300">
             <Image 
               src="/images/Logo/logo.png" 
               alt="Vasoo Bamboo Arts Logo" 
-              width={120}
-              height={40}
-              className="h-10 w-auto"
+              width={200}
+              height={80}
+              className="h-10 sm:h-12 md:h-16 w-auto hover:scale-105 transition-transform duration-300"
+              priority
             />
           </Link>
 

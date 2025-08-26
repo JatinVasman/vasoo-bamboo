@@ -47,7 +47,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-16 md:pt-20">
       {/* Hero Section */}
       <Hero
         title="Crafted from Bamboo. Inspired by Nature."

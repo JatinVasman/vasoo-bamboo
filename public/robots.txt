@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /products
+Allow: /about
+Allow: /contact
+
+# Sitemap location
+Sitemap: https://www.vasoobambooarts.com/sitemap.xml
+
+# Block crawling of admin or private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/static/

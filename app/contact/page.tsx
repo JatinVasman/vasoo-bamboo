@@ -26,9 +26,9 @@ export default function ContactPage() {
     {
       icon: '📞',
       title: 'Phone',
-      details: ['+91 90279 18860'],
+      details: ['+91 84849 88228'],
       action: 'Call Now',
-      link: 'tel:+919027918860',
+      link: 'tel:+918484988228',
     },
     {
       icon: '✉️',
@@ -40,9 +40,9 @@ export default function ContactPage() {
     {
       icon: '💬',
       title: 'WhatsApp',
-      details: ['+91 90279 18860'],
+      details: ['+91 84849 88228'],
       action: 'Chat Now',
-      link: 'https://wa.me/919027918860',
+      link: 'https://wa.me/+918484988228',
     },
   ];
 
@@ -390,7 +390,7 @@ export default function ContactPage() {
         className="fixed bottom-6 right-6 z-50"
       >
         <motion.a
-          href="https://wa.me/919027918860"
+          href="https://wa.me/+918484988228"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#1DA851] transition-colors duration-200 flex items-center justify-center"

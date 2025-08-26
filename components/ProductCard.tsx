@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import AnimatedButton from './AnimatedButton';
 import { useProductList } from '../contexts/ProductListContext';
 
 interface ProductCardProps {
@@ -15,7 +14,6 @@ interface ProductCardProps {
   isNew?: boolean;
   isEcoFriendly?: boolean;
   index?: number;
-  onInquiry?: (productName: string) => void;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -28,20 +26,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
   isNew = false,
   isEcoFriendly = true,
   index = 0,
-  onInquiry,
 }) => {
-  const { addItem, items } = useProductList();
+  const { addItem, removeItem, items } = useProductList();
   const productId = id || name.toLowerCase().replace(/\s+/g, '-');
   const isInList = items.some(item => item.id === productId);
-
-  const handleInquiry = () => {
-    if (onInquiry) {
-      onInquiry(name);
-    } else {
-      // Default action - redirect to contact page with product name
-      window.location.href = `/contact?product=${encodeURIComponent(name)}`;
-    }
-  };
 
   const handleAddToList = () => {
     addItem({
@@ -51,6 +39,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
       price,
       originalPrice,
     });
+  };
+
+  const handleRemoveFromList = () => {
+    removeItem(productId);
   };
 
   return (
@@ -147,42 +139,35 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Action Buttons */}
         <div className="flex space-x-2">
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="flex-1"
-          >
-            <AnimatedButton
-              onClick={handleInquiry}
-              variant="primary"
-              size="sm"
-              className="w-full"
+          {isInList ? (
+            // Product is in cart - show remove button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={handleRemoveFromList}
+              className="flex-1 p-3 border border-red-500/50 bg-red-500/10 text-red-600 rounded-lg hover:bg-red-500/20 hover:border-red-500 transition-all duration-200 flex items-center justify-center space-x-2"
+              title="Remove from inquiry list"
             >
-              Inquire Now
-            </AnimatedButton>
-          </motion.div>
-          
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleAddToList}
-            className={`p-2 border rounded-lg transition-all duration-200 ${
-              isInList 
-                ? 'border-eco-green bg-eco-green text-black' 
-                : 'border-bamboo-accent/50 hover:border-charcoal hover:text-charcoal hover:shadow-sm'
-            }`}
-            title={isInList ? 'Added to list' : 'Add to inquiry list'}
-          >
-            {isInList ? (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
               </svg>
-            ) : (
+              <span>Remove</span>
+            </motion.button>
+          ) : (
+            // Product not in cart - show add button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={handleAddToList}
+              className="flex-1 p-3 border border-bamboo-accent/50 bg-bamboo-accent/10 text-bamboo-brown rounded-lg hover:bg-bamboo-accent/20 hover:border-bamboo-accent transition-all duration-200 flex items-center justify-center space-x-2"
+              title="Add to inquiry list"
+            >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
               </svg>
-            )}
-          </motion.button>
+              <span>Add to List</span>
+            </motion.button>
+          )}
         </div>
       </div>
 

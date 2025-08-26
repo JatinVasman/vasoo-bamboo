@@ -120,7 +120,7 @@ const Footer = () => {
             <div className="space-y-2 text-black">
               <p>📍 Chandrapur, Maharashtra, India</p>
               <p>📞 <a href="tel:+918484988228" className="hover:text-charcoal transition-colors">+91 84849 88228</a></p>
-              <p>✉️ <a href="mailto:vasoo.bamboo@gmail.com" className="hover:text-charcoal transition-colors">vasoo.bamboo@gmail.com</a></p>
+              <p>✉️ <a href="mailto:vasoobambooarts@gmail.com" className="hover:text-charcoal transition-colors">vasoobambooarts@gmail.com</a></p>
               <p>💬 <a href="https://wa.me/+918484988228" target="_blank" rel="noopener noreferrer" className="hover:text-charcoal transition-colors">WhatsApp: +91 84849 88228</a></p>
             </div>
           </motion.div>

@@ -51,20 +51,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
       className="group bg-beige rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-bamboo-accent/10 transition-all duration-300"
     >
       {/* Image Container */}
-      <div className="relative h-64 overflow-hidden">
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="w-full h-full"
-        >
-          <Image
-            src={image}
-            alt={name}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </motion.div>
+      <div className="relative aspect-[3/2] overflow-hidden">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          className="object-contain object-center p-2"
+          sizes="(max-width: 750px) 80vw, (max-width: 1000px) 40vw, 25vw"
+        />
 
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col space-y-2">
@@ -94,21 +88,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </button>
         </motion.div>
 
-        {/* Overlay with Quick View */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          className="absolute inset-0 bg-bamboo-brown/40 flex items-center justify-center opacity-0 group-hover:opacity-100"
-        >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-beige text-bamboo-brown px-4 py-2 rounded-lg font-semibold hover:bg-charcoal hover:text-black transition-colors duration-200"
-          >
-            Quick View
-          </motion.button>
-        </motion.div>
+
       </div>
 
       {/* Content */}

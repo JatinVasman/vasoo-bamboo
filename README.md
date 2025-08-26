@@ -211,7 +211,7 @@ This project is licensed under the MIT License.
 
 ## 📞 Support
 
-For support, email vasoo.bamboo@gmail.com or contact +91 90279 18860.
+For support, email vasoobambooarts@gmail.com or contact +91 90279 18860.
 
 ---
 

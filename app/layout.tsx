@@ -94,7 +94,7 @@ export default function RootLayout({
               "logo": "https://www.vasoobambooarts.com/images/Logo/logo.png",
               "image": "https://www.vasoobambooarts.com/images/Logo/logo.png",
               "telephone": "+91-90279-18860",
-              "email": "vasoo.bamboo@gmail.com",
+              "email": "vasoobambooarts@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Chandrapur",

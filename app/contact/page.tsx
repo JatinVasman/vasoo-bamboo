@@ -33,9 +33,9 @@ export default function ContactPage() {
     {
       icon: '✉️',
       title: 'Email',
-      details: ['vasoo.bamboo@gmail.com'],
+      details: ['vasoobambooarts@gmail.com'],
       action: 'Send Email',
-      link: 'mailto:vasoo.bamboo@gmail.com',
+      link: 'mailto:vasoobambooarts@gmail.com',
     },
     {
       icon: '💬',
@@ -70,7 +70,7 @@ export default function ContactPage() {
         `Best regards,%0A${formData.name}`;
 
       // Create mailto link
-      const mailtoLink = `mailto:vasoo.bamboo@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
+      const mailtoLink = `mailto:vasoobambooarts@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
       
       // Simulate processing time
       await new Promise(resolve => setTimeout(resolve, 1000));

@@ -22,7 +22,7 @@ export default function Home() {
   const handleInquiry = (productName: string) => {
     const subject = `Product Inquiry: ${productName}`;
     const body = `Hello Vasoo Bamboo Arts,%0A%0AI am interested in the ${productName}.%0A%0APlease provide more details including:%0A- Pricing%0A- Availability%0A- Specifications%0A- Bulk orders%0A%0AThank you!`;
-    window.location.href = `mailto:vasoo.bamboo@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    window.location.href = `mailto:vasoobambooarts@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
   };
 
   return (
@@ -30,7 +30,7 @@ export default function Home() {
       {/* Hero Section */}
       <Hero
         title="Welcome to Vasoo Bamboo Arts - Handmade Excellence"
-        subtitle="Discover eco-friendly, sustainable bamboo crafts handmade by skilled artisans in Chandrapur. Experience traditional craftsmanship that brings nature's beauty into your home while protecting our planet."
+        subtitle="Discover eco-friendly, sustainable bamboo crafts handmade by skilled artisans in Chandrapur, Maharashtra. Experience traditional craftsmanship that brings nature's beauty into your home while protecting our planet."
         buttonText="Explore Our Products"
         buttonHref="/products"
         backgroundImage="/images/bamboo-hero.jpg"

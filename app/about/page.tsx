@@ -142,28 +142,36 @@ export default function AboutPage() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
-                  <img
-                    src="/images/artisan-1.jpg"
-                    alt="Bamboo artisan at work"
-                    className="w-full h-48 object-cover rounded-lg shadow-lg"
-                  />
-                  <img
-                    src="/images/workshop-2.jpg"
-                    alt="Bamboo workshop"
-                    className="w-full h-40 object-cover rounded-lg shadow-lg"
-                  />
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      src="/images/Logo/ABOUT1.jpg"
+                      alt="Vasoo Bamboo Arts - Our Story"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      src="/images/Logo/ABOUT2.jpg"
+                      alt="Vasoo Bamboo Arts - Our Workshop"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
                 <div className="space-y-4 mt-8">
-                  <img
-                    src="/images/products-making.jpg"
-                    alt="Bamboo products being made"
-                    className="w-full h-40 object-cover rounded-lg shadow-lg"
-                  />
-                  <img
-                    src="/images/artisan-2.jpg"
-                    alt="Skilled craftsperson"
-                    className="w-full h-48 object-cover rounded-lg shadow-lg"
-                  />
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      src="/images/Logo/ABOUT3.jpg"
+                      alt="Vasoo Bamboo Arts - Our Craftsmanship"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      src="/images/Logo/ABOUT4.jpg"
+                      alt="Vasoo Bamboo Arts - Our Artisans"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -174,11 +182,13 @@ export default function AboutPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="absolute -top-8 -right-8 bg-eco-green text-black p-6 rounded-xl shadow-xl"
+                className="absolute -top-8 -right-8 bg-eco-green text-black p-5 rounded-xl shadow-xl border-2 border-white/20"
               >
-                <div className="text-center">
-                  <div className="text-2xl font-bold">6+</div>
-                  <div className="text-sm">Years of Excellence</div>
+                <div className="text-center space-y-1">
+                  <div className="text-2xl font-bold text-white">6+</div>
+                  <div className="text-sm font-medium text-white/90 leading-tight">
+                    Years of<br/>Excellence
+                  </div>
                 </div>
               </motion.div>
             </motion.div>
@@ -350,7 +360,7 @@ export default function AboutPage() {
               View Our Products
               </AnimatedButton>
               <AnimatedButton
-              href="mailto:vasoo.bamboo@gmail.com?subject=Inquiry from About Page&body=Hello Vasoo Bamboo Arts,%0A%0AI would like to know more about your products and custom solutions.%0A%0APlease contact me.%0A%0AThank you!"
+              href="mailto:vasoobambooarts@gmail.com?subject=Inquiry from About Page&body=Hello Vasoo Bamboo Arts,%0A%0AI would like to know more about your products and custom solutions.%0A%0APlease contact me.%0A%0AThank you!"
               variant="outline"
               size="lg"
               className="w-full sm:w-auto npr"

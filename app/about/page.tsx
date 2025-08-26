@@ -182,11 +182,11 @@ export default function AboutPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="absolute -top-8 -right-8 bg-eco-green text-black p-5 rounded-xl shadow-xl border-2 border-white/20"
+                className="absolute -top-20 -right-16 bg-eco-green text-black p-5 rounded-xl shadow-xl border-2 border-white/20"
               >
                 <div className="text-center space-y-1">
-                  <div className="text-2xl font-bold text-white">6+</div>
-                  <div className="text-sm font-medium text-white/90 leading-tight">
+                  <div className="text-2xl font-bold text-black">6+</div>
+                  <div className="text-sm font-medium text-black/90 leading-tight">
                     Years of<br/>Excellence
                   </div>
                 </div>

@@ -128,14 +128,6 @@ export const products: Product[] = [
     description: 'Traditional panpuda with multiple design options'
   },
   {
-    id: 'triangle-paanpuda',
-    name: 'Triangle Paanpuda',
-    image: '/slideimage/Trangle Paanpuda/IMG_20250828_130146687_HDR_AE.jpg',
-    price: '789',
-    category: 'multi-image',
-    description: 'Trangle paanpuda with multiple design options'
-  },
-  {
     id: 'bamboo-bottle-regular',
     name: 'Bamboo Bottle Regular (500ML)',
     image: '/images/products/BAMBOO BOTTLE REGULAR  .jpg',

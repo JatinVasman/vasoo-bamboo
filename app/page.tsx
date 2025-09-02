@@ -20,11 +20,7 @@ export default function Home() {
     products.find(p => p.id === 'bamboo-tabala'),
   ].filter(Boolean).slice(0, 6);
 
-  const handleInquiry = (productName: string) => {
-    const subject = `Product Inquiry: ${productName}`;
-    const body = `Hello Vasoo Bamboo Arts,%0A%0AI am interested in the ${productName}.%0A%0APlease provide more details including:%0A- Pricing%0A- Availability%0A- Specifications%0A- Bulk orders%0A%0AThank you!`;
-    window.location.href = `mailto:vasoobambooarts@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-  };
+
 
   return (
     <div className="pt-16 md:pt-20">

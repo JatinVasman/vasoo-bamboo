@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import CategoryCard from '../components/CategoryCard';
@@ -116,9 +117,11 @@ export default function Home() {
               className="relative"
             >
               <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-xl">
-                <img
+                <Image
                   src="/images/workshop.jpg"
                   alt="Bamboo crafting workshop"
+                  width={800}
+                  height={600}
                   className="w-full h-96 object-cover rounded-2xl"
                 />
               </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import SectionTitle from '../../components/SectionTitle';
 import ProductCard from '../../components/ProductCard';
 import AnimatedButton from '../../components/AnimatedButton';
@@ -28,10 +29,12 @@ export default function ProductsPage() {
       <section className="relative py-20 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/Logo/product-page.jpg"
             alt="Bamboo Products Background"
-            className="w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-bamboo-brown/95 to-eco-green/95" />
         </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import SectionTitle from '../../components/SectionTitle';
 import AnimatedButton from '../../components/AnimatedButton';
 
@@ -79,10 +80,12 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
       <div className="absolute inset-0">
-        <img
+        <Image
         src="/images/Logo/wide-shot-of-the-forest.jpg"
         alt="Wide shot of the forest - sustainable bamboo source"
-        className="w-full h-full object-cover object-center"
+        fill
+        className="object-cover object-center"
+        priority
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>
@@ -143,32 +146,40 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
-                    <img
+                    <Image
                       src="/images/Logo/ABOUT1.jpg"
                       alt="Vasoo Bamboo Arts - Our Story"
+                      width={400}
+                      height={300}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
-                    <img
+                    <Image
                       src="/images/Logo/ABOUT2.jpg"
                       alt="Vasoo Bamboo Arts - Our Workshop"
+                      width={400}
+                      height={300}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="space-y-4 mt-8">
                   <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
-                    <img
+                    <Image
                       src="/images/Logo/ABOUT3.jpg"
                       alt="Vasoo Bamboo Arts - Our Craftsmanship"
+                      width={400}
+                      height={300}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
-                    <img
+                    <Image
                       src="/images/Logo/ABOUT4.jpg"
                       alt="Vasoo Bamboo Arts - Our Artisans"
+                      width={400}
+                      height={300}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>

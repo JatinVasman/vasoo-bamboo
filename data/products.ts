@@ -20,7 +20,172 @@ export const productCategories = [
 ];
 
 export const products: Product[] = [
+  // Multi-Image Products (converted from existing products)
+  {
+    id: 'photo-frame-10x8',
+    name: 'Photo Frame (10"X8")',
+    image: '/images/products/PHOTOFRAME 2.jpg',
+    price: '469',
+    category: 'multi-image',
+    description: 'Beautiful 10"X8" bamboo photo frame with multiple design options'
+  },
+  {
+    id: 'photo-frame-10x12',
+    name: 'Photo Frame (10"X12")',
+    image: '/slideimage/10X12 photo frame/IMG_20250813_132828615_HDR_AE.jpg',
+    price: '1100',
+    category: 'multi-image',
+    description: 'Elegant 10"X12" bamboo photo frame with multiple design options'
+  },
+  {
+    id: 'bamboo-tea-coaster-set-6',
+    name: 'Bamboo Tea Coaster Set of 6',
+    image: '/images/products/BAMBOO TEA COASTER SET OF 6 .jpg',
+    price: '459',
+    category: 'multi-image',
+    description: 'Set of 6 beautiful bamboo tea coasters with multiple designs'
+  },
+ 
+  {
+    id: 'diary-bamboo-pages',
+    name: 'Diary with Bamboo Pages (6.1" X 8.5", 150 Pages)',
+    image: '/images/products/DIARY WITH BAMBOO PAGES .jpg',
+    price: '699',
+    category: 'multi-image',
+    description: 'Premium diary with bamboo pages and multiple cover designs'
+  },
+  {
+    id: 'bamboo-ganapati',
+    name: 'Bamboo Ganapati (7" Height)',
+    image: '/images/products/BAMBOO GANAPATI .jpg',
+    price: '599',
+    category: 'multi-image',
+    description: 'Sacred bamboo Ganapati idol with multiple design variations'
+  },
+  {
+    id: 'stylus-pen',
+    name: 'Stylus Pen',
+    image: '/slideimage/Stylus pen/stylus pen.jpg',
+    price: '129',
+    category: 'multi-image',
+    description: 'Stylus pen with multiple design options'
+  },
+  {
+    id: 'two-pen-set-ink-ball',
+    name: 'Two Pen Set (One Ink, One Ball)',
+    image: '/slideimage/Two pen set one ink one ball @1199/IMG-20241230-WA0002.jpg',
+    price: '1199',
+    category: 'multi-image',
+    description: 'Set of two pens: one ink pen and one ball pen, with multiple design options'
+  },
+  
+  {
+    id: 'green-tea-bottle',
+    name: 'Green Tea Bottle (500ML)',
+    image: '/images/products/green-tea bottle.jpg',
+    price: '849',
+    category: 'multi-image',
+    description: 'Green tea bottle with multiple design variations'
+  },
+  {
+    id: 'bamboo-sound-amplifier-mobile-holder',
+    name: 'Bamboo Sound Amplifier & Mobile Holder',
+    image: '/images/products/BAMBOO SOUND AMPLIFIER AND MOBILE HOLDER.jpg',
+    price: '359',
+    category: 'multi-image',
+    description: 'Bamboo sound amplifier with mobile holder and multiple designs'
+  },
+  {
+    id: 'bamboo-bottle-with-lace',
+    name: 'BAMBOO BOTTLE WITH LACE (500ML)',
+    image: '/slideimage/Lace Bottle/51gVNXSejKL._SX679_.jpg',
+    price: '799',
+    category: 'multi-image',
+    description: 'Bamboo bottle with lace design and multiple variations'
+  },
+  {
+    id: 'mobile-stand-1',
+    name: 'Mobile Stand (7.5" X 3.5")',
+    image: '/images/products/MOBILE STAND .jpg',
+    price: '239',
+    category: 'multi-image',
+    description: 'Mobile stand with multiple design options'
+  },
+  {
+    id: 'name-plate-1',
+    name: 'Name Plate (2.25" X 12")',
+    image: '/images/products/NAME PLATE.jpg',
+    price: '395',
+    category: 'multi-image',
+    description: 'Name plate with multiple design variations'
+  },
+  {
+    id: 'panpuda',
+    name: 'Panpuda (4" X 8" X 0.5")',
+    image: '/images/products/PANPUDA.jpg',
+    price: '789',
+    category: 'multi-image',
+    description: 'Traditional panpuda with multiple design options'
+  },
+  {
+    id: 'triangle-paanpuda',
+    name: 'Triangle Paanpuda',
+    image: '/slideimage/Trangle Paanpuda/IMG_20250828_130216180_HDR_AE.jpg',
+    price: '789',
+    category: 'multi-image',
+    description: 'Trangle paanpuda with multiple design options'
+  },
+  {
+    id: 'bamboo-bottle-regular',
+    name: 'Bamboo Bottle Regular (500ML)',
+    image: '/images/products/BAMBOO BOTTLE REGULAR  .jpg',
+    price: '699',
+    category: 'multi-image',
+    description: 'Regular bamboo bottle with multiple design variations'
+  },
+  {
+    id: 'bamboo-bottle-steel-handle',
+    name: 'Bamboo Bottle with Steel Handle (500ML)',
+    image: '/images/products/BAMBOO BOTTLE WITH STEEL HANDLE.jpg',
+    price: '799',
+    category: 'multi-image',
+    description: 'Bamboo bottle with steel handle and multiple designs'
+  },
+  {
+    id: 'premium-bamboo-pen',
+    name: 'Premium Bamboo Pen',
+    image: '/images/products/PREMIUM  BAMBOO  PEN .jpg',
+    price: '339',
+    category: 'multi-image',
+    description: 'Premium bamboo pen with multiple design options'
+  },
+  {
+    id: 'sports-bamboo-bottle',
+    name: 'Sports Bamboo Bottle (500ML)',
+    image: '/images/products/SPORTS BAMBOO BOTTLE(1).jpg',
+    price: '799',
+    category: 'multi-image',
+    description: 'Sports bamboo bottle with multiple design variations'
+  },
+  {
+    id: 'table-photo-frame',
+    name: 'Table Photo Frame (10"X8")',
+    image: '/images/products/_ TABLE PHOTO FRAME.jpg',
+    price: '469',
+    category: 'multi-image',
+    description: 'Table photo frame with multiple design variations'
+  },
+  {
+    id: 'tumbler',
+    name: 'Tumbler (450ML)',
+    image: '/images/products/TUMBLR.jpg',
+    price: '499',
+    category: 'multi-image',
+    description: 'Tumbler with multiple design variations'
+  },
+
   // Bottles & Cups
+
   {
     id: 'bottle-engraving-sample',
     name: 'Bottle Engraving Sample',
@@ -30,85 +195,45 @@ export const products: Product[] = [
     description: 'Sample of custom engraving on bamboo bottle'
   },
   {
-    id: 'sports-bamboo-bottle',
-    name: 'Sports Bamboo Bottle',
-    image: '/images/products/SPORTS BAMBOO BOTTLE  .jpg',
-    price: '799',
-    category: 'bottles',
-    isNew: true,
-    description: 'Sports bottle made from sustainable bamboo - 500ML'
-  },
-  {
     id: 'bamboo-bottle-bamboo-cap',
-    name: 'Bamboo Bottle with Bamboo Cap',
+    name: 'Bamboo Bottle with Bamboo Cap (500ML)',
     image: '/images/products/BAMBOO BOTTLE WITH BAMBOO CAP.jpg',
-    price: '629',
-    category: 'bottles',
-    description: 'Eco-friendly bamboo bottle with a natural bamboo cap - 500ML'
-  },
-  {
-    id: 'bamboo-bottle-steel-handle',
-    name: 'Bamboo Bottle with Steel Handle',
-    image: '/images/products/BAMBOO BOTTLE WITH STEEL HANDLE.jpg',
     price: '799',
     category: 'bottles',
-    description: 'Durable bamboo bottle with stainless steel handle - 500ML'
+    description: 'Eco-friendly bamboo bottle with a natural bamboo cap'
   },
   {
     id: 'BAMBOO BOTTLE  WITH LACE ',
-    name: 'BAMBOO BOTTLE  WITH LACE ',
+    name: 'BAMBOO BOTTLE WITH LACE (500ML)',
     image: '/images/products/BAMBOO BOTTLE  WITH LACE .jpg',
     price: '799',
     category: 'bottles',
-    description: 'Bamboo bottle with bamboo cap - 500ML'
-  },
-  {
-    id: 'bamboo-bottle-regular',
-    name: 'Bamboo Bottle Regular',
-    image: '/images/products/BAMBOO BOTTLE REGULAR  .jpg',
-    price: '699',
-    category: 'bottles',
-    description: 'Regular bamboo water bottle for daily use - 500ML'
-  },
-  {
-    id: 'SPORTS BAMBOO BOTTLE   (1)',
-    name: 'Sports Bamboo Bottle',
-    image: '/images/products/SPORTS BAMBOO BOTTLE(1).jpg',
-    price: '799',
-    category: 'bottles',
-    description: 'Bamboo bottle with big stainer - 500ML'
-  },
+    description: 'Bamboo bottle with bamboo cap'
+  }, 
+
   {
     id: 'bamboo-tea-cup',
-    name: 'Bamboo Tea Cup with Bamboo Lid',
+    name: 'Bamboo Tea Cup with Bamboo Lid (250ML)',
     image: '/images/products/_  BAMBOO TEA CUP .jpg',
     price: '499',
     category: 'bottles',
-    description: 'Traditional bamboo tea cup with lid - 250ML'
+    description: 'Traditional bamboo tea cup with lid'
   },
   {
     id: 'eco-cup-wheat-fiber',
-    name: 'Eco Cup - Wheat Fiber with Bamboo Lid',
+    name: 'Eco Cup - Wheat Fiber with Bamboo Lid (350ML)',
     image: '/images/products/_  ECO CUP MADE OF WHEAT FIBER WITH BAMBOO LID.jpg',
     price: '349',
     category: 'bottles',
-    description: 'Sustainable wheat fiber cup with bamboo lid - 350ML'
-  },
-  {
-    id: 'tumbler',
-    name: 'Tumbler',
-    image: '/images/products/TUMBLR.jpg',
-    price: '499',
-    category: 'bottles',
-    description: 'Coffee tumbler made from bamboo - 450ML'
+    description: 'Sustainable wheat fiber cup with bamboo lid'
   },
   {
     id: 'coffee-tumbler-beer-mug',
-    name: 'Coffee Tumbler Beer Mug',
+    name: 'Coffee Tumbler Beer Mug (400ML)',
     image: '/images/products/_COFFEETUMBLRBEERMUG.jpg',
     price: '749',
     category: 'bottles',
-    description: 'Bamboo coffee tumbler beer mug - 400ML'
+    description: 'Bamboo coffee tumbler beer mug'
   },
   {
     id: 'reusable-bamboo-straw',
@@ -122,76 +247,76 @@ export const products: Product[] = [
   // Home Décor
   {
     id: 'single-national-flag',
-    name: 'Single National Flag',
+    name: 'Single National Flag (16" Height)',
     image: '/images/products/SINGLE NATIONAL FLAG.jpg',
     price: '979',
     category: 'decor',
     isNew: true,
-    description: 'Single national flag holder - 16" Height'
+    description: 'Single national flag holder'
   },
   {
     id: 'twin-national-flag',
-    name: 'Twin National Flag',
+    name: 'Twin National Flag (8.5" Height)',
     image: '/images/products/TWIN NATIONAL FLAG .jpg',
     price: '709',
     category: 'decor',
-    description: 'Twin national flag holder - 8.5" Height'
+    description: 'Twin national flag holder'
   },
   {
     id: 'twin-national-flag-small',
-    name: 'Twin National Flag Small',
+    name: 'Twin National Flag Small (4.7" Height)',
     image: '/images/products/TWIN NTIONAL FLAG SMAL.jpg',
     price: '139',
     category: 'decor',
-    description: 'Small twin national flag holder - 4.7" Height'
+    description: 'Small twin national flag holder'
   },
   {
     id: 'bamboo-charaka',
-    name: 'Bamboo Charaka',
+    name: 'Bamboo Charaka (10.3" X 5.5" X 4.3")',
     image: '/images/products/BAMBOO-CHARAKA.jpg',
     price: '389',
     category: 'decor',
-    description: 'Decorative bamboo charaka - 10.3" x 5.5" x 4.3"'
+    description: 'Decorative bamboo charaka'
   },
   {
     id: 'bamboo-peacock',
-    name: 'Bamboo Peacock',
+    name: 'Bamboo Peacock (10" Height)',
     image: '/images/products/BAMBOO PEACOCK.jpg',
     price: '559',
     category: 'decor',
-    description: 'Handcrafted bamboo peacock - 10" Height'
+    description: 'Handcrafted bamboo peacock'
   },
   {
     id: 'bamboo-tabala',
-    name: 'Bamboo Tabala',
+    name: 'Bamboo Tabala (5" X 6" X 8")',
     image: '/images/products/BAMBOO TABALA.jpg',
     price: '689',
     category: 'decor',
-    description: 'Traditional bamboo tabla set - 5" x 6" x 8"'
+    description: 'Traditional bamboo tabla set'
   },
   {
-    id: 'bamboo-ganapati',
-    name: 'Bamboo Ganapati',
+    id: 'bamboo-ganpati',
+    name: 'Bamboo Ganpati (7" Height)',
     image: '/images/products/BAMBOO GANAPATI .jpg',
     price: '599',
     category: 'decor',
-    description: 'Sacred bamboo Ganapati idol - 7" Height'
+    description: 'Sacred bamboo Ganapati idol'
   },
   {
     id: 'bamboo-veena',
-    name: 'Bamboo Veena',
+    name: 'Bamboo Veena (3" X 4" X 9")',
     image: '/images/products/BAMBOO-VEENA.jpg',
     price: '509',
     category: 'decor',
-    description: 'Decorative bamboo veena - 3" x 4" x 9"'
+    description: 'Decorative bamboo veena'
   },
   {
     id: 'bamboo-dholak',
-    name: 'Bamboo Dholak',
+    name: 'Bamboo Dholak (2" X 2" X 5")',
     image: '/images/products/BAMBOO DHOLAK.jpg',
     price: '159',
     category: 'decor',
-    description: 'Miniature bamboo dholak - 2" x 2" x 5"'
+    description: 'Miniature bamboo dholak'
   },
   {
     id: 'bamboo-talwar',
@@ -211,83 +336,75 @@ export const products: Product[] = [
   },
   {
     id: 'bamboo-bullock-cart',
-    name: 'Bamboo Bullock Cart',
+    name: 'Bamboo Bullock Cart (13" X 10")',
     image: '/images/products/BAMBOO BULLOCK CART.jpg',
     price: '1159',
     category: 'decor',
-    description: 'Miniature bamboo bullock cart - 13" X 10"'
+    description: 'Miniature bamboo bullock cart'
   },
   {
     id: 'bamboo-tribal-face',
-    name: 'Bamboo Tribal Face',
+    name: 'Bamboo Tribal Face (4" X 11")',
     image: '/images/products/BAMBOO TRIBAL FACE.jpg',
     price: '269',
     category: 'decor',
-    description: 'Traditional tribal face mask - 4" x 11"'
+    description: 'Traditional tribal face mask'
   },
   {
     id: 'bamboo-tribal-mask',
-    name: 'Bamboo Tribal Mask',
+    name: 'Bamboo Tribal Mask (4" X 9")',
     image: '/images/products/BAMBOO TRIBAL MASK .jpg',
     price: '289',
     category: 'decor',
-    description: 'Authentic tribal mask - 4" x 9"'
+    description: 'Authentic tribal mask'
   },
   {
     id: 'harine-candle-holder',
-    name: 'Harine Candle Holder',
+    name: 'Harine Candle Holder (4" X 3")',
     image: '/images/products/HARINE CANDLE HOLDER.jpg',
     price: '109',
     category: 'decor',
-    description: 'Traditional candle holder - 4" X 3"'
+    description: 'Traditional candle holder'
   },
   {
     id: 'flat-planter',
-    name: 'Flat Planter',
+    name: 'Flat Planter (12" Length)',
     image: '/images/products/FLAT PLANTER PLANT-2 .jpg',
     price: '159',
     category: 'decor',
-    description: 'Flat bamboo planter - 12" Length'
+    description: 'Flat bamboo planter'
   },
   {
     id: 'flower-vase',
-    name: 'Flower Vase',
+    name: 'Flower Vase (11" Height)',
     image: '/images/products/Flower-vase.png',
     price: '201',
     category: 'decor',
-    description: 'Bamboo flower vase - 11" Height'
+    description: 'Bamboo flower vase'
   },
   {
     id: 'table-flower-vase',
-    name: 'Table Flower Vase',
+    name: 'Table Flower Vase (10" Height)',
     image: '/images/products/TABLE FLOWER VASE .jpg',
     price: '101',
     category: 'decor',
-    description: 'Table bamboo flower vase - 10" Height'
+    description: 'Table bamboo flower vase'
   },
   {
     id: 'wall-flower-vase',
-    name: 'Wall Flower Vase',
+    name: 'Wall Flower Vase (11" X 11")',
     image: '/images/products/WALL FLOWER VASE .jpg',
     price: '449',
     category: 'decor',
-    description: 'Wall-mounted flower vase - 11"X11"'
-  },
-  {
-    id: 'planter-plant-1',
-    name: 'Planter Plant-1',
-    image: '/images/products/PLANTER  PLANT-1.jpg',
-    price: '89',
-    category: 'decor',
-    description: 'Small bamboo planter - 5" Height'
+    description: 'Wall-mounted flower vase'
   },
   {
     id: 'insence-stick-holder',
-    name: 'Incense Stick Holder with Non-Burning Cloth',
+    name: 'Incense Stick Holder with Non-Burning Cloth (9" X 1.3")',
     image: '/images/products/INSENCE STICK HOLDER WITH NON BURNING CLOTH  .jpg',
     price: '399',
     category: 'decor',
-    description: 'Bamboo incense holder - 9"X1.3"'
+    description: 'Bamboo incense holder'
   },
 
   // Office & Gifts
@@ -301,268 +418,268 @@ export const products: Product[] = [
     description: 'A4 size bamboo file folder'
   },
   {
-    id: 'desk-organizer',
-    name: 'Desk Organizer',
-    image: '/images/products/DESK  ORGANISER .jpg',
-    price: '759',
-    category: 'office',
-    description: 'Bamboo desk organizer - 2"X5"X4"'
-  },
-  {
     id: 'file-folder-tray',
-    name: 'File Folder Tray',
+    name: 'File Folder Tray (14" X 16")',
     image: '/images/products/FILE FOLDER TRAY.jpg',
     price: '1401',
     category: 'office',
-    description: 'Bamboo file folder tray - 14"x16"'
+    description: 'Bamboo file folder tray'
   },
   {
     id: 'table-organizer-1',
-    name: 'Table Organizer 1',
+    name: 'Table Organizer 1 (9" X 5")',
     image: '/images/products/TABLE ORGANISER.jpg',
     price: '469',
     category: 'office',
-    description: 'Bamboo table organizer - 9"X5"'
+    description: 'Bamboo table organizer'
   },
   {
     id: 'table-organizer-2',
-    name: 'Table Organizer 2',
+    name: 'Table Organizer 2 (9" X 5")',
     image: '/images/products/TABLE ORGANISER (1).jpg',
     price: '469',
     category: 'office',
-    description: 'Alternative table organizer - 9"x5"'
+    description: 'Alternative table organizer'
+  },
+  {
+    id: 'desk-organizer',
+    name: 'Desk Organizer (2" X 5" X 4")',
+    image: '/images/products/DESK  ORGANISER .jpg',
+    price: '759',
+    category: 'office',
+    description: 'Premium desk organizer with multiple design variations'
+  },
+  {
+    id: 'Desk Organizer 5',
+    name: 'Desk Organizer 5',
+    image: '/slideimage/Desk organizer 05/IMG_20250818_112715124_HDR_AE.jpg',
+    price: '759',
+    category: 'multi-image',
+    description: 'Premium desk organizer with multiple design variations'
+  },
+  {
+    id: 'Desk Organizer 6',
+    name: 'Desk Organizer 6',
+    image: '/slideimage/Desk organizer 06/IMG_20250827_142935914_HDR_AE.jpg',
+    price: '759',
+    category: 'multi-image',
+    description: 'Premium desk organizer with multiple design variations'
   },
   {
     id: 'mobile-amplifier',
-    name: 'Mobile Amplifier',
+    name: 'Mobile Amplifier (10" Length)',
     image: '/images/products/MOBILE AMPLIFIER .jpg',
     price: '229',
     category: 'office',
-    description: 'Bamboo mobile amplifier - 10" Length'
+    description: 'Bamboo mobile amplifier'
   },
   {
     id: 'flat-mobile-stand',
-    name: 'Flat Mobile Stand',
+    name: 'Flat Mobile Stand (7.5" Height)',
     image: '/images/products/FLATMOBILE STAND.jpg',
     price: '239',
     category: 'office',
-    description: 'Flat mobile stand - 7.5" Height'
+    description: 'Flat mobile stand'
   },
   {
     id: 'tree-mobile-stand',
-    name: 'Tree Mobile Stand',
+    name: 'Tree Mobile Stand (5" Height, 4" Diameter)',
     image: '/images/products/TREEMOBILE STAND.jpg',
     price: '239',
     category: 'office',
-    description: 'Tree-shaped mobile stand - 5"Ht, 4"Dia'
-  },
-  {
-    id: 'mobile-stand-1',
-    name: 'Mobile Stand',
-    image: '/images/products/MOBILE STAND .jpg',
-    price: '239',
-    category: 'office',
-    description: 'Classic mobile stand - 7.5" x 3.5"'
+    description: 'Tree-shaped mobile stand'
   },
   {
     id: 'home-name-plate-2',
-    name: 'Home Name Plate',
+    name: 'Home Name Plate (13.5" X 7.5")',
     image: '/images/products/HOME NAME PLATE.jpg',
     price: '639',
     category: 'office',
-    description: 'Home name plate - 13.5" x 7.5"'
-  },
-  {
-    id: 'name-plate-1',
-    name: 'Name Plate',
-    image: '/images/products/NAME PLATE.jpg',
-    price: '395',
-    category: 'office',
-    description: 'Bamboo name plate - 2.25" x 12"'
+    description: 'Home name plate'
   },
   {
     id: 'home-name-plate-1',
-    name: 'Home Name Plate Large',
-    image: '/images/products/HOME NAME PLATE (1).jpg',
+    name: 'Home Name Plate Large (16" X 7.5")',
+    image: '/images/products/Home-name-plate.jpg',
     price: '679',
     category: 'office',
-    description: 'Large home name plate - 16" x 7.5"'
+    description: 'Large home name plate'
   },
   {
     id: 'notebook',
-    name: 'Bamboo Notebook',
+    name: 'Bamboo Notebook (5.5" X 7.5", 200 Pages)',
     image: '/images/products/NOTEBOOK .jpg',
     price: '663',
     category: 'office',
-    description: 'Notebook with bamboo cover - 5.5"x 7.5", 200 Pages'
+    description: 'Notebook with bamboo cover'
   },
   {
     id: 'diary-bamboo-pages',
-    name: 'Diary with Bamboo Pages',
+    name: 'Diary with Bamboo Pages (6.1" X 8.5", 150 Pages)',
     image: '/images/products/DIARY WITH BAMBOO PAGES .jpg',
     price: '699',
     category: 'office',
-    description: 'Diary with bamboo paper - 6.1"x 8.5", 150 Pages'
+    description: 'Diary with bamboo paper'
   },
   {
     id: 'panpuda',
-    name: 'Panpuda',
+    name: 'Panpuda (4" X 8" X 0.5")',
     image: '/images/products/PANPUDA.jpg',
     price: '789',
     category: 'office',
-    description: 'Bamboo panpuda - 4"X8"X.5"'
+    description: 'Bamboo panpuda'
   },
   {
     id: 'camera-pen-stand',
-    name: 'Camera Pen Stand',
+    name: 'Camera Pen Stand (5" X 3" X 2.25")',
     image: '/images/products/CAMERA PEN STAND.jpg',
     price: '359',
     category: 'office',
-    description: 'Camera-shaped pen stand - 5" x 3" x 2.25"'
+    description: 'Camera-shaped pen stand'
   },
   {
     id: 'ludo-pen-stand',
-    name: 'Ludo Pen Stand',
+    name: 'Ludo Pen Stand (5" X 5" X 5")',
     image: '/images/products/LUDO PEN STAND.jpg',
     price: '399',
     category: 'office',
-    description: 'Ludo-themed pen stand - 5" x 5" x 5"'
+    description: 'Ludo-themed pen stand'
   },
   {
     id: 'pencil-pen-stand',
-    name: 'Pencil Pen Stand',
+    name: 'Pencil Pen Stand (8" Height)',
     image: '/images/products/PENCIL PEN STAND.jpg',
     price: '455',
     category: 'office',
-    description: 'Pencil-shaped pen stand - 8" Height'
+    description: 'Pencil-shaped pen stand'
   },
   {
     id: 'pen-stand',
-    name: 'Pen Stand',
+    name: 'Pen Stand (5" Height)',
     image: '/images/products/PEN STAND.jpg',
     price: '190',
     category: 'office',
-    description: 'Classic pen stand - 5" Height'
+    description: 'Classic pen stand'
   },
   {
     id: 'paperweight',
-    name: 'Bamboo Paperweight',
+    name: 'Bamboo Paperweight (3" X 1")',
     image: '/images/products/PAPERWEIGHT.jpg',
     price: '149',
     category: 'office',
-    description: 'Decorative paperweight - 3"x1"'
+    description: 'Decorative paperweight'
   },
   {
     id: 'bamboo-visiting-cards',
-    name: 'Bamboo Visiting Cards',
+    name: 'Bamboo Visiting Cards (3.5" X 2")',
     image: '/images/products/BAMBOO VISITING CARDS .jpg',
     price: '49',
     category: 'office',
-    description: 'Eco-friendly visiting cards - 3.5"X2"'
+    description: 'Eco-friendly visiting cards'
   },
   {
     id: 'laptop-stand',
-    name: 'Bamboo Laptop Stand',
+    name: 'Bamboo Laptop Stand (10.5" X 1.5")',
     image: '/images/products/LAPTOP STAND.jpg',
     price: '304',
     category: 'office',
-    description: 'Ergonomic laptop stand - 10.5" X1.5"'
+    description: 'Ergonomic laptop stand'
   },
   {
     id: 'memento-1',
-    name: 'Memento 1',
+    name: 'Memento 1 (13" X 6")',
     image: '/images/products/MEMENTO .jpg',
     price: '669',
     category: 'office',
-    description: 'Bamboo memento - 13"X6"'
+    description: 'Bamboo memento'
   },
   {
     id: 'memento-2',
-    name: 'Memento 2',
+    name: 'Memento 2 (12" X 5")',
     image: '/images/products/MEMENTO 2.jpg',
     price: '429',
     category: 'office',
-    description: 'Memento design 2 - 12"X5"'
+    description: 'Memento design 2'
   },
   {
     id: 'memento-3',
-    name: 'Memento 3',
+    name: 'Memento 3 (14" X 9")',
     image: '/images/products/MEMENTO 3.jpg',
     price: '1279',
     category: 'office',
-    description: 'Premium memento - 14"X9"'
+    description: 'Premium memento'
   },
   {
     id: 'memento-4',
-    name: 'Memento 4',
+    name: 'Memento 4 (12" X 6")',
     image: '/images/products/MEMENTO 4.jpg',
     price: '489',
     category: 'office',
-    description: 'Memento design 4 - 12"X6"'
+    description: 'Memento design 4'
   },
   {
     id: 'memento-box',
-    name: 'Memento Box',
+    name: 'Memento Box (13" X 6")',
     image: '/images/products/MEMENTO BOX.jpg',
     price: '3099',
     category: 'office',
-    description: 'Memento storage box - 13"X6"'
+    description: 'Memento storage box'
   },
   {
     id: 'memento-round',
-    name: 'Memento Round',
+    name: 'Memento Round (14" X 5")',
     image: '/images/products/MEMENTO ROUND.jpg',
     price: '1419',
     category: 'office',
-    description: 'Round memento - 14"X5"'
+    description: 'Round memento'
   },
   {
     id: 'memento-tiger',
-    name: 'Memento Tiger',
+    name: 'Memento Tiger (14" X 9")',
     image: '/images/products/MEMENTO TIGER.jpg',
     price: '1909',
     category: 'office',
-    description: 'Tiger memento - 14"X9"'
+    description: 'Tiger memento'
   },
   {
     id: 'memento-tree',
-    name: 'Memento Tree',
+    name: 'Memento Tree (10" X 6")',
     image: '/images/products/MEMENTO TREE .jpg',
     price: '359',
     category: 'office',
-    description: 'Tree memento - 10"X6"'
+    description: 'Tree memento'
   },
   {
     id: 'invitation-card-1',
-    name: 'Invitation Card 1',
+    name: 'Invitation Card 1 (11" X 12")',
     image: '/images/products/INVITATION CARD.jpg',
     price: '329',
     category: 'office',
-    description: 'Bamboo invitation card - 11"X12"'
+    description: 'Bamboo invitation card'
   },
   {
     id: 'invitation-card-2',
-    name: 'Invitation Card 2',
+    name: 'Invitation Card 2 (6" X 13")',
     image: '/images/products/INVITATION CARD 2.jpg',
     price: '509',
     category: 'office',
-    description: 'Invitation card design 2 - 6"X13"'
+    description: 'Invitation card design 2'
   },
   {
     id: 'invitation-card-3',
-    name: 'Invitation Card 3',
+    name: 'Invitation Card 3 (6" X 8")',
     image: '/images/products/INVITATION CARD 3.jpg',
     price: '489',
     category: 'office',
-    description: 'Invitation card design 3 - 6"X8"'
+    description: 'Invitation card design 3'
   },
   {
-    id: 'stylus-pen',
-    name: 'Stylus Pen',
-    image: '/images/products/STYLUS PEN.jpg',
-    price: '129',
+    id: 'hexagonal-pen',
+    name: 'Hexagonal Pen',
+    image: '/images/products/hexagonal-pen.jpg',
+    price: '150',
     category: 'office',
-    description: 'Bamboo stylus pen'
+    description: 'Hexagonal bamboo pen'
   },
   {
     id: 'double-ring-pen',
@@ -571,14 +688,6 @@ export const products: Product[] = [
     price: '129',
     category: 'office',
     description: 'Bamboo pen with double rings'
-  },
-  {
-    id: 'premium-bamboo-pen',
-    name: 'Premium Bamboo Pen',
-    image: '/images/products/PREMIUM  BAMBOO  PEN .jpg',
-    price: '339',
-    category: 'office',
-    description: 'Premium quality bamboo pen'
   },
   {
     id: 'premium-pen-artificial-diamond',
@@ -595,6 +704,14 @@ export const products: Product[] = [
     price: '749',
     category: 'office',
     description: 'Premium ink pen with bamboo box'
+  },
+  {
+    id: 'single-pen-standup-box',
+    name: 'Single Pen with Standup Box',
+    image: '/slideimage/Single pen with standup box @699/IMG_20250828_154756131_HDR_AE.jpg',
+    price: '699',
+    category: 'multi-image',
+    description: 'Single pen with standup box'
   },
   {
     id: 'premium-bamboo-pen-box',
@@ -624,27 +741,27 @@ export const products: Product[] = [
   // Daily Essentials
   {
     id: 'calendar',
-    name: 'Bamboo Calendar',
+    name: 'Bamboo Calendar (3" X 2" X 1")',
     image: '/images/products/CALANDER .jpg',
     price: '349',
     category: 'utility',
-    description: 'Bamboo wall calendar - 3"X2"X1"'
+    description: 'Bamboo wall calendar'
   },
   {
     id: 'bamboo-badge',
-    name: 'Bamboo Badge',
+    name: 'Bamboo Badge (2" X 1")',
     image: '/images/products/_BADGE  .jpg',
     price: '39',
     category: 'utility',
-    description: 'Eco-friendly badge - 2"X1"'
+    description: 'Eco-friendly badge'
   },
   {
     id: 'fridge-magnet',
-    name: 'Bamboo Fridge Magnet',
+    name: 'Bamboo Fridge Magnet (3.6" X 2")',
     image: '/images/products/_FRIDGE MAGNET .jpg',
     price: '100',
     category: 'utility',
-    description: 'Decorative fridge magnet - 3.6"X2"'
+    description: 'Decorative fridge magnet'
   },
   {
     id: 'bamboo-cutlery-set',
@@ -671,61 +788,53 @@ export const products: Product[] = [
     description: 'Sound amplifier with mobile holder'
   },
   {
-    id: 'table-photo-frame',
-    name: 'Table Photo Frame',
-    image: '/images/products/_ TABLE PHOTO FRAME.jpg',
-    price: '449',
-    category: 'utility',
-    description: 'Table photo frame - 100X100 MM'
-  },
-  {
     id: 'small-elephant-tea-coaster',
-    name: 'Small Elephant Tea Coaster',
+    name: 'Small Elephant Tea Coaster (7" X 5")',
     image: '/images/products/SMALL ELEPHANT TEA COASTER.jpg',
     price: '579',
-    category: 'utility',
-    description: 'Elephant design tea coaster - 7"X5"'
+    category: 'multi-image',
+    description: 'Elephant design tea coaster'
   },
   {
     id: 'bullock-cart-tea-coaster',
-    name: 'Bullock Cart Tea Coaster',
+    name: 'Bullock Cart Tea Coaster (10" X 7")',
     image: '/images/products/BULLOCK CART TEA COASTER.jpg',
     price: '869',
     category: 'utility',
-    description: 'Bullock cart tea coaster - 10"X7"'
+    description: 'Bullock cart tea coaster'
   },
   {
     id: 'tea-coaster',
-    name: 'Tea Coaster',
+    name: 'Tea Coaster (4" X 4")',
     image: '/images/products/TEA COASTER.jpg',
     price: '539',
     category: 'utility',
-    description: 'Classic tea coaster - 4"X4"'
+    description: 'Classic tea coaster'
   },
   {
     id: 'horse-tea-coaster',
-    name: 'Horse Tea Coaster',
+    name: 'Horse Tea Coaster (10" X 4")',
     image: '/images/products/HORSE TEA COASTER.jpg',
     price: '879',
     category: 'utility',
-    description: 'Horse design tea coaster - 10"X4"'
+    description: 'Horse design tea coaster'
   },
   {
     id: 'fruit-tray',
-    name: 'Fruit Tray',
+    name: 'Fruit Tray (11" X 9")',
     image: '/images/products/FRUIT TRAY.jpg',
     price: '449',
     category: 'utility',
-    description: 'Bamboo fruit serving tray - 11"X9"'
+    description: 'Bamboo fruit serving tray'
   },
 
   {
     id: 'strip-tray-small',
-    name: 'Small Tray',
+    name: 'Small Tray (13" X 9")',
     image: '/images/products/SMALL TRAY .jpg',
     price: '269',
     category: 'utility',
-    description: 'Small strip tray - 13" X9"'
+    description: 'Small strip tray'
   },
   {
     id: 'strip-tray-big',
@@ -737,19 +846,19 @@ export const products: Product[] = [
   },
   {
     id: 'silver-tray',
-    name: 'Silver Tray',
+    name: 'Silver Tray (13" X 5")',
     image: '/images/products/SLIVER TRAY  TRY-SLIVR.jpg',
     price: '709',
     category: 'utility',
-    description: 'Silver finish tray - 13"X5"'
+    description: 'Silver finish tray'
   },
   {
     id: 'strip-tray-3',
-    name: 'Strip Tray',
+    name: 'Strip Tray (13" X 9.5" X 3")',
     image: '/images/products/STRIP TRAY .jpg',
     price: '819',
     category: 'utility',
-    description: 'Medium strip tray - 13" x 9.5" x 3"'
+    description: 'Medium strip tray'
   },
   {
     id: 'travel-karanda',
@@ -777,11 +886,11 @@ export const products: Product[] = [
   },
   {
     id: 'key-chains',
-    name: 'Key Chains',
+    name: 'Key Chains (45-60mm)',
     image: '/images/products/KEY CHAINS  KY-CHNS.jpg',
     price: '82',
     category: 'utility',
-    description: 'Bamboo key chains - 45 to 60mm'
+    description: 'Bamboo key chains'
   },
   {
     id: 'key-chains-100',
@@ -801,59 +910,59 @@ export const products: Product[] = [
   },
   {
     id: 'bell-key-holder',
-    name: 'Bell Key Holder',
+    name: 'Bell Key Holder (8" X 3.5")',
     image: '/images/products/BELL KEY HOLDER.jpg',
     price: '169',
     category: 'utility',
-    description: 'Bell-shaped key holder - 8"X3.5"'
+    description: 'Bell-shaped key holder'
   },
   {
     id: 'elephant-key-holder',
-    name: 'Elephant Key Holder',
+    name: 'Elephant Key Holder (11" X 7")',
     image: '/images/products/ELEPHANTKEY HOLDER .jpg',
     price: '479',
     category: 'utility',
-    description: 'Elephant key holder - 11"X7"'
+    description: 'Elephant key holder'
   },
   {
     id: 'guitar-key-holder',
-    name: 'Guitar Key Holder',
+    name: 'Guitar Key Holder (14" X 7")',
     image: '/images/products/GUITAR KEY HOLDER  KY-HL-GTR .jpg',
     price: '479',
     category: 'utility',
-    description: 'Guitar-shaped key holder - 14"X7"'
+    description: 'Guitar-shaped key holder'
   },
   {
     id: 'learn-cubes',
-    name: 'Learn Cubes',
+    name: 'Learn Cubes (3" X 3")',
     image: '/images/products/LEARN CUBES.jpg',
     price: '450',
     category: 'utility',
-    description: 'Educational learning cubes - 3" x 3"'
+    description: 'Educational learning cubes'
   },
   {
     id: 'sarota',
-    name: 'Sarota',
+    name: 'Sarota (11" Length)',
     image: '/images/products/SAROTA.jpg',
     price: '59',
     category: 'utility',
-    description: 'Bamboo sarota for kitchen - 11"'
+    description: 'Bamboo sarota for kitchen'
   },
   {
     id: 'chimta',
-    name: 'Chimta',
+    name: 'Chimta (8" Length)',
     image: '/images/products/CHIMTA.jpg',
     price: '59',
     category: 'utility',
-    description: 'Bamboo chimta tongs - 8"'
+    description: 'Bamboo chimta tongs'
   },
   {
     id: 'pot-stand',
-    name: 'Pot Stand',
+    name: 'Pot Stand (6" X 6" X 2")',
     image: '/images/products/POT STAND.jpg',
     price: '79',
     category: 'utility',
-    description: 'Bamboo pot stand - 6" x6" x2"'
+    description: 'Bamboo pot stand'
   },
   {
     id: 'soft-tooth-brush',
@@ -873,43 +982,43 @@ export const products: Product[] = [
   },
   {
     id: 'lily-comb',
-    name: 'Lily Comb',
+    name: 'Lily Comb (7.5" X 2")',
     image: '/images/products/_LILY COMB  .jpg',
     price: '139',
     category: 'utility',
-    description: 'Lily bamboo comb - 7.5"X2"'
+    description: 'Lily bamboo comb'
   },
   {
     id: 'beard-comb',
-    name: 'Beard Comb',
+    name: 'Beard Comb (3.5" X 2.4")',
     image: '/images/products/_ BEARD COMB .jpg',
     price: '69',
     category: 'utility',
-    description: 'Bamboo beard comb - 3.5"X2.4"'
+    description: 'Bamboo beard comb'
   },
   {
     id: 'pocket-comb',
-    name: 'Pocket Comb',
+    name: 'Pocket Comb (5.5" X 1.5")',
     image: '/images/products/POCKET COMB.jpg',
     price: '49',
     category: 'utility',
-    description: 'Compact pocket comb - 5.5"X1.5"'
+    description: 'Compact pocket comb'
   },
   {
     id: 'handle-comb',
-    name: 'Handle Comb',
+    name: 'Handle Comb (7.5" X 2")',
     image: '/images/products/HANDLE COMB.jpg',
     price: '139',
     category: 'utility',
-    description: 'Bamboo comb with handle - 7.5"X2"'
+    description: 'Bamboo comb with handle'
   },
   {
     id: 'shampoo-comb',
-    name: 'Shampoo Comb',
+    name: 'Shampoo Comb (6.5" X 2.5")',
     image: '/images/products/_SHAMPOO COMB.jpg',
     price: '79',
     category: 'utility',
-    description: 'Shampoo comb - 6.5"X2.5"'
+    description: 'Shampoo comb'
   },
 
   // Lamps & Clocks
@@ -963,14 +1072,6 @@ export const products: Product[] = [
     description: 'Silver bamboo lamp - dia 6" x 13" ht'
   },
   {
-    id: 'glass-lamp',
-    name: 'Glass Lamp',
-    image: '/images/products/GLASS LAMP.jpg',
-    price: '329',
-    category: 'lighting',
-    description: 'Glass and bamboo combination lamp'
-  },
-  {
     id: 'candle-set-1',
     name: 'HARINE CANDLE HOLDER',
     image: '/images/products/HARINE CANDLE HOLDER.jpg',
@@ -980,11 +1081,11 @@ export const products: Product[] = [
   },
   {
     id: 'shivaji-wall-clock',
-    name: 'Shivaji Wall Clock',
+    name: 'Shivaji Wall Clock (24" X 10" X 3")',
     image: '/images/products/SHIVAJI WALL CLOCK .jpg',
     price: '1529',
     category: 'lighting',
-    description: 'Shivaji themed wall clock - 24"x10"x3"'
+    description: 'Shivaji themed wall clock'
   },
   {
     id: 'anchor-wall-clock',
@@ -1066,20 +1167,4 @@ export const products: Product[] = [
     category: 'lighting',
     description: 'Large photo frame - 20"X16"'
   },
-  {
-    id: 'photo-frame-4',
-    name: 'Photo Frame ',
-    image: '/images/products/PHOTOFRAME 2.jpg',
-    price: '469',
-    category: 'lighting',
-    description: 'Medium photo frame - 10"X12"'
-  },
-  {
-    id: 'photo-frame-2',
-    name: 'Table Photo Frame',
-    image: '/images/products/_ TABLE PHOTO FRAME.jpg',
-    price: '469',
-    category: 'lighting',
-    description: 'Small photo frame - 10"X8"'
-  }
 ];

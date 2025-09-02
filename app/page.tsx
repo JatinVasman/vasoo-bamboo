@@ -7,6 +7,7 @@ import SectionTitle from '../components/SectionTitle';
 import ProductCard from '../components/ProductCard';
 import AnimatedButton from '../components/AnimatedButton';
 import { products } from '../data/products';
+import HomepageSlider from '../components/HomepageSlider';
 
 export default function Home() {
   // Featured products - select 6 products to showcase in 3-3 format
@@ -35,6 +36,9 @@ export default function Home() {
         buttonHref="/products"
         backgroundImage="/images/bamboo-hero.jpg"
       />
+
+      {/* Homepage Slider - Engraved Products */}
+      <HomepageSlider />
 
       {/* Featured Products Section */}
       <section className="py-20 bg-beige">

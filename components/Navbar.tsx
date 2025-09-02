@@ -34,6 +34,9 @@ const Navbar = () => {
               className="h-10 sm:h-12 md:h-16 w-auto hover:scale-105 transition-transform duration-300"
               priority
             />
+            <span className="ml-3 text-lg sm:text-xl md:text-2xl font-bold text-bamboo-brown hidden sm:block">
+              Vasoo Bamboo Art's
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

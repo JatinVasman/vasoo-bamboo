@@ -67,12 +67,13 @@ const Hero: React.FC<HeroProps> = ({
                </motion.p>
              )}
 
-            {(buttonText && (buttonHref || onButtonClick)) && (
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-              >
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
+              {(buttonText && (buttonHref || onButtonClick)) && (
                 <AnimatedButton
                   href={buttonHref}
                   onClick={onButtonClick}
@@ -81,8 +82,18 @@ const Hero: React.FC<HeroProps> = ({
                 >
                   {buttonText}
                 </AnimatedButton>
-              </motion.div>
-            )}
+              )}
+              
+              {/* Bulk Order Button */}
+              <AnimatedButton
+                href="https://wa.me/+918484988228?text=Hi! I'm interested in bulk orders. Can you provide pricing and details?"
+                variant="secondary"
+                size="lg"
+                className="!text-black hover:!text-black border border-eco-green/30"
+              >
+                📦 Bulk Orders
+              </AnimatedButton>
+            </motion.div>
           </motion.div>
 
                      {/* Right Column - Images */}

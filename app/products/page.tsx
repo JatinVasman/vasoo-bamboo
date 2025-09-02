@@ -9,11 +9,17 @@ import { products, productCategories } from '../../data/products';
 
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredProducts = activeCategory === 'all' 
-    ? products 
-    : products.filter(product => product.category === activeCategory);
-
+  // Filter products by both category and search query
+  const filteredProducts = products.filter(product => {
+    const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
+    const matchesSearch = searchQuery === '' || 
+      product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (product.description && product.description.toLowerCase().includes(searchQuery.toLowerCase()));
+    
+    return matchesCategory && matchesSearch;
+  });
 
 
   return (
@@ -52,6 +58,57 @@ export default function ProductsPage() {
         </div>
       </section>
 
+      {/* Search Box */}
+      <section className="py-8 bg-beige/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="relative"
+          >
+            <div className="relative max-w-2xl mx-auto">
+              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                <svg className="h-5 w-5 text-bamboo-brown" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <input
+                type="text"
+                placeholder="Search products by name or description..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="block w-full pl-12 pr-4 py-4 border-2 border-bamboo-brown/30 rounded-2xl text-lg placeholder-bamboo-brown/60 bg-white/80 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-eco-green focus:border-eco-green transition-all duration-300 shadow-lg hover:shadow-xl"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-bamboo-brown hover:text-eco-green transition-colors duration-200"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </div>
+            
+            {/* Search Results Summary */}
+            {searchQuery && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-center mt-4"
+              >
+                <p className="text-bamboo-brown font-medium">
+                  Found {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''} for "{searchQuery}"
+                </p>
+              </motion.div>
+            )}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Category Filter - Premium Bamboo Frosted Glass Design */}
       <section className="py-6 sticky top-16 z-40 backdrop-blur-md bg-beige/70 border-b border-[#3E2723]/10 shadow-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +128,10 @@ export default function ProductsPage() {
                     y: -3
                   }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => setActiveCategory(category.id)}
+                  onClick={() => {
+                    setActiveCategory(category.id);
+                    setSearchQuery(''); // Clear search when category changes
+                  }}
                   className={`relative px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 border flex items-center space-x-2 ${
                     activeCategory === category.id
                       ? 'bg-eco-green text-black font-bold border-eco-green shadow-lg'
@@ -112,7 +172,10 @@ export default function ProductsPage() {
                     key={category.id}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => setActiveCategory(category.id)}
+                    onClick={() => {
+                      setActiveCategory(category.id);
+                      setSearchQuery(''); // Clear search when category changes
+                    }}
                     className={`flex-shrink-0 px-5 py-3 rounded-full font-semibold text-sm transition-all duration-300 snap-center border flex items-center space-x-2 ${
                       activeCategory === category.id
                         ? 'bg-eco-green text-black font-bold border-eco-green shadow-lg shadow-eco-green/30'
@@ -153,15 +216,19 @@ export default function ProductsPage() {
             className="text-center mb-12"
           >
             <h2 className="text-2xl font-semibold text-bamboo-brown mb-2">
-              {activeCategory === 'all' 
-                ? `All Products (${products.length})` 
-                : `${productCategories.find(c => c.id === activeCategory)?.name} (${filteredProducts.length})`
+              {searchQuery 
+                ? `Search Results for "${searchQuery}" (${filteredProducts.length})`
+                : activeCategory === 'all' 
+                  ? `All Products (${products.length})` 
+                  : `${productCategories.find(c => c.id === activeCategory)?.name} (${filteredProducts.length})`
               }
             </h2>
             <p className="text-black/70">
-              {activeCategory === 'all' 
-                ? 'Browse our complete collection of eco-friendly bamboo products'
-                : `Discover our ${filteredProducts.length} ${productCategories.find(c => c.id === activeCategory)?.name.toLowerCase()}`
+              {searchQuery 
+                ? `Found ${filteredProducts.length} product${filteredProducts.length !== 1 ? 's' : ''} matching your search`
+                : activeCategory === 'all' 
+                  ? 'Browse our complete collection of eco-friendly bamboo products'
+                  : `Discover our ${filteredProducts.length} ${productCategories.find(c => c.id === activeCategory)?.name.toLowerCase()}`
               }
             </p>
           </motion.div>
@@ -193,15 +260,28 @@ export default function ProductsPage() {
             >
               <div className="text-6xl mb-4">🔍</div>
               <h3 className="text-2xl font-semibold text-bamboo-brown mb-2">
-                No products found
+                {searchQuery ? 'No search results found' : 'No products found'}
               </h3>
               <p className="text-black">
-                Try selecting a different category or check back later for new arrivals.
+                {searchQuery 
+                  ? `No products found for "${searchQuery}". Try different keywords or browse by category.`
+                  : 'Try selecting a different category or check back later for new arrivals.'
+                }
               </p>
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="mt-4 px-6 py-2 bg-eco-green text-black font-semibold rounded-full hover:bg-eco-green/80 transition-colors duration-200"
+                >
+                  Clear Search
+                </button>
+              )}
             </motion.div>
           )}
         </div>
       </section>
+
+
 
       {/* CTA Section */}
       <section className="py-20 bg-beige">
@@ -213,7 +293,7 @@ export default function ProductsPage() {
             viewport={{ once: true }}
           >
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-bamboo-brown mb-6">
-              Shop Handmade Bamboo Products Today
+              View Our Catalog
             </h2>
             <p className="text-black text-lg mb-8 max-w-2xl mx-auto">
               Experience the durability and sustainability of our eco-friendly bamboo crafts. 

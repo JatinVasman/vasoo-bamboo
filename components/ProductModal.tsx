@@ -42,8 +42,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product })
                 '/slideimage/7x9 photo frame/Screenshot_20250828-152039.Maps.png'
               ],
               'Photo Frame (10"X12")': [
-                '/slideimage/10x12 photo frame/IMG_20250721_134953119_HDR.jpg',
-                '/slideimage/10x12 photo frame/IMG_20250813_132828615_HDR_AE.jpg',
+                '/slideimage/10X12 photo frame/IMG_20250813_132828615_HDR_AE.jpg',
                 '/slideimage/10x12 photo frame/IMG_20250818_213310166_HDR.jpg'
               ],
               'Bamboo Tea Coaster Set of 6': [
@@ -135,7 +134,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product })
 
               ],
               'Triangle Paanpuda': [
-                '/slideimage/Trangle Paanpuda/IMG_20250828_130146687_HDR_AE.jpg',
+                '/slideimage/Trangle Paanpuda/IMG_20250828_130216180_HDR_AE.jpg',
                 '/slideimage/Trangle Paanpuda/IMG_20250828_130229947_HDR_AE.jpg'
               ],
                 'Two Pen Set (One Ink, One Ball)':[

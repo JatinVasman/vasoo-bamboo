@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     id: 'photo-frame-10x12',
     name: 'Photo Frame (10"X12")',
-    image: '/slideimage/10X12 photo frame/IMG_20250813_132828615_HDR_AE.jpg',
+    image: '/slideimage/10x12 photo frame/IMG_20250721_134953119_HDR.jpg',
     price: '1100',
     category: 'multi-image',
     description: 'Elegant 10"X12" bamboo photo frame with multiple design options'
@@ -130,7 +130,7 @@ export const products: Product[] = [
   {
     id: 'triangle-paanpuda',
     name: 'Triangle Paanpuda',
-    image: '/slideimage/Trangle Paanpuda/IMG_20250828_130216180_HDR_AE.jpg',
+    image: '/slideimage/Trangle Paanpuda/IMG_20250828_130146687_HDR_AE.jpg',
     price: '789',
     category: 'multi-image',
     description: 'Trangle paanpuda with multiple design options'

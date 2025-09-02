@@ -46,7 +46,7 @@ export default function Home() {
           
           {/* First row - 3 products */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            {featuredProducts.slice(0, 3).map((product, index) => (
+            {featuredProducts.slice(0, 3).map((product) => (
               product && (
                 <ProductCard
                   key={product.id}
@@ -57,7 +57,7 @@ export default function Home() {
                   originalPrice={product.originalPrice}
                   category={product.category}
                   isNew={product.isNew}
-                  index={index}
+
                 />
               )
             ))}
@@ -65,7 +65,7 @@ export default function Home() {
 
           {/* Second row - 3 products */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {featuredProducts.slice(3, 6).map((product, index) => (
+            {featuredProducts.slice(3, 6).map((product) => (
               product && (
                 <ProductCard
                   key={product.id}
@@ -76,7 +76,7 @@ export default function Home() {
                   originalPrice={product.originalPrice}
                   category={product.category}
                   isNew={product.isNew}
-                  index={index + 3}
+
                 />
               )
             ))}

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import AnimatedButton from './AnimatedButton';
 
 interface HeroProps {
@@ -120,9 +121,11 @@ const Hero: React.FC<HeroProps> = ({
                     transition={{ duration: 0.4, ease: 'easeOut' }}
                     className="w-full h-full"
                   >
-                    <img
+                    <Image
                       src="/images/Logo/bamboo-products.jpg"
                       alt="Bamboo Products Collection"
+                      width={800}
+                      height={600}
                       className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-300"
                     />
                   </motion.div>
@@ -147,9 +150,11 @@ const Hero: React.FC<HeroProps> = ({
                     transition={{ duration: 0.4, ease: 'easeOut' }}
                     className="w-full h-full"
                   >
-                    <img
+                    <Image
                       src="/images/Logo/bamboo-products2.jpg"
                       alt="Bamboo Products Collection 2"
+                      width={800}
+                      height={600}
                       className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-300"
                     />
                   </motion.div>

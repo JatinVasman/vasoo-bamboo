@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import SectionTitle from '../../components/SectionTitle';
 import ProductCard from '../../components/ProductCard';
 import AnimatedButton from '../../components/AnimatedButton';
 import { products, productCategories } from '../../data/products';
@@ -104,7 +103,7 @@ export default function ProductsPage() {
                 className="text-center mt-4"
               >
                 <p className="text-bamboo-brown font-medium">
-                  Found {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''} for "{searchQuery}"
+                  Found {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''} for &quot;{searchQuery}&quot;
                 </p>
               </motion.div>
             )}
@@ -249,7 +248,7 @@ export default function ProductsPage() {
                 originalPrice={product.originalPrice}
                 category={product.category}
                 isNew={product.isNew}
-                index={index}
+
               />
             ))}
           </motion.div>

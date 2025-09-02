@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.vasoobambooarts.com'),
   title: "Vasoo Bamboo Arts - Eco-Friendly Handcrafted Bamboo Products | Chandrapur",
   description: "Vasoo Bamboo Arts in Chandrapur offers premium handcrafted bamboo products. Eco-friendly home décor, office accessories, bamboo bottles, lamps and more. Sustainable craftsmanship since generations.",
   keywords: "Vasoo Bamboo Arts, bamboo products Chandrapur, eco-friendly handicrafts, sustainable bamboo crafts, handmade bamboo items, bamboo home décor, bamboo bottles, bamboo lamps, office accessories bamboo, traditional bamboo crafts India",

@@ -35,7 +35,7 @@ const Navbar = () => {
               priority
             />
             <span className="ml-3 text-lg sm:text-xl md:text-2xl font-bold text-bamboo-brown hidden sm:block">
-              Vasoo Bamboo Art's
+              Vasoo Bamboo Art&apos;s
             </span>
           </Link>
 

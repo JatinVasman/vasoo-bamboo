@@ -245,9 +245,9 @@ export const products: Product[] = [
       '/slideimage/Bamboo Bottle with Steel Handle (500ML)/71JsXhMMmkL._SX679_.jpg',
       '/slideimage/Bamboo Bottle with Steel Handle (500ML)/615weOtGwuL._SX679_.jpg',
       '/slideimage/Bamboo Bottle with Steel Handle (500ML)/1699002520112.jpg',
-      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/1699002520159.jpg',
-      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/Image_Editor.png',
-      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/Screenshot_2024_0607_102913.jpg'
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/1700811379788.jpg',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/IMG_20240723_234606094_HDR_AE.png',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/IMG_20240723_234514900_HDR_AE.jpg'
     ]
   
   },
@@ -274,8 +274,6 @@ export const products: Product[] = [
                 '/slideimage/Sports Bamboo Bottle (500ML)/615weOtGwuL._SX679_.jpg',
                 '/slideimage/Sports Bamboo Bottle (500ML)/1000124726.jpg',
                 '/slideimage/Sports Bamboo Bottle (500ML)/1699002520112.jpg',
-                '/slideimage/Sports Bamboo Bottle (500ML)/black cap.WEBP',
-                '/slideimage/Sports Bamboo Bottle (500ML)/black.WEBP',
                 '/slideimage/Sports Bamboo Bottle (500ML)/IMG_20240729_102928992_HDR_AE.jpg',
                 '/slideimage/Sports Bamboo Bottle (500ML)/IMG_20240729_102932525_HDR_AE.jpg']
   },
@@ -668,15 +666,13 @@ export const products: Product[] = [
     image: '/images/products/DIARY WITH BAMBOO PAGES .jpg',
     price: '699',
     category: 'office',
-    description: 'Diary with bamboo paper'
-  },
-  {
-    id: 'panpuda',
-    name: 'Panpuda (4" X 8" X 0.5")',
-    image: '/images/products/PANPUDA.jpg',
-    price: '789',
-    category: 'office',
-    description: 'Bamboo panpuda'
+    description: 'Diary with bamboo paper',
+    multiImage: true,
+    images:[
+      '/slideimage/Diary/IMG_20250828_144858738_HDR_AE.jpg',
+      '/slideimage/Diary/IMG_20250828_144722223_HDR_AE.jpg',
+      '/slideimage/Diary/IMG_20250721_230820015_HDR_AE.jpg'
+    ]
   },
   {
     id: 'camera-pen-stand',

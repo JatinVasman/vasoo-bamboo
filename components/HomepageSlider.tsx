@@ -63,8 +63,8 @@ const HomepageSlider = () => {
 
 
   return (
-    <section className="relative py-20 overflow-hidden bg-eco-green/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section className="relative py-12 md:py-20 overflow-hidden bg-eco-green/10">
+  <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -85,7 +85,7 @@ const HomepageSlider = () => {
         {/* Slider Container */}
         <div className="relative">
           {/* Main Slider */}
-          <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-eco-green/10">
+          <div className="relative h-[420px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-eco-green/10 flex flex-col md:flex-row">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide}
@@ -93,28 +93,27 @@ const HomepageSlider = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0 flex"
+                className="flex-1 flex flex-col md:flex-row w-full h-full"
               >
-                {/* Image Section - Left Side */}
-                <div className="w-1/2 relative">
+                {/* Image Section - Top on mobile, left on desktop */}
+                <div className="w-full md:w-1/2 h-1/2 md:h-full relative flex items-center justify-center bg-white/10">
                   <Image
                     src={slides[currentSlide].image}
                     alt={slides[currentSlide].title}
                     fill
                     className="object-contain p-4"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 40vw, 600px"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 600px"
                     priority
                   />
                 </div>
-                
-                {/* Content Section - Right Side */}
-                <div className="w-1/2 flex items-center justify-center p-8">
-                  <div className="max-w-lg">
+                {/* Content Section - Bottom on mobile, right on desktop */}
+                <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-4 md:p-8">
+                  <div className="max-w-lg w-full">
                     <motion.h3
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.2 }}
-                      className="text-3xl md:text-4xl font-bold mb-3 text-bamboo-brown"
+                      className="text-2xl md:text-4xl font-bold mb-2 md:mb-3 text-bamboo-brown"
                     >
                       {slides[currentSlide].title}
                     </motion.h3>
@@ -122,7 +121,7 @@ const HomepageSlider = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3 }}
-                      className="text-xl md:text-2xl mb-4 text-black/80"
+                      className="text-base md:text-2xl mb-2 md:mb-4 text-black/80"
                     >
                       {slides[currentSlide].subtitle}
                     </motion.p>
@@ -130,7 +129,7 @@ const HomepageSlider = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4 }}
-                      className="text-lg text-black/70 mb-6"
+                      className="text-sm md:text-lg text-black/70 mb-4 md:mb-6"
                     >
                       {slides[currentSlide].description}
                     </motion.p>
@@ -141,7 +140,7 @@ const HomepageSlider = () => {
                     >
                       <a
                         href="/products"
-                        className="inline-block bg-eco-green text-black font-semibold px-8 py-3 rounded-full hover:bg-eco-green/80 transition-all duration-200 hover:scale-105"
+                        className="inline-block bg-eco-green text-black font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-eco-green/80 transition-all duration-200 hover:scale-105"
                       >
                         Explore Products
                       </a>
@@ -151,28 +150,28 @@ const HomepageSlider = () => {
               </motion.div>
             </AnimatePresence>
 
-            {/* Navigation Arrows */}
+            {/* Navigation Arrows - hide on mobile, show on md+ */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white backdrop-blur-sm p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+              className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white backdrop-blur-sm p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
             >
               <ChevronLeft className="w-6 h-6 text-bamboo-brown" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white backdrop-blur-sm p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+              className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white backdrop-blur-sm p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
             >
               <ChevronRight className="w-6 h-6 text-bamboo-brown" />
             </button>
           </div>
 
           {/* Thumbnail Navigation */}
-          <div className="flex justify-center mt-8 space-x-4">
+          <div className="flex flex-wrap justify-center mt-6 md:mt-8 gap-3 md:space-x-4">
             {slides.map((slide, index) => (
               <button
                 key={slide.id}
                 onClick={() => goToSlide(index)}
-                className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                className={`relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
                   index === currentSlide
                     ? 'border-eco-green scale-110 shadow-lg'
                     : 'border-gray-300 hover:border-gray-400'
@@ -183,7 +182,7 @@ const HomepageSlider = () => {
                   alt={slide.title}
                   fill
                   className="object-cover"
-                  sizes="80px"
+                  sizes="64px"
                 />
               </button>
             ))}

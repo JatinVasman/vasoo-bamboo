@@ -15,6 +15,9 @@ interface ProductCardProps {
   category?: string;
   isNew?: boolean;
   isEcoFriendly?: boolean;
+  multiImage?: boolean;
+  images?: string[];
+  description?: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -26,6 +29,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   category,
   isNew = false,
   isEcoFriendly = true,
+  multiImage,
+  images,
+  description,
 }) => {
   const { addItem, removeItem, items } = useProductList();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,7 +63,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
     price,
     originalPrice,
     category,
-    description: category,
+    description: description || category,
+    multiImage,
+    images,
   };
 
   return (

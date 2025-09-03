@@ -57,7 +57,10 @@ export default function Home() {
                   originalPrice={product.originalPrice}
                   category={product.category}
                   isNew={product.isNew}
-
+                  isEcoFriendly={product.isEcoFriendly}
+                  multiImage={product.multiImage}
+                  images={product.images}
+                  description={product.description}
                 />
               )
             ))}
@@ -76,7 +79,10 @@ export default function Home() {
                   originalPrice={product.originalPrice}
                   category={product.category}
                   isNew={product.isNew}
-
+                  isEcoFriendly={product.isEcoFriendly}
+                  multiImage={product.multiImage}
+                  images={product.images}
+                  description={product.description}
                 />
               )
             ))}

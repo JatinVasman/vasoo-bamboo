@@ -8,6 +8,8 @@ export interface Product {
   isNew?: boolean;
   isEcoFriendly?: boolean;
   description?: string;
+  multiImage?: boolean;
+  images?: string[];
 }
 
 export const productCategories = [
@@ -20,160 +22,287 @@ export const productCategories = [
 ];
 
 export const products: Product[] = [
-  // Multi-Image Products (converted from existing products)
+  // Multi-Image Products (now with correct categories)
   {
     id: 'photo-frame-10x8',
     name: 'Photo Frame (10"X8")',
     image: '/images/products/PHOTOFRAME 2.jpg',
     price: '469',
-    category: 'multi-image',
-    description: 'Beautiful 10"X8" bamboo photo frame with multiple design options'
+    category: 'decor',
+    description: 'Beautiful 10"X8" bamboo photo frame with multiple design options',
+  },
+  {
+    id: 'photo-frame-9x7',
+    name: 'Photo Frame (7"X9")',
+    image: '/slideimage/7x9 photo frame/IMG-20250725-WA0043.jpg',
+    price: '859',
+    category: 'decor',
+    description: 'Beautiful 9"X7" bamboo photo frame with multiple design options',
+    multiImage: true,
+    images: [
+      '/slideimage/7x9 photo frame/IMG-20250822-WA0034.jpg',
+      '/slideimage/7x9 photo frame/Screenshot_20250828-152039.Maps.png'
+    ]
   },
   {
     id: 'photo-frame-10x12',
     name: 'Photo Frame (10"X12")',
     image: '/slideimage/10x12 photo frame/IMG_20250721_134953119_HDR.jpg',
     price: '1100',
-    category: 'multi-image',
-    description: 'Elegant 10"X12" bamboo photo frame with multiple design options'
+    category: 'decor',
+    description: 'Elegant 10"X12" bamboo photo frame with multiple design options',
+    multiImage: true,
+    images: [ '/slideimage/10x12 photo frame/IMG_20250818_213310166_HDR.jpg' ]
   },
   {
     id: 'bamboo-tea-coaster-set-6',
     name: 'Bamboo Tea Coaster Set of 6',
     image: '/images/products/BAMBOO TEA COASTER SET OF 6 .jpg',
     price: '459',
-    category: 'multi-image',
-    description: 'Set of 6 beautiful bamboo tea coasters with multiple designs'
+    category: 'utility',
+    description: 'Set of 6 beautiful bamboo tea coasters with multiple designs',
+    multiImage: true,
+    images :  [
+      '/slideimage/Bamboo tea coaster set of 6/IMG-20250606-WA0031.jpg',
+                  '/slideimage/Bamboo tea coaster set of 6/IMG-20250606-WA0032.jpg'
+    ]
   },
- 
+
   {
     id: 'diary-bamboo-pages',
     name: 'Diary with Bamboo Pages (6.1" X 8.5", 150 Pages)',
     image: '/images/products/DIARY WITH BAMBOO PAGES .jpg',
     price: '699',
-    category: 'multi-image',
-    description: 'Premium diary with bamboo pages and multiple cover designs'
+    category: 'office',
+    description: 'Premium diary with bamboo pages and multiple cover designs',
+    multiImage: true,
+    images:[ '/slideimage/Diary/IMG_20250710_200916431_HDR.jpg',
+                  '/slideimage/Diary/IMG_20250828_144858738_HDR_AE.jpg',
+                  '/slideimage/Diary/IMG_20250721_230820015_HDR_AE.jpg',
+                  '/slideimage/Diary/IMG_20250828_144703398_AE.jpg',
+                  '/slideimage/Diary/IMG_20250828_144714733_HDR_AE.jpg']
   },
   {
     id: 'bamboo-ganapati',
     name: 'Bamboo Ganapati (7" Height)',
     image: '/images/products/BAMBOO GANAPATI .jpg',
     price: '599',
-    category: 'multi-image',
-    description: 'Sacred bamboo Ganapati idol with multiple design variations'
+    category: 'decor',
+    description: 'Sacred bamboo Ganapati idol with multiple design variations',
+    multiImage: true,
+    images:[   '/slideimage/Bamboo Ganapati (7 Height)/IMG_20240729_111007003_AE.jpg',
+                  '/slideimage/Bamboo Ganapati (7 Height)/IMG_20240729_111031079_AE.jpg',
+                  '/slideimage/Bamboo Ganapati (7 Height)/IMG_20240729_111040082_AE.jpg',
+                  '/slideimage/Bamboo Ganapati (7 Height)/IMG_20240729_111046657_AE.jpg',
+                  '/slideimage/Bamboo Ganapati (7 Height)/IMG_20240729_111056511_HDR_AE.jpg',
+                  '/slideimage/Bamboo Ganapati (7 Height)/IMG_20240729_111113892_HDR_AE.jpg']
   },
   {
     id: 'stylus-pen',
     name: 'Stylus Pen',
     image: '/slideimage/Stylus pen/stylus pen.jpg',
     price: '129',
-    category: 'multi-image',
-    description: 'Stylus pen with multiple design options'
+    category: 'office',
+    description: 'Stylus pen with multiple design options',
+    multiImage: true,
+    images:[  '/slideimage/Stylus pen/Bamboo-Pen-with-Stylus_2.jpg',
+                  '/slideimage/Stylus pen/IMG_20240723_233511570_AE.jpg',
+                  '/slideimage/Stylus pen/BambooPen5_1200x.jpg',
+                  '/slideimage/Stylus pen/IMG_20240723_233555264_HDR_AE.jpg',
+                  '/slideimage/Stylus pen/IMG_20240723_233615761_AE.jpg',
+                  '/slideimage/Stylus pen/IMG_20240723_233623637_AE.jpg',
+                  '/slideimage/Stylus pen/IMG_20240723_233634008_AE.jpg']
   },
   {
     id: 'two-pen-set-ink-ball',
     name: 'Two Pen Set (One Ink, One Ball)',
     image: '/slideimage/Two pen set one ink one ball @1199/IMG-20241230-WA0002.jpg',
     price: '1199',
-    category: 'multi-image',
-    description: 'Set of two pens: one ink pen and one ball pen, with multiple design options'
+    category: 'office',
+    description: 'Set of two pens: one ink pen and one ball pen, with multiple design options',
+    multiImage: true,
+    images:[
+      '/slideimage/Two pen set one ink one ball @1199/IMG_20250828_154100714_HDR_AE.jpg',
+                  '/slideimage/Two pen set one ink one ball @1199/IMG_20250828_154126788_HDR_AE.jpg'  
+    ]
   },
-  
+
   {
     id: 'green-tea-bottle',
     name: 'Green Tea Bottle (500ML)',
     image: '/images/products/green-tea bottle.jpg',
     price: '849',
-    category: 'multi-image',
-    description: 'Green tea bottle with multiple design variations'
+    category: 'bottles',
+    description: 'Green tea bottle with multiple design variations',
+    multiImage: true,
+    images:[
+        '/slideimage/Green tea bottle/61mklfrPHkL._SX679_.jpg',
+                  '/slideimage/Green tea bottle/71iYjJZYcWL._SX679_.jpg',
+                  '/slideimage/Green tea bottle/b st.jpg',
+                  '/slideimage/Green tea bottle/big main.jpg'
+    ]
   },
   {
     id: 'bamboo-sound-amplifier-mobile-holder',
     name: 'Bamboo Sound Amplifier & Mobile Holder',
     image: '/images/products/BAMBOO SOUND AMPLIFIER AND MOBILE HOLDER.jpg',
     price: '359',
-    category: 'multi-image',
-    description: 'Bamboo sound amplifier with mobile holder and multiple designs'
+    category: 'utility',
+    description: 'Bamboo sound amplifier with mobile holder and multiple designs',
+    multiImage: true,
+    images:[
+      '/slideimage/Bamboo sound amplifier & mobile holder/IMG-20250828-WA0103.jpg',
+    ]
   },
   {
     id: 'bamboo-bottle-with-lace',
     name: 'BAMBOO BOTTLE WITH LACE (500ML)',
     image: '/slideimage/Lace Bottle/51gVNXSejKL._SX679_.jpg',
     price: '799',
-    category: 'multi-image',
-    description: 'Bamboo bottle with lace design and multiple variations'
+    category: 'bottles',
+    description: 'Bamboo bottle with lace design and multiple variations',
+    multiImage: true,
+    images:[
+      '/slideimage/Lace Bottle/61mklfrPHkL._SX679_.jpg',
+                  '/slideimage/Lace Bottle/71iYjJZYcWL._SX679_.jpg',
+                  '/slideimage/Lace Bottle/71JsXhMMmkL._SX679_.jpg',
+                  '/slideimage/Lace Bottle/615weOtGwuL._SX679_.jpg',
+                  '/slideimage/Lace Bottle/6115tHjQeuL._SX679_.jpg',
+                  '/slideimage/Lace Bottle/1699002520089.jpg',
+                  '/slideimage/Lace Bottle/1699002520112.jpg',
+                  '/slideimage/Lace Bottle/images.jpg'
+    ]
   },
   {
     id: 'mobile-stand-1',
     name: 'Mobile Stand (7.5" X 3.5")',
     image: '/images/products/MOBILE STAND .jpg',
     price: '239',
-    category: 'multi-image',
-    description: 'Mobile stand with multiple design options'
+    category: 'utility',
+    description: 'Mobile stand with multiple design options',
+    multiImage: true,
+    images:[
+      '/slideimage/Mobile Stand (7.5 X 3.5)/IMG-20250615-WA0017.jpg',
+    ]
   },
   {
     id: 'name-plate-1',
     name: 'Name Plate (2.25" X 12")',
     image: '/images/products/NAME PLATE.jpg',
     price: '395',
-    category: 'multi-image',
-    description: 'Name plate with multiple design variations'
+    category: 'office',
+    description: 'Name plate with multiple design variations',
+    multiImage: true,
+    images:[
+      '/slideimage/Name plate with nail/IMG_20250827_142846365_HDR_AE.jpg',
+                  '/slideimage/Name plate with nail/IMG_20250827_142850967_AE.jpg',
+                  '/slideimage/Name plate with nail/IMG_20250827_142902056_HDR_AE.jpg',
+                  '/slideimage/Name plate with nail/IMG_20250827_142918650_AE.jpg'
+    ]
   },
   {
     id: 'panpuda',
     name: 'Panpuda (4" X 8" X 0.5")',
     image: '/images/products/PANPUDA.jpg',
     price: '789',
-    category: 'multi-image',
-    description: 'Traditional panpuda with multiple design options'
+    category: 'utility',
+    description: 'Traditional panpuda with multiple design options',
+    multiImage: true,
+    images:[
+        '/slideimage/Paanpuda/IMG_20250828_125800346_HDR_AE.jpg',
+                  '/slideimage/Paanpuda/IMG_20250828_125738963_HDR_AE.jpg',
+                  '/slideimage/Paanpuda/IMG_20250828_125817907_HDR_AE.jpg'
+    ]
   },
   {
     id: 'bamboo-bottle-regular',
     name: 'Bamboo Bottle Regular (500ML)',
     image: '/images/products/BAMBOO BOTTLE REGULAR  .jpg',
     price: '699',
-    category: 'multi-image',
-    description: 'Regular bamboo bottle with multiple design variations'
+    category: 'bottles',
+    description: 'Regular bamboo bottle with multiple design variations',
+    multiImage: true,
+      images:[ '/slideimage/Regular bottle/61mklfrPHkL._SX679_.jpg',
+                  '/slideimage/Regular bottle/71iYjJZYcWL._SX679_.jpg',
+                  '/slideimage/Regular bottle/71JsXhMMmkL._SX679_.jpg',
+                  '/slideimage/Regular bottle/615weOtGwuL._SX679_.jpg',
+                  '/slideimage/Regular bottle/1699002520112.jpg',
+                  '/slideimage/Regular bottle/1699002520159.jpg',
+                  '/slideimage/Regular bottle/Image_Editor.png',
+                  '/slideimage/Regular bottle/Screenshot_2024_0607_102913.jpg']
   },
   {
     id: 'bamboo-bottle-steel-handle',
     name: 'Bamboo Bottle with Steel Handle (500ML)',
     image: '/images/products/BAMBOO BOTTLE WITH STEEL HANDLE.jpg',
     price: '799',
-    category: 'multi-image',
-    description: 'Bamboo bottle with steel handle and multiple designs'
+    category: 'bottles',
+    description: 'Bamboo bottle with steel handle and multiple designs',
+    multiImage: true,
+    images:[
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/61mklfrPHkL._SX679_.jpg',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/71iYjJZYcWL._SX679_.jpg',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/71JsXhMMmkL._SX679_.jpg',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/615weOtGwuL._SX679_.jpg',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/1699002520112.jpg',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/1699002520159.jpg',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/Image_Editor.png',
+      '/slideimage/Bamboo Bottle with Steel Handle (500ML)/Screenshot_2024_0607_102913.jpg'
+    ]
+  
   },
   {
     id: 'premium-bamboo-pen',
     name: 'Premium Bamboo Pen',
     image: '/images/products/PREMIUM  BAMBOO  PEN .jpg',
     price: '339',
-    category: 'multi-image',
-    description: 'Premium bamboo pen with multiple design options'
+    category: 'office',
+    description: 'Premium bamboo pen with multiple design options',
+
   },
   {
     id: 'sports-bamboo-bottle',
     name: 'Sports Bamboo Bottle (500ML)',
     image: '/images/products/SPORTS BAMBOO BOTTLE(1).jpg',
     price: '799',
-    category: 'multi-image',
-    description: 'Sports bamboo bottle with multiple design variations'
+    category: 'bottles',
+    description: 'Sports bamboo bottle with multiple design variations',
+    multiImage: true,
+    images:['/slideimage/Sports Bamboo Bottle (500ML)/61mklfrPHkL._SX679_.jpg',
+                '/slideimage/Sports Bamboo Bottle (500ML)/71iYjJZYcWL._SX679_.jpg',
+                '/slideimage/Sports Bamboo Bottle (500ML)/71JsXhMMmkL._SX679_.jpg',
+                '/slideimage/Sports Bamboo Bottle (500ML)/615weOtGwuL._SX679_.jpg',
+                '/slideimage/Sports Bamboo Bottle (500ML)/1000124726.jpg',
+                '/slideimage/Sports Bamboo Bottle (500ML)/1699002520112.jpg',
+                '/slideimage/Sports Bamboo Bottle (500ML)/black cap.WEBP',
+                '/slideimage/Sports Bamboo Bottle (500ML)/black.WEBP',
+                '/slideimage/Sports Bamboo Bottle (500ML)/IMG_20240729_102928992_HDR_AE.jpg',
+                '/slideimage/Sports Bamboo Bottle (500ML)/IMG_20240729_102932525_HDR_AE.jpg']
   },
   {
     id: 'table-photo-frame',
     name: 'Table Photo Frame (10"X8")',
     image: '/images/products/_ TABLE PHOTO FRAME.jpg',
     price: '469',
-    category: 'multi-image',
-    description: 'Table photo frame with multiple design variations'
+    category: 'decor',
+    description: 'Table photo frame with multiple design variations',
+    multiImage: true,
+    images:['/slideimage/Table photo frame/IMG-20250819-WA0066.jpg',
+                '/slideimage/Table photo frame/IMG-20250819-WA0075.jpg']
   },
   {
     id: 'tumbler',
     name: 'Tumbler (450ML)',
     image: '/images/products/TUMBLR.jpg',
     price: '499',
-    category: 'multi-image',
-    description: 'Tumbler with multiple design variations'
+    category: 'bottles',
+    description: 'Tumbler with multiple design variations',
+    multiImage: true,
+    images:[ '/slideimage/tumblr/1699072435753.jpg',
+                '/slideimage/tumblr/IMG_20240723_233934825_HDR_AE.jpg',
+                '/slideimage/tumblr/IMG_20240723_233941679_HDR_AE.jpg',
+                '/slideimage/tumblr/IMG_20240723_233958365_HDR_AE.jpg',
+                '/slideimage/tumblr/IMG_20240723_234039605_HDR_AE.jpg']
   },
 
   // Bottles & Cups
@@ -194,22 +323,21 @@ export const products: Product[] = [
     category: 'bottles',
     description: 'Eco-friendly bamboo bottle with a natural bamboo cap'
   },
-  {
-    id: 'BAMBOO BOTTLE  WITH LACE ',
-    name: 'BAMBOO BOTTLE WITH LACE (500ML)',
-    image: '/images/products/BAMBOO BOTTLE  WITH LACE .jpg',
-    price: '799',
-    category: 'bottles',
-    description: 'Bamboo bottle with bamboo cap'
-  }, 
 
   {
     id: 'bamboo-tea-cup',
     name: 'Bamboo Tea Cup with Bamboo Lid (250ML)',
-    image: '/images/products/_  BAMBOO TEA CUP .jpg',
+    image: '/slideimage/Bamboo Tea Cup with Bamboo Lid (250ML)/bamboo-insulated-steel-coffee-travel-mug-with-handle-and-lid-500x500.jpeg',
     price: '499',
     category: 'bottles',
-    description: 'Traditional bamboo tea cup with lid'
+    description: 'Traditional bamboo tea cup with lid',
+    multiImage: true,
+    images: [
+      '/slideimage/Bamboo Tea Cup with Bamboo Lid (250ML)/IMG_20240723_234145178_HDR_AE.jpg',
+      '/slideimage/Bamboo Tea Cup with Bamboo Lid (250ML)/IMG_20240723_234224217_HDR_AE.jpg',
+      '/slideimage/Bamboo Tea Cup with Bamboo Lid (250ML)/IMG_20240723_234236310_HDR_AE.jpg',
+      '/slideimage/Bamboo Tea Cup with Bamboo Lid (250ML)/IMG_20240723_234251327_HDR_AE.jpg'
+    ]
   },
   {
     id: 'eco-cup-wheat-fiber',
@@ -225,7 +353,25 @@ export const products: Product[] = [
     image: '/images/products/_COFFEETUMBLRBEERMUG.jpg',
     price: '749',
     category: 'bottles',
-    description: 'Bamboo coffee tumbler beer mug'
+    description: 'Bamboo coffee tumbler beer mug',
+    multiImage: true,
+    images: ['/slideimage/Coffee Tumbler Beer Mug (400ML)/IMG_20240723_234711958_HDR_AE.jpg',
+                  '/slideimage/Coffee Tumbler Beer Mug (400ML)/IMG_20240723_234737570_HDR_AE.jpg',
+                  '/slideimage/Coffee Tumbler Beer Mug (400ML)/IMG_20240723_234834204_HDR_AE.jpg',
+                  '/slideimage/Coffee Tumbler Beer Mug (400ML)/IMG_20240723_234906770_HDR_AE.jpg']
+  },
+  {
+    id : 'Gel Pen',
+    name: 'Gel Pen',
+    image: '/slideimage/Gel pen/IMG-20250718-WA0015.jpg',
+    price: '199',
+    category: 'office',
+    description: 'Smooth writing gel pen with bamboo design',
+    multiImage: true,
+    images: [
+      '/slideimage/Gel pen/IMG-20250718-WA0013.jpg',
+      '/slideimage/Gel pen/IMG-20250718-WA0014.jpg'
+    ]
   },
   {
     id: 'reusable-bamboo-straw',
@@ -446,16 +592,27 @@ export const products: Product[] = [
     name: 'Desk Organizer 5',
     image: '/slideimage/Desk organizer 05/IMG_20250818_112715124_HDR_AE.jpg',
     price: '759',
-    category: 'multi-image',
-    description: 'Premium desk organizer with multiple design variations'
+    category: 'office',
+    description: 'Premium desk organizer with multiple design variations',
+    multiImage: true,
+    images:[
+       '/slideimage/Desk organizer 05/IMG_20250818_204742000_HDR.jpg',
+                  '/slideimage/Desk organizer 05/IMG_20250818_204755883_HDR.jpg'
+    ]
   },
   {
     id: 'Desk Organizer 6',
     name: 'Desk Organizer 6',
     image: '/slideimage/Desk organizer 06/IMG_20250827_142935914_HDR_AE.jpg',
     price: '759',
-    category: 'multi-image',
-    description: 'Premium desk organizer with multiple design variations'
+    category: 'office',
+    description: 'Premium desk organizer with multiple design variations',
+    multiImage: true,
+    images:[
+      '/slideimage/Desk organizer 06/IMG_20250827_142949741_HDR_AE.jpg',
+                  '/slideimage/Desk organizer 06/IMG_20250827_143006890_AE.jpg',
+                  '/slideimage/Desk organizer 06/IMG_20250827_143012404_AE.jpg'
+    ]
   },
   {
     id: 'mobile-amplifier',
@@ -702,8 +859,14 @@ export const products: Product[] = [
     name: 'Single Pen with Standup Box',
     image: '/slideimage/Single pen with standup box @699/IMG_20250828_154756131_HDR_AE.jpg',
     price: '699',
-    category: 'multi-image',
-    description: 'Single pen with standup box'
+    category: 'office',
+    description: 'Single pen with standup box',
+    multiImage: true,
+    images:[
+      '/slideimage/Single pen with standup box @699/IMG_20250828_154800293_HDR_AE.jpg',
+                  '/slideimage/Single pen with standup box @699/IMG_20250828_154806482_AE.jpg',
+                  '/slideimage/Single pen with standup box @699/IMG_20250828_154814967_AE.jpg'
+    ]
   },
   {
     id: 'premium-bamboo-pen-box',
@@ -784,8 +947,15 @@ export const products: Product[] = [
     name: 'Small Elephant Tea Coaster (7" X 5")',
     image: '/images/products/SMALL ELEPHANT TEA COASTER.jpg',
     price: '579',
-    category: 'multi-image',
-    description: 'Elephant design tea coaster'
+    category: 'utility',
+    description: 'Elephant design tea coaster',
+    multiImage: true,
+    images:[
+      '/slideimage/Small elephant tea coaster/IMG_20250828_155336613_HDR_AE.jpg',
+                  '/slideimage/Small elephant tea coaster/IMG_20250828_155344064_HDR_AE.jpg',
+                  '/slideimage/Small elephant tea coaster/IMG_20250828_155351092_HDR_AE.jpg',
+                  '/slideimage/Small elephant tea coaster/IMG_20250828_155359973_HDR_AE.jpg'
+    ]
   },
   {
     id: 'bullock-cart-tea-coaster',

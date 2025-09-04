@@ -35,7 +35,7 @@ const HomepageSlider = () => {
       title: "Table Photo Frame",
       subtitle: "Beautiful bamboo table photo frame for memories",
       image: "/images/products/_ TABLE PHOTO FRAME.jpg",
-      description: "10\"X8\" bamboo table photo frame with elegant design"
+      description: "10\"X10\" bamboo table photo frame with elegant design"
     }
   ];
 

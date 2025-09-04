@@ -32,12 +32,12 @@ export const products: Product[] = [
     description: 'Beautiful 10"X8" bamboo photo frame with multiple design options',
   },
   {
-    id: 'photo-frame-9x7',
+    id: 'photo-frame-7x9',
     name: 'Photo Frame (7"X9")',
     image: '/slideimage/7x9 photo frame/IMG-20250725-WA0043.jpg',
     price: '859',
     category: 'decor',
-    description: 'Beautiful 9"X7" bamboo photo frame with multiple design options',
+    description: 'Beautiful 7"X9" bamboo photo frame with multiple design options',
     multiImage: true,
     images: [
       '/slideimage/7x9 photo frame/IMG-20250822-WA0034.jpg',
@@ -258,6 +258,8 @@ export const products: Product[] = [
     price: '339',
     category: 'office',
     description: 'Premium bamboo pen with multiple design options',
+    multiImage: true,
+    images:[ '/images/product-image2/Premium bamboo pen.jpg' ]
 
   },
   {
@@ -279,7 +281,7 @@ export const products: Product[] = [
   },
   {
     id: 'table-photo-frame',
-    name: 'Table Photo Frame (10"X8")',
+    name: 'Table Photo Frame (10"X10")',
     image: '/images/products/_ TABLE PHOTO FRAME.jpg',
     price: '469',
     category: 'decor',
@@ -579,7 +581,7 @@ export const products: Product[] = [
   },
   {
     id: 'desk-organizer',
-    name: 'Desk Organizer (2" X 5" X 4")',
+    name: 'Desk Organizer (12" X 5" X 4")',
     image: '/images/products/DESK  ORGANISER .jpg',
     price: '759',
     category: 'office',
@@ -827,20 +829,15 @@ export const products: Product[] = [
     description: 'Hexagonal bamboo pen'
   },
   {
-    id: 'double-ring-pen',
-    name: 'Double Ring Pen',
-    image: '/images/products/DOUBLE RING PEN.jpg',
-    price: '129',
-    category: 'office',
-    description: 'Bamboo pen with double rings'
-  },
-  {
     id: 'premium-pen-artificial-diamond',
     name: 'Premium Pen with Artificial Diamond',
     image: '/images/products/PREMIUM PEN SAMAI BIG  SMAI-BIG  WITH ARTIFICIAL DIAMOND BOX.jpg',
     price: '449',
     category: 'office',
-    description: 'Premium pen with artificial diamond'
+    description: 'Premium pen with artificial diamond',
+    multiImage: true,
+    images:[
+      '/images/product-image2/Premium pen with artificial diamond.jpg']
   },
   {
     id: 'premium-bamboo-ink-pen',
@@ -848,7 +845,14 @@ export const products: Product[] = [
     image: '/images/products/PREMIUM BAMBOO INK PEN WITH BAMBOO BOX.jpg',
     price: '749',
     category: 'office',
-    description: 'Premium ink pen with bamboo box'
+    description: 'Premium ink pen with bamboo box',
+    multiImage: true,
+    images:[ '/images/product-image2/Premium bamboo ink pen with box1.jpg',
+                '/images/product-image2/Premium bamboo ink pen with box2.jpg',
+                '/images/product-image2/Premium bamboo ink pen with box3.jpg',
+                '/images/product-image2/Premium bamboo ink pen with box4.jpg',
+                '/images/product-image2/Premium bamboo ink pen with box5.jpg'
+     ]
   },
   {
     id: 'single-pen-standup-box',
@@ -870,15 +874,27 @@ export const products: Product[] = [
     image: '/images/products/_ PREMIUM BAMBOO PEN WITH BAMBOO BOX.jpg',
     price: '699',
     category: 'office',
-    description: 'Premium pen with bamboo box'
+    description: 'Premium pen with bamboo box',
+    multiImage: true,
+    images:[ '/images/product-image2/Premium bamboo pen with box1.jpg',
+                '/images/product-image2/Premium bamboo pen with box2.jpg',
+                '/images/product-image2/Premium bamboo pen with box3.jpg',
+                '/images/product-image2/Premium bamboo pen with box4.jpg'
+    ]
   },
   {
     id: 'premium-cap-rotation-pen',
-    name: 'Premium Cap Rotation Bamboo Pen',
+    name: 'Premium cap rotation bamboo pen with bamboo box',
     image: '/images/products/PREMIUM CAP ROTATION   BAMBOO NANDHA DEEP  BAMBOO PEN WITH BAMBOO.jpg',
     price: '699',
     category: 'office',
-    description: 'Premium pen with rotating cap'
+    description: 'Premium pen with rotating cap',
+    multiImage: true,
+    images:[ '/images/product-image2/Premium cap rotation bamboo pen1.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen2.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen3.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen4.jpg'
+    ]
   },
   {
     id: 'artificial-diamond-pen-box',
@@ -886,9 +902,50 @@ export const products: Product[] = [
     image: '/images/products/ARTIFICIAL DIAMOND  PEN WITH BAMBOO  BOX.jpg',
     price: '799',
     category: 'office',
-    description: 'Diamond pen with bamboo box'
+    description: 'Diamond pen with bamboo box',
+    multiImage: true,
+    images:[ '/images/product-image2/Artificial diamond pen with box1.jpg',
+                '/images/product-image2/Artificial diamond pen with box2.jpg',
+                '/images/product-image2/Artificial diamond pen with box3.jpg'
+    ]
   },
-
+  {
+    id: 'Premium ink pen',
+    name: 'Premium Ink Pen',
+    image: '/images/product-image2/Premium ink pen  399 rupees1.jpg',
+    price: '399',
+    category: 'office',
+    description: 'Premium ink pen with elegant design',
+    multiImage: true,
+    images:[    '/images/product-image2/Premium ink pen  399 rupees2.jpg'
+    ]
+  },
+  {
+    id: 'Premium cap rotation bamboo pen',
+    name: 'Premium Cap Rotation Bamboo Pen',
+    image: '/images/product-image2/Premium cap rotation bamboo pen 330 rupees1.jpg',
+    price: '330',
+    category: 'office',
+    description: 'Premium cap rotation bamboo pen with elegant design',
+    multiImage: true,
+    images:[    '/images/product-image2/Premium cap rotation bamboo pen 330 rupees2.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen 330 rupees3.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen 330 rupees4.jpg'
+    ]
+  },
+  {
+    id: 'Double ring pen',
+    name: 'Double Ring Pen',
+    image: '/images/products/DOUBLE RING PEN.jpg',
+    price: '129',
+    category: 'office',
+    description: 'Double ring pen with elegant design',
+    multiImage: true,
+    images:[    '/images/product-image2/Double ring pen1.jpg',
+                '/images/product-image2/Double ring pen2.jpg',
+                '/images/product-image2/Double ring pen3.jpg'
+    ]
+  },
   // Daily Essentials
   {
     id: 'calendar',
@@ -996,7 +1053,7 @@ export const products: Product[] = [
   },
   {
     id: 'strip-tray-big',
-    name: 'Strip Tray Small | Big',
+    name: 'Strip Tray Small | Big (12" X 18")',
     image: '/images/products/STRIP  TRAY(SMALL    BIG).jpg',
     price: '779|1289',
     category: 'utility',
@@ -1020,7 +1077,7 @@ export const products: Product[] = [
   },
   {
     id: 'travel-karanda',
-    name: 'Travel Karanda',
+    name: 'Travel Karanda (1.5" X 5")',
     image: '/images/products/TRAVEL KARANDA.jpg',
     price: '169',
     category: 'utility',
@@ -1028,7 +1085,7 @@ export const products: Product[] = [
   },
   {
     id: 'karanda',
-    name: 'Karanda',
+    name: 'Karanda (7" X 3")',
     image: '/images/products/KARANDA.jpg',
     price: '139',
     category: 'utility',
@@ -1036,7 +1093,7 @@ export const products: Product[] = [
   },
   {
     id: 'pipal-karanda',
-    name: 'Pipal Karanda',
+    name: 'Pipal Karanda (3.5" X 5")',
     image: '/images/products/PIPAL KARANDA  KRND-PIP.jpg',
     price: '149',
     category: 'utility',
@@ -1182,7 +1239,7 @@ export const products: Product[] = [
   // Lamps & Clocks
   {
     id: 'hanging-lamp-2',
-    name: 'Hanging Lamp',
+    name: 'Hanging Lamp 2 (7" x 10")',
     image: '/images/products/HANGING LAMP2.jpg',
     price: '1019',
     category: 'lighting',
@@ -1191,7 +1248,7 @@ export const products: Product[] = [
   },
   {
     id: 'hanging-lamp-1',
-    name: 'Hanging Lamp Design-2',
+    name: 'Hanging Lamp Design-2 (14" x 14")',
     image: '/images/products/HANGING LAMP.jpg',
     price: '829',
     category: 'lighting',
@@ -1199,7 +1256,7 @@ export const products: Product[] = [
   },
   {
     id: 'hanging-lamp-3',
-    name: 'Hanging Lamp Design 3',
+    name: 'Hanging Lamp Design 3 (14" x 14")',
     image: '/images/products/HANGINGLAMP.jpg',
     price: '699',
     category: 'lighting',
@@ -1207,7 +1264,7 @@ export const products: Product[] = [
   },
   {
     id: 'electric-lamp-2',
-    name: 'Electric Lamp',
+    name: 'Electric Lamp 2 (7" x 10")',
     image: '/images/products/ELECTRICLAMP.jpg',
     price: '589',
     category: 'lighting',
@@ -1215,7 +1272,7 @@ export const products: Product[] = [
   },
   {
     id: 'electric-lamp-1',
-    name: 'Electric Lamp 2',
+    name: 'Electric Lamp 2 (3" x 10")',
     image: '/images/products/ELECTRICLAMP (1).jpg',
     price: '479',
     category: 'lighting',
@@ -1223,7 +1280,7 @@ export const products: Product[] = [
   },
   {
     id: 'bamboo-silver-lamp-3',
-    name: 'Bamboo Silver Lamp',
+    name: 'Bamboo Silver Lamp 6"x13"ht',
     image: '/images/products/BAMBOO SLIVER LAMP.jpg',
     price: '789',
     category: 'lighting',
@@ -1231,7 +1288,7 @@ export const products: Product[] = [
   },
   {
     id: 'candle-set-1',
-    name: 'HARINE CANDLE HOLDER',
+    name: 'HARINE CANDLE HOLDER 8"x8"x2"ht',
     image: '/images/products/HARINE CANDLE HOLDER.jpg',
     price: '109',
     category: 'lighting',
@@ -1247,7 +1304,7 @@ export const products: Product[] = [
   },
   {
     id: 'anchor-wall-clock',
-    name: 'Anchor Wall Clock',
+    name: 'Anchor Wall Clock 14"X12"X3"',
     image: '/images/products/ANCHOR WALL CLOCK.jpg',
     price: '2869',
     category: 'lighting',
@@ -1255,7 +1312,7 @@ export const products: Product[] = [
   },
   {
     id: 'tribal-table-clock',
-    name: 'Tribal Table Clock',
+    name: 'Tribal Table Clock 13"X9"',
     image: '/images/products/TRABAL TABLE CLOCK.jpg',
     price: '1829',
     category: 'lighting',
@@ -1263,7 +1320,7 @@ export const products: Product[] = [
   },
   {
     id: 'ganesh-wall-clock',
-    name: 'Ganesh Wall Clock',
+    name: 'Ganesh Wall Clock 14"X6"',
     image: '/images/products/GANESH WALL CLOCK .jpg',
     price: '889',
     category: 'lighting',
@@ -1271,7 +1328,7 @@ export const products: Product[] = [
   },
   {
     id: 'table-clock',
-    name: 'Table Clock',
+    name: 'Table Clock 6"X6"',
     image: '/images/products/TABLE CLOCK.jpg',
     price: '559',
     category: 'lighting',
@@ -1279,7 +1336,7 @@ export const products: Product[] = [
   },
   {
     id: 'train-wall-clock',
-    name: 'Train Wall Clock',
+    name: 'Train Wall Clock 13"X13"',
     image: '/images/products/TRAIN WALL CLOCK .jpg',
     price: '849',
     category: 'lighting',
@@ -1287,7 +1344,7 @@ export const products: Product[] = [
   },
   {
     id: 'wall-clock',
-    name: 'Wall Clock',
+    name: 'Wall Clock 10" X 10"',
     image: '/images/products/WALL CLOCK .jpg',
     price: '749',
     category: 'lighting',
@@ -1295,7 +1352,7 @@ export const products: Product[] = [
   },
   {
     id: 'octagonal-wall-clock',
-    name: 'Octagonal Wall Clock',
+    name: 'Octagonal Wall Clock 12"X 12"',
     image: '/images/products/OCTAGONAL WALL CLOCK.jpg',
     price: '1009',
     category: 'lighting',
@@ -1303,7 +1360,7 @@ export const products: Product[] = [
   },
   {
     id: 'clock-round',
-    name: 'Round Clock',
+    name: 'Round Clock 4"x4"',
     image: '/images/products/CLOCK ROUND.jpg',
     price: '249',
     category: 'lighting',
@@ -1311,15 +1368,15 @@ export const products: Product[] = [
   },
   {
     id: 'photo-frame-3',
-    name: 'Photo Frame',
+    name: 'Photo Frame 7"X9"',
     image: '/images/products/PHOTOFRAME.jpg',
     price: '859',
     category: 'lighting',
-    description: 'Bamboo photo frame - 9"X7"'
+    description: 'Bamboo photo frame '
   },
   {
     id: 'big-photo-frame',
-    name: 'Big Photo Frame',
+    name: 'Big Photo Frame 20"X16"',
     image: '/images/products/BIG PHOTO.jpg',
     price: '2469',
     category: 'lighting',

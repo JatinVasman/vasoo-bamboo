@@ -34,8 +34,13 @@ const Navbar = () => {
               className="h-10 sm:h-12 md:h-16 w-auto hover:scale-105 transition-transform duration-300"
               priority
             />
+            {/* Mobile text - smaller and shorter */}
+            <span className="ml-2 text-sm font-bold text-bamboo-brown block sm:hidden">
+              Vasoo Bamboo Arts
+            </span>
+            {/* Desktop text - larger and with apostrophe */}
             <span className="ml-3 text-lg sm:text-xl md:text-2xl font-bold text-bamboo-brown hidden sm:block">
-              Vasoo Bamboo Art&apos;s
+              Vasoo Bamboo Arts
             </span>
           </Link>
 

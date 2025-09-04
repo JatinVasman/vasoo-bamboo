@@ -259,7 +259,9 @@ export const products: Product[] = [
     category: 'office',
     description: 'Premium bamboo pen with multiple design options',
     multiImage: true,
-    images:[ '/images/product-image2/Premium bamboo pen.jpg' ]
+    images:[ '/images/product-image2/Premium bamboo pen.jpg',
+              '/images/product-image2/Premium bamboo pen1.jpg'
+     ]
 
   },
   {
@@ -837,7 +839,12 @@ export const products: Product[] = [
     description: 'Premium pen with artificial diamond',
     multiImage: true,
     images:[
-      '/images/product-image2/Premium pen with artificial diamond.jpg']
+      '/images/product-image2/Premium pen with artificial diamond1.jpg',
+      '/images/product-image2/Premium pen with artificial diamond2.jpg',
+      '/images/product-image2/Premium pen with artificial diamond3.jpg',
+      '/images/product-image2/Premium pen with artificial diamond4.jpg',
+      '/images/product-image2/Premium pen with artificial diamond5.jpg'
+    ]
   },
   {
     id: 'premium-bamboo-ink-pen',
@@ -847,11 +854,10 @@ export const products: Product[] = [
     category: 'office',
     description: 'Premium ink pen with bamboo box',
     multiImage: true,
-    images:[ '/images/product-image2/Premium bamboo ink pen with box1.jpg',
-                '/images/product-image2/Premium bamboo ink pen with box2.jpg',
-                '/images/product-image2/Premium bamboo ink pen with box3.jpg',
-                '/images/product-image2/Premium bamboo ink pen with box4.jpg',
-                '/images/product-image2/Premium bamboo ink pen with box5.jpg'
+    images:[ '/images/product-image2/Premium bamboo ink pen with box1.jpg',
+                '/images/product-image2/Premium bamboo ink pen with box2.jpg',
+                '/images/product-image2/Premium bamboo ink pen with box3.jpg',
+                '/images/product-image2/Premium bamboo ink pen with box4.jpg'
      ]
   },
   {
@@ -884,16 +890,15 @@ export const products: Product[] = [
   },
   {
     id: 'premium-cap-rotation-pen',
-    name: 'Premium cap rotation bamboo pen with bamboo box',
+    name: 'Premium cap rotation bamboo pen with bamboo box',
     image: '/images/products/PREMIUM CAP ROTATION   BAMBOO NANDHA DEEP  BAMBOO PEN WITH BAMBOO.jpg',
     price: '699',
     category: 'office',
     description: 'Premium pen with rotating cap',
     multiImage: true,
-    images:[ '/images/product-image2/Premium cap rotation bamboo pen1.jpg',
-                '/images/product-image2/Premium cap rotation bamboo pen2.jpg',
-                '/images/product-image2/Premium cap rotation bamboo pen3.jpg',
-                '/images/product-image2/Premium cap rotation bamboo pen4.jpg'
+    images:[ '/images/product-image2/Premium cap rotation bamboo pen1.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen2.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen3.jpg',
     ]
   },
   {
@@ -906,31 +911,34 @@ export const products: Product[] = [
     multiImage: true,
     images:[ '/images/product-image2/Artificial diamond pen with box1.jpg',
                 '/images/product-image2/Artificial diamond pen with box2.jpg',
-                '/images/product-image2/Artificial diamond pen with box3.jpg'
+                '/images/product-image2/Artificial diamond pen with box3.jpg',
+                '/images/product-image2/Artificial diamond pen with box4.jpg',
+                '/images/product-image2/Artificial diamond pen with box5.jpg'
     ]
   },
   {
     id: 'Premium ink pen',
     name: 'Premium Ink Pen',
-    image: '/images/product-image2/Premium ink pen  399 rupees1.jpg',
+    image: '/images/product-image2/Premium ink pen  399 rupees11.jpg',
     price: '399',
     category: 'office',
     description: 'Premium ink pen with elegant design',
     multiImage: true,
-    images:[    '/images/product-image2/Premium ink pen  399 rupees2.jpg'
+    images:[    '/images/product-image2/Premium ink pen  399 rupees22.jpg',
+                '/images/product-image2/Premium ink pen  399 rupees3.jpg',
+                '/images/product-image2/Premium ink pen  399 rupees4.jpg' 
     ]
   },
   {
     id: 'Premium cap rotation bamboo pen',
     name: 'Premium Cap Rotation Bamboo Pen',
-    image: '/images/product-image2/Premium cap rotation bamboo pen 330 rupees1.jpg',
+    image: '/images/product-image2/Premium cap rotation bamboo pen 330 rupees1.jpg',
     price: '330',
     category: 'office',
     description: 'Premium cap rotation bamboo pen with elegant design',
     multiImage: true,
-    images:[    '/images/product-image2/Premium cap rotation bamboo pen 330 rupees2.jpg',
-                '/images/product-image2/Premium cap rotation bamboo pen 330 rupees3.jpg',
-                '/images/product-image2/Premium cap rotation bamboo pen 330 rupees4.jpg'
+    images:[    '/images/product-image2/Premium cap rotation bamboo pen 330 rupees2.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen 330 rupees3.jpg'
     ]
   },
   {
@@ -942,11 +950,8 @@ export const products: Product[] = [
     description: 'Double ring pen with elegant design',
     multiImage: true,
     images:[    
-                 '/images/product-image2/Double ring pen4.jpg',
-                '/images/product-image2/Double ring pen1.jpg',
-                '/images/product-image2/Double ring pen2.jpg',
-                '/images/product-image2/Double ring pen3.jpg',
-                '/images/product-image2/Double ring pen5.jpg'
+      '/images/product-image2/Double ring pen11.jpg',
+                '/images/product-image2/Double ring pen12.jpg'
     ]
   },
   // Daily Essentials

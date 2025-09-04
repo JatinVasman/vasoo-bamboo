@@ -84,7 +84,7 @@ export const products: Product[] = [
   },
   {
     id: 'bamboo-ganapati',
-    name: 'Bamboo Ganapati (7" Height)',
+    name: 'Bamboo Ganpati (7" Height)',
     image: '/images/products/BAMBOO GANAPATI .jpg',
     price: '599',
     category: 'decor',
@@ -289,7 +289,7 @@ export const products: Product[] = [
   },
   {
     id: 'table-photo-frame',
-    name: 'Table Photo Frame (10"X10")',
+    name: 'Table Photo Frame (10"X10"cm)',
     image: '/images/products/_ TABLE PHOTO FRAME.jpg',
     price: '469',
     category: 'decor',
@@ -431,14 +431,6 @@ export const products: Product[] = [
     price: '689',
     category: 'decor',
     description: 'Traditional bamboo tabla set'
-  },
-  {
-    id: 'bamboo-ganpati',
-    name: 'Bamboo Ganpati (7" Height)',
-    image: '/images/products/BAMBOO GANAPATI .jpg',
-    price: '599',
-    category: 'decor',
-    description: 'Sacred bamboo Ganapati idol'
   },
   {
     id: 'bamboo-veena',
@@ -591,7 +583,7 @@ export const products: Product[] = [
     id: 'Desk Organizer 5',
     name: 'Desk Organizer 5',
     image: '/slideimage/Desk organizer 05/IMG_20250818_112715124_HDR_AE.jpg',
-    price: '759',
+    price: '450',
     category: 'office',
     description: 'Premium desk organizer with multiple design variations',
     multiImage: true,
@@ -833,15 +825,15 @@ export const products: Product[] = [
   {
     id: 'premium-bamboo-ink-pen',
     name: 'Premium Bamboo Ink Pen with Box',
-    image: '/images/products/PREMIUM BAMBOO INK PEN WITH BAMBOO BOX.jpg',
+    image: '/images/product-image2/Premium bamboo ink pen with box4.jpg',
     price: '749',
     category: 'office',
     description: 'Premium ink pen with bamboo box',
     multiImage: true,
     images:[ '/images/product-image2/Premium bamboo ink pen with box1.jpg',
+              '/images/products/PREMIUM BAMBOO INK PEN WITH BAMBOO BOX.jpg',
                 '/images/product-image2/Premium bamboo ink pen with box2.jpg',
-                '/images/product-image2/Premium bamboo ink pen with box3.jpg',
-                '/images/product-image2/Premium bamboo ink pen with box4.jpg'
+                '/images/product-image2/Premium bamboo ink pen with box3.jpg'
      ]
   },
   {
@@ -866,10 +858,9 @@ export const products: Product[] = [
     category: 'office',
     description: 'Premium pen with bamboo box',
     multiImage: true,
-    images:[ '/images/product-image2/Premium bamboo pen with box1.jpg',
-                '/images/product-image2/Premium bamboo pen with box2.jpg',
-                '/images/product-image2/Premium bamboo pen with box3.jpg',
-                '/images/product-image2/Premium bamboo pen with box4.jpg'
+    images:[ '/images/product-image2/Premium cap rotation bamboo pen1.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen2.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen3.jpg',
     ]
   },
   {
@@ -880,9 +871,10 @@ export const products: Product[] = [
     category: 'office',
     description: 'Premium pen with rotating cap',
     multiImage: true,
-    images:[ '/images/product-image2/Premium cap rotation bamboo pen1.jpg',
-                '/images/product-image2/Premium cap rotation bamboo pen2.jpg',
-                '/images/product-image2/Premium cap rotation bamboo pen3.jpg',
+    images:[ 
+                '/images/product-image2/Premium cap rotation bamboo pen with bamboo box1.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen with bamboo box2.jpg',
+                '/images/product-image2/Premium cap rotation bamboo pen with bamboo box3.jpg'
     ]
   },
   {
@@ -893,11 +885,8 @@ export const products: Product[] = [
     category: 'office',
     description: 'Diamond pen with bamboo box',
     multiImage: true,
-    images:[ '/images/product-image2/Artificial diamond pen with box1.jpg',
-                '/images/product-image2/Artificial diamond pen with box2.jpg',
-                '/images/product-image2/Artificial diamond pen with box3.jpg',
-                '/images/product-image2/Artificial diamond pen with box4.jpg',
-                '/images/product-image2/Artificial diamond pen with box5.jpg'
+    images:[ '/images/product-image2/Artificial diamond pen with box1.jpg',
+                '/images/product-image2/Artificial diamond pen with box2.jpg'
     ]
   },
   {
@@ -1341,14 +1330,6 @@ export const products: Product[] = [
     price: '249',
     category: 'lighting',
     description: 'Small round clock - 4"x4"'
-  },
-  {
-    id: 'photo-frame-3',
-    name: 'Photo Frame 7"X9"',
-    image: '/images/products/PHOTOFRAME.jpg',
-    price: '859',
-    category: 'lighting',
-    description: 'Bamboo photo frame '
   },
   {
     id: 'big-photo-frame',

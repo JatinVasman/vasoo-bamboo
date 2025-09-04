@@ -941,9 +941,12 @@ export const products: Product[] = [
     category: 'office',
     description: 'Double ring pen with elegant design',
     multiImage: true,
-    images:[    '/images/product-image2/Double ring pen1.jpg',
+    images:[    
+                 '/images/product-image2/Double ring pen4.jpg',
+                '/images/product-image2/Double ring pen1.jpg',
                 '/images/product-image2/Double ring pen2.jpg',
-                '/images/product-image2/Double ring pen3.jpg'
+                '/images/product-image2/Double ring pen3.jpg',
+                '/images/product-image2/Double ring pen5.jpg'
     ]
   },
   // Daily Essentials

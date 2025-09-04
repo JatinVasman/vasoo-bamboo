@@ -122,8 +122,8 @@ export const products: Product[] = [
     description: 'Set of two pens: one ink pen and one ball pen, with multiple design options',
     multiImage: true,
     images:[
-      '/slideimage/Two pen set one ink one ball @1199/IMG_20250828_154100714_HDR_AE.jpg',
-                  '/slideimage/Two pen set one ink one ball @1199/IMG_20250828_154126788_HDR_AE.jpg'  
+      '/slideimage/Two pen set one ink one ball @1199/two-ink1.jpg',
+                  '/slideimage/Two pen set one ink one ball @1199/two-ink2.jpg'  
     ]
   },
 
@@ -136,7 +136,6 @@ export const products: Product[] = [
     description: 'Green tea bottle with multiple design variations',
     multiImage: true,
     images:[
-        '/slideimage/Green tea bottle/61mklfrPHkL._SX679_.jpg',
                   '/slideimage/Green tea bottle/71iYjJZYcWL._SX679_.jpg',
                   '/slideimage/Green tea bottle/b st.jpg',
                   '/slideimage/Green tea bottle/big main.jpg'
@@ -192,9 +191,16 @@ export const products: Product[] = [
     price: '395',
     category: 'office',
     description: 'Name plate with multiple design variations',
+  },
+  {
+    id: 'name-plate-with-nail',
+    name: 'Name Plate with Nail (3.5" X 13")',
+    image: '/slideimage/Name plate with nail/IMG_20250827_142846365_HDR_AE.jpg',
+    price: '449',
+    category: 'office',
+    description: 'Name plate with nail for easy mounting',
     multiImage: true,
     images:[
-      '/slideimage/Name plate with nail/IMG_20250827_142846365_HDR_AE.jpg',
                   '/slideimage/Name plate with nail/IMG_20250827_142850967_AE.jpg',
                   '/slideimage/Name plate with nail/IMG_20250827_142902056_HDR_AE.jpg',
                   '/slideimage/Name plate with nail/IMG_20250827_142918650_AE.jpg'
@@ -309,14 +315,6 @@ export const products: Product[] = [
 
   // Bottles & Cups
 
-  {
-    id: 'bottle-engraving-sample',
-    name: 'Bottle Engraving Sample',
-    image: '/images/products/_BOTTLE ENGRAVING SAMPLE.jpg',
-    price: '989',
-    category: 'bottles',
-    description: 'Sample of custom engraving on bamboo bottle'
-  },
   {
     id: 'bamboo-bottle-bamboo-cap',
     name: 'Bamboo Bottle with Bamboo Cap (500ML)',
@@ -665,20 +663,6 @@ export const products: Product[] = [
     description: 'Notebook with bamboo cover'
   },
   {
-    id: 'diary-bamboo-pages',
-    name: 'Diary with Bamboo Pages (6.1" X 8.5", 150 Pages)',
-    image: '/images/products/DIARY WITH BAMBOO PAGES .jpg',
-    price: '699',
-    category: 'office',
-    description: 'Diary with bamboo paper',
-    multiImage: true,
-    images:[
-      '/slideimage/Diary/IMG_20250828_144858738_HDR_AE.jpg',
-      '/slideimage/Diary/IMG_20250828_144722223_HDR_AE.jpg',
-      '/slideimage/Diary/IMG_20250721_230820015_HDR_AE.jpg'
-    ]
-  },
-  {
     id: 'camera-pen-stand',
     name: 'Camera Pen Stand (5" X 3" X 2.25")',
     image: '/images/products/CAMERA PEN STAND.jpg',
@@ -986,22 +970,6 @@ export const products: Product[] = [
     price: '359',
     category: 'utility',
     description: 'Complete bamboo cutlery set'
-  },
-  {
-    id: 'bamboo-tea-coaster-set',
-    name: 'Bamboo Tea Coaster Set of 6',
-    image: '/images/products/BAMBOO TEA COASTER SET OF 6 .jpg',
-    price: '459',
-    category: 'utility',
-    description: 'Set of 6 bamboo tea coasters'
-  },
-  {
-    id: 'bamboo-sound-amplifier',
-    name: 'Bamboo Sound Amplifier & Mobile Holder',
-    image: '/images/products/BAMBOO SOUND AMPLIFIER AND MOBILE HOLDER.jpg',
-    price: '359',
-    category: 'utility',
-    description: 'Sound amplifier with mobile holder'
   },
   {
     id: 'small-elephant-tea-coaster',
